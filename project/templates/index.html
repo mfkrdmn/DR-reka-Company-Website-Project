@@ -35,6 +35,16 @@
   <!-- responsive style -->
   <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
 
+  <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/fullpage.min.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  {% comment %} <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}"> {% endcomment %}
+
+
 </head>
 
 <body>
@@ -42,37 +52,11 @@
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
-      <div class="header_top">
-        <div class="container-fluid ">
-          <div class="contact_nav">
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +01 123455678990
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                Email : demo@gmail.com
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Location
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="index.html">
-              <span>
-                Lineer
-              </span>
+                <img width="200ox" src="{% static 'images/logo.png' %}" alt="">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -360,10 +344,12 @@
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT.
+              <p>
+                <b>
+                  HUNDREDS OF OUR BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN VARIOUS FIELDS.
+                </b>
+              </p>
             </p>
             <a href="">
               Read More
@@ -449,7 +435,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          What Says Our <span>Clients</span>
+          Our <span>TEAM</span>
         </h2>
       </div>
       <div class="carousel-wrap ">
@@ -458,23 +444,15 @@
             <div class="box">
               <div class="client_id">
                 <div class="img-box">
-                  <img src="{% static 'images/c1.jpg'%}" alt="" class="box-img">
+                  <img src="{% static 'images/kaan.jpg'%}" alt="" class="box-img">
                 </div>
                 <h5>
-                  Mike Trope
+                  KAAN SEHREMAN
                 </h5>
               </div>
               <div class="detail-box">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                </p>
-                <h6 class="rating">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </h6>
+                  Matching customer needs with the right sources in globalized trading world is the definition of success for Kaan. Both B2B and B2C procurement, sales and marketing goals combined with deep research discipline.                </p>
               </div>
             </div>
           </div>
@@ -482,23 +460,51 @@
             <div class="box">
               <div class="client_id">
                 <div class="img-box">
-                  <img src="{% static 'images/c2.jpg' %}" alt="" class="box-img">
+                  <img src="{% static 'images/bahadır.jpg'%}" alt="" class="box-img">
                 </div>
                 <h5>
-                  Jonas Bell
+                  BAHADIR ÇAYIRLIOĞLU
                 </h5>
               </div>
               <div class="detail-box">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                </p>
-                <h6 class="rating">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </h6>
+                  Professional client communication meets with committed and dedicated CRM structure. Accesibilty & responsibilty on proactive integration of specialist resources.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="{% static 'images/sefa.jpg'%}" alt="" class="box-img">
+                </div>
+                <h5>
+                  SEFA KOSEDAG
+                </h5>
+              </div>
+              <div class="detail-box">
+                <p>
+                  Complicated multinational trade operations require wide range of know-how and experiences to find the best trading strategies & logistic solutions, Sefa is with you all over the world to make overseas accessible for you.                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="{% static 'images/cem.png' %}" alt="" class="box-img">
+                </div>
+                <h5>
+                  CEM MERIH YENER
+                </h5>
+              </div>
+              <div class="detail-box">
+                <p>
+                  We build trust with disciplined business structure and professional team-mates that complate each other in the whole complicated steps of our operations globally. 
+
+                  Different regions, languages, business cultures and attitudes are adapted to the same excelent know-how with combination of skills for progressive success.                </p>
+
               </div>
             </div>
           </div>
@@ -508,6 +514,75 @@
   </section>
 
   <!-- end client section -->
+
+  <div class="section animated-row" data-section="slide03">
+    <div class="section-inner">
+        <div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Trusted by</h2>
+                </div>
+                <div class="services-section">
+                    <div class="services-list owl-carousel">
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                                <img style="width: 250px;" src="{% static 'images/brands/1.png'%}" alt="" class="box-img">
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                  
+                                <img style="width: 250px;" src="{% static 'images/brands/2.png'%}" alt="" class="box-img">
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                 
+                                <img style="width: 250px;" src="{% static 'images/brands/3.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+               
+                                <img  style="width: 250px;"src="{% static 'images/brands/4.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                        
+                                <img style="width: 250px;" src="{% static 'images/brands/5.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                          
+                                <img style="width: 250px;"src="{% static 'images/brands/6.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                       
+                                <img style="width: 250px;"src="{% static 'images/brands/7.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                       
+                                <img style="width: 250px;" src="{% static 'images/brands/8.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
   <!-- contact section -->
   <section class="contact_section">
@@ -651,6 +726,8 @@
 
   <!-- end info section -->
 
+  
+
   <!-- footer section -->
   <section class="footer_section">
     <div class="container">
@@ -675,10 +752,14 @@
   </script>
   <!-- custom js -->
   <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/customm.js' %}"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
 
 </body>
 
