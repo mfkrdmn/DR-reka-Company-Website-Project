@@ -200,3 +200,16 @@
         });
     });
 })(jQuery, window, document);
+
+/***
+Counter UP
+*/
+$('.counter').counterUp({
+    delay: 10,
+    time: 2000
+  });
+  $('.counter').addClass('animated fadeInDownBig');
+  $('h3').addClass('animated fadeIn');
+/***
+Counter UP end
+*/
