@@ -10,26 +10,22 @@ getYear();
 
 // client section owl carousel
 $(".client_owl-carousel").owlCarousel({
-    loop: true,
+    loop: false,
     margin: 0,
     dots: false,
     nav: true,
     navText: [],
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: true,
-    navText: [
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-    ],
     responsive: {
         0: {
-            items: 1
+            items: 4
         },
         600: {
-            items: 1
+            items: 4
         },
         1000: {
-            items: 2
+            items: 4
         }
     }
 });
