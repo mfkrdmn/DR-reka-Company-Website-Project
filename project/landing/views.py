@@ -12,3 +12,7 @@ def contact(request):
 
 def career(request):
     return render(request,"career.html")
+
+
+def test(request):
+    return render(request,"test.html")
