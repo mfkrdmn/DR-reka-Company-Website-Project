@@ -6,4 +6,8 @@ urlpatterns = [
     path('contactus',views.contact, name="contact"),
     path('career',views.career, name="career"),
     path('test',views.test, name="test"),
+    path('aviation',views.aviation, name="aviation"),
+    path('gse',views.gse, name="gse"),
+    path('finance',views.finance, name="finance"),
+    path('ec',views.ec, name="ec"),
 ]

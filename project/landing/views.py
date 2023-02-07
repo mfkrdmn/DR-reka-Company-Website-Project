@@ -16,3 +16,16 @@ def career(request):
 
 def test(request):
     return render(request,"test.html")
+
+
+def aviation(request):
+    return render(request,"aviation.html")
+    
+def gse(request):
+    return render(request,"gse.html")
+
+def finance(request):
+    return render(request,"finance.html")
+
+def ec(request):
+    return render(request,"ec.html")

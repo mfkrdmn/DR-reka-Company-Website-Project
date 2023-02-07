@@ -82,13 +82,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Aviation <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{% url 'aviation' %}">Aviation <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html">Finance</a>
+                  <a class="nav-link" href="{% url 'gse' %}">MRO & GSE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> EC</a>
+                  <a class="nav-link" href="{% url 'finance' %}">Finance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'ec' %}"> EC</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html"> RE & C</a>
@@ -99,18 +102,22 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'contact' %}">Contact </a>
                 </li>
-          
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html"> RFQ</a>
-                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
                 </li>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                <div class="dropdown">
+                  <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
                   </button>
-                </form>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                    <li><a class="dropdown-item" href="#">TR</a></li>
+                    <li><a class="dropdown-item" href="#">GR</a></li>
+                    <li><a class="dropdown-item" href="#">AR</a></li>
+                  </ul>
+                </div>
+      
+               
               </ul>
             </div>
           </nav>
@@ -132,15 +139,15 @@
               <div class="carousel-item active">
                 <img src="{% static 'images/slider/slider1.jpg' %}" class="d-block w-100 sliderpic" style="height: 850px !important;" alt="...">
                 <div class="carousel-caption  d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <h5>We Build Trust</h5>
+                  <p>HUNDREDS OF BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN VARIOUS FIELDS.</p>
                 </div>
               </div>
               <div class="carousel-item">
           <img src="{% static 'images/slider/slider2.jpeg' %}" class="d-block w-100 sliderpic"   style="height: 850px !important; " alt="...">
                 <div class="carousel-caption  d-md-block">
                   <h5>International trade</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <p>REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN,  GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT.</p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -194,29 +201,29 @@
         <h1 class="modal-title fs-5" style="color:white ;" id="staticBackdropLabel">Request For Quote</h1>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body text-center">
         <form action="/action_page.php">
           <label for="fname">Part Number *:</label><br>
-          <input type="text" id="fname" name="fname" required><br><br>
+          <input class="w-100" type="text" id="fname" name="fname" required><br><br>
           <label for="lname">Description:</label><br>
-          <input type="text" id="lname" name="lname" ><br><br>
+          <input class="w-100" type="text" id="lname" name="lname" ><br><br>
           <label for="lname">Quantitiy *:</label><br>
-          <input type="text" id="lname" name="lname" required><br><br>
+          <input class="w-100" type="text" id="lname" name="lname" required><br><br>
           <label for="lname">Condition:</label><br>
-          <input type="text" id="lname" name="lname" ><br><br>
+          <input class="w-100" type="text" id="lname" name="lname" ><br><br>
           <label for="lname">Mail *:</label><br>
-          <input type="email" id="lname" name="lname" required><br><br>
+          <input class="w-100" type="email" id="lname" name="lname" required><br><br>
           <label for="lname">Telephone:</label><br>
-          <input type="tel" id="lname" name="lname" ><br><br>
+          <input class="w-100" type="tel" id="lname" name="lname" ><br><br>
           <label for="lname">Company:</label><br>
-          <input type="text" id="lname" name="lname" ><br><br>
+          <input class="w-100" type="text" id="lname" name="lname" ><br><br>
           <label for="lname">Name Surname:</label><br>
-          <input type="text" id="lname" name="lname" ><br><br>
+          <input class="w-100" type="text" id="lname" name="lname" ><br><br>
         
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer" style="justify-content: center !important">
         <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <input type="submit" class="btn btn-primary" value="Submit">
+        <input type="submit" class="btn btn-danger" value="Submit">
       </form>   
       </div>
     </div>
@@ -351,7 +358,74 @@
 
   <!-- end service section -->
 
+  <div class="section animated-row" data-section="slide03">
+    <div class="section-inner">
+        <div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Trusted by</h2>
+                </div>
+                <div class="services-section">
+                    <div class="services-list owl-carousel">
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                                <img style="width: 250px;" src="{% static 'images/brands/1.png'%}" alt="" class="box-img">
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                  
+                                <img style="width: 250px;" src="{% static 'images/brands/2.png'%}" alt="" class="box-img">
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                 
+                                <img style="width: 250px;" src="{% static 'images/brands/3.png'%}" alt="" class="box-img">
 
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+               
+                                <img  style="width: 250px;"src="{% static 'images/brands/4.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                        
+                                <img style="width: 250px;" src="{% static 'images/brands/5.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                          
+                                <img style="width: 250px;"src="{% static 'images/brands/6.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                       
+                                <img style="width: 250px;"src="{% static 'images/brands/7.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                        <div class="item animate" data-animate="fadeInUp">
+                            <div class="service-box">
+                       
+                                <img style="width: 250px;" src="{% static 'images/brands/8.png'%}" alt="" class="box-img">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
   <!-- about section -->
 
   <section class="about_section layout_padding-bottom">
@@ -377,9 +451,7 @@
                 </b>
               </p>
             </p>
-            <a href="">
-              Read More
-            </a>
+      
           </div>
         </div>
       </div>
@@ -403,11 +475,11 @@
               <div class="box">
                 <div class="num-box">
                   <span id="countDay" class="count">
-                    3850
+                    14
                   </span>
                 </div>
                 <h5>
-                  Hours Of Work
+                  COUNTRIES SERVED
                 </h5>
               </div>
             </div>
@@ -415,11 +487,11 @@
               <div class="box">
                 <div class="num-box">
                   <span id="countSec" class="count">
-                    219
+                    192
                   </span>
                 </div>
                 <h5>
-                  Projects Completed
+                  PROJECTS COMPLETED
                 </h5>
               </div>
             </div>
@@ -427,11 +499,11 @@
               <div class="box">
                 <div class="num-box">
                   <span id="countMin" class="count">
-                    16
+                    1054
                   </span>
                 </div>
                 <h5>
-                  Industries Served
+                  SUCCESSFULL DELIVERIES
                 </h5>
               </div>
             </div>
@@ -439,11 +511,11 @@
               <div class="box">
                 <div class="num-box">
                   <span id="countHour" class="count">
-                    198
+                    478
                   </span>
                 </div>
                 <h5>
-                  Satisfied Clients
+                  SATISFIED CLIENTS
                 </h5>
               </div>
             </div>
@@ -454,166 +526,6 @@
   </section>
 
   <!-- end why us section -->
-
-  <!-- client section -->
-
-  <!-- <section class="client_section layout_padding">
-    <div class="container-fluid">
-      <div class="heading_container">
-        <h2>
-          Our <span>TEAM</span>
-        </h2>
-      </div>
-      <div class="carousel-wrap" >
-        <div class="owl-carousel client_owl-carousel">
-          <div class="item">
-            <div class="box" style="height: 250px;">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="{% static 'images/cem.png' %}" alt="" class="box-img">
-                </div>
-                <h5>
-                  CEM MERIH YENER
-                </h5>
-              </div>
-              <div class="detail-box">
-                <p>
-                  We build trust with disciplined business structure and professional team-mates that complate each other in the whole complicated steps of our operations globally. 
-
-                  Different regions, languages, business cultures and attitudes are adapted to the same excelent know-how with combination of skills for progressive success.                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box" style="height: 250px;">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="{% static 'images/sefa.jpg' %}" alt="" class="box-img">
-                </div>
-                <h5>
-                  Sefa Kösedağ
-                </h5>
-              </div>
-              <div class="detail-box">
-                <p>
-                  We build trust with disciplined business structure and professional team-mates that complate each other in the whole complicated steps of our operations globally. 
-
-                  Different regions, languages, business cultures and attitudes are adapted to the same excelent know-how with combination of skills for progressive success.                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box" style="height: 250px;">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="{% static 'images/user.png' %}" alt="" class="box-img">
-                </div>
-                <h5>
-                  Atilla Muratlı
-                </h5>
-              </div>
-              <div class="detail-box">
-                <p>
-                  We build trust with disciplined business structure and professional team-mates that complate each other in the whole complicated steps of our operations globally. 
-
-                  Different regions, languages, business cultures and attitudes are adapted to the same excelent know-how with combination of skills for progressive success.                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="{% static 'images/bahadır.jpg'%}" alt="" class="box-img">
-                </div>
-                <h5>
-                  BAHADIR ÇAYIRLIOĞLU
-                </h5>
-              </div>
-              <div class="detail-box">
-                <p>
-                  Professional client communication meets with committed and dedicated CRM structure. Accesibilty & responsibilty on proactive integration of specialist resources.                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-wrap" >
-        <div class="owl-carousel client_owl-carousel">
-          <div class="item">
-            <div class="box" style="height: 250px;">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="{% static 'images/cagatay.jpeg' %}" alt="" class="box-img">
-                </div>
-                <h5>
-                  Çağatay Özel
-                </h5>
-              </div>
-              <div class="detail-box">
-                <p>
-                  Matching customer needs with the right sources in globalized trading world is the definition of success for Kaan. Both B2B and B2C procurement, sales and marketing goals combined with deep research discipline.                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box" style="height: 250px;">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="{% static 'images/erenay.jpeg' %}" alt="" class="box-img">
-                </div>
-                <h5>
-                  Erenay Köktaş
-                </h5>
-              </div>
-              <div class="detail-box">
-                <p>
-                  Professional client communication meets with committed and dedicated CRM structure. Accesibilty & responsibilty on proactive integration of specialist resources.                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box" style="height: 250px;">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="{% static 'images/salih.png' %}" alt="" class="box-img">
-                </div>
-                <h5>
-                  Salih Özcan
-                </h5>
-              </div>
-              <div class="detail-box">
-                <p>
-                  Complicated multinational trade operations require wide range of know-how and experiences to find the best trading strategies & logistic solutions, Sefa is with you all over the world to make overseas accessible for you.                </p>
-
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="box" style="height: 250px;">
-              <div class="client_id">
-                <div class="img-box">
-                  <img src="{% static 'images/mert.jpeg' %}" alt="" class="box-img">
-                </div>
-                <h5>
-                  Mert İntaş
-                </h5>
-              </div>
-              <div class="detail-box">
-                <p>
-                  We build trust with disciplined business structure and professional team-mates that complate each other in the whole complicated steps of our operations globally. 
-
-                  Different regions, languages, business cultures and attitudes are adapted to the same excelent know-how with combination of skills for progressive success.                </p>
-
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-
-    </div>
-  </section> -->
 
   <div class="container mt-5 mb-5">
     <div class="heading_container">
@@ -709,122 +621,9 @@
 
   <!-- end client section -->
 
-  <div class="section animated-row" data-section="slide03">
-    <div class="section-inner">
-        <div class="row justify-content-center">
-            <div class="col-md-8 wide-col-laptop">
-                <div class="title-block animate" data-animate="fadeInUp">
-                    <h2>Trusted by</h2>
-                </div>
-                <div class="services-section">
-                    <div class="services-list owl-carousel">
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="service-box">
-                                <img style="width: 250px;" src="{% static 'images/brands/1.png'%}" alt="" class="box-img">
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="service-box">
-                  
-                                <img style="width: 250px;" src="{% static 'images/brands/2.png'%}" alt="" class="box-img">
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="service-box">
-                 
-                                <img style="width: 250px;" src="{% static 'images/brands/3.png'%}" alt="" class="box-img">
 
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="service-box">
-               
-                                <img  style="width: 250px;"src="{% static 'images/brands/4.png'%}" alt="" class="box-img">
 
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="service-box">
-                        
-                                <img style="width: 250px;" src="{% static 'images/brands/5.png'%}" alt="" class="box-img">
 
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="service-box">
-                          
-                                <img style="width: 250px;"src="{% static 'images/brands/6.png'%}" alt="" class="box-img">
-
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="service-box">
-                       
-                                <img style="width: 250px;"src="{% static 'images/brands/7.png'%}" alt="" class="box-img">
-
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="service-box">
-                       
-                                <img style="width: 250px;" src="{% static 'images/brands/8.png'%}" alt="" class="box-img">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-  <!-- contact section -->
-  <section class="contact_section">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4 col-md-5 offset-md-1">
-          <div class="heading_container">
-            <h2>
-              Contact <span>Us</span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-5 offset-md-1">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-lg-7 col-md-6 px-0">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end contact section -->
  
   <!-- info section -->
 
@@ -843,7 +642,7 @@
         <div class="col-md-6 col-lg-2 mx-auto info_col">
           <div class="info_link_box">
             <h4>
-              Links
+              
             </h4>
             <div class="info_links">
               <a class="active" href="index.html">
@@ -864,41 +663,34 @@
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_contact">
             <h4>
-              Get In Touch
+              AOG Line
             </h4>
             <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
+
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  Call +90 507 900 90 77
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  aog@rekaglobal.com 
                 </span>
               </a>
             </div>
           </div>
           <div class="info_social">
             <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa-brands fa-whatsapp"></i>
             </a>
+    
             <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa-brands fa-twitter"></i>
             </a>
           </div>
         </div>
@@ -927,6 +719,7 @@
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
         <a href="https://html.design/">REKA Global</a>
+        <span>Developed by REKA Design</span>
       </p>
     </div>
   </section>
