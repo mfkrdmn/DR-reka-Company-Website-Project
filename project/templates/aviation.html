@@ -4,6 +4,91 @@
 
 {% block content %}
 
+<style>
+  /*----  Main Style  ----*/
+#cards_landscape_wrap-2{
+  text-align: center;
+  background: #F7F7F7;
+}
+#cards_landscape_wrap-2 .container{
+  padding-top: 80px; 
+  padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a{
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box{
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  opacity: 0.7;
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box{
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+  background: #FFFFFF;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+#cards_landscape_wrap-2 .card-flyer:hover{
+  background: #fff;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: #00acc1;
+}
+</style>
+
 <div class="container-fluid m-0 p-0">
     <div class="row">
         <div class="col-md-12">
@@ -12,93 +97,130 @@
     </div>
 </div>
 
-<div class="container mt-5">
-    <h2 style="margin-bottom:50px ;">AVIATION</h2>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/aviation/aviation1.jpg' %}" alt="Card image" style="width:100%; height: 180px;">
-                <div class="card-body">
-                  <h4 class="card-title">Civil Air Planes</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-             
+
+       <!-- Topic Cards -->
+      <div id="cards_landscape_wrap-2">
+        <div class="container">
+            <div class="row">
+              <h2>Aviation</h2>
+
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <a href="">
+                        <div class="card-flyer">
+                            <div class="text-box">
+                                <div class="image-box">
+                                    <img src="{% static 'images/aviation/aviation1.jpg' %}" alt="" />
+                                </div>
+                                <div class="text-container">
+                                    <h6>Civil Air Planes</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <a href="">
+                      <div class="card-flyer">
+                          <div class="text-box">
+                              <div class="image-box">
+                                <img src="{% static 'images/slider/slider2.jpeg' %}" alt="" />
+                              </div>
+                              <div class="text-container">
+                                  <h6>Helicopters</h6>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
               </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="{% static 'images/slider/slider2.jpeg' %}" alt="" />
+                            </div>
+                            <div class="text-container">
+                                <h6>Business Jets</h6>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <a href="">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="image-box">
+                              <img src="{% static 'images/slider/slider2.jpeg' %}" alt="" />
+                          </div>
+                          <div class="text-container">
+                              <h6>Private Jets</h6>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <a href="">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                            <img src="{% static 'images/slider/slider2.jpeg' %}" alt="" />
+                        </div>
+                        <div class="text-container">
+                            <h6>Engines</h6>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/slider/slider2.jpeg' %}" alt="Card image" style="width:100%; height:180px;">
-                <div class="card-body">
-                  <h4 class="card-title">Helicopters</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-          
-                </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <a href="">
+              <div class="card-flyer">
+                  <div class="text-box">
+                      <div class="image-box">
+                        <img src="{% static 'images/aviation/aviation2.jpg' %}" alt="" />
+                      </div>
+                      <div class="text-container">
+                          <h6>Avionics</h6>
+                      </div>
+                  </div>
               </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/slider/slider2.jpeg' %}" alt="Card image" style="width:100%; height:180px;">
-                <div class="card-body">
-                  <h4 class="card-title">Business Jets</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-             
+          </a>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <a href="">
+            <div class="card-flyer">
+                <div class="text-box">
+                    <div class="image-box">
+                      <img src="{% static 'images/aviation/aviation4.jpg' %}" alt="" />
+                    </div>
+                    <div class="text-container">
+                        <h6>Consumables</h6>
+                    </div>
                 </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/aviation/aviation3.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Standard Parts</h6>
+                  </div>
               </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/slider/slider2.jpeg' %}" alt="Card image" style="width:100%; height:180px;">
-                <div class="card-body">
-                  <h4 class="card-title">Private Jets</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-     
-                </div>
-              </div>
+          </div>
+      </a>
+  </div>
+            </div>
         </div>
     </div>
-    <div class="row mt-5">
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/slider/slider2.jpeg' %}" alt="Card image" style="width:100%; height:180px;">
-                <div class="card-body">
-                  <h4 class="card-title">Engines</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-          
-                </div>
-              </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/slider/slider2.jpeg' %}" alt="Card image" style="width:100%; height:180px;">
-                <div class="card-body">
-                  <h4 class="card-title">Avionics</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-             
-                </div>
-              </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/slider/slider2.jpeg' %}" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <h4 class="card-title">Consumables</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      
-                </div>
-              </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/slider/slider2.jpeg' %}" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <h4 class="card-title">Standard Parts</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-           
-                </div>
-              </div>
-        </div>
-    </div>
-</div>
+
 
 <br><br><br><br>
 
