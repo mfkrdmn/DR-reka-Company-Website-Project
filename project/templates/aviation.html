@@ -28,10 +28,7 @@
   border-radius: 5px;
 }
 #cards_landscape_wrap-2 .card-flyer .image-box img{
-  -webkit-transition:all .9s ease; 
-  -moz-transition:all .9s ease; 
-  -o-transition:all .9s ease;
-  -ms-transition:all .9s ease; 
+  transition:all .9s ease; 
   width: 100%;
   height: 200px;
 }
@@ -99,31 +96,31 @@
 
 
        <!-- Topic Cards -->
-      <div id="cards_landscape_wrap-2">
-        <div class="container">
-            <div class="row">
+      <div id="cards_landscape_wrap-2" style="background-color: white !important;">
+        <div class="container-fluid">
+            <div class="row justify-content-center mt-5">
               <h2>Aviation</h2>
 
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
                     <a href="">
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
-                                    <img src="{% static 'images/aviation/aviation1.jpg' %}" alt="" />
+                                    <img src="{% static 'images/aviation/aviation9.jpg' %}" alt="" />
                                 </div>
                                 <div class="text-container">
-                                    <h6>Civil Air Planes</h6>
+                                    <h6>Commercial Aircrafts </h6>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
                   <a href="">
                       <div class="card-flyer">
                           <div class="text-box">
                               <div class="image-box">
-                                <img src="{% static 'images/slider/slider2.jpeg' %}" alt="" />
+                                <img src="{% static 'images/aviation/aviation8.jpg' %}" alt="" />
                               </div>
                               <div class="text-container">
                                   <h6>Helicopters</h6>
@@ -132,12 +129,12 @@
                       </div>
                   </a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
                 <a href="">
                     <div class="card-flyer">
                         <div class="text-box">
                             <div class="image-box">
-                                <img src="{% static 'images/slider/slider2.jpeg' %}" alt="" />
+                              <img src="{% static 'images/aviation/aviation1.jpg' %}" alt="" />
                             </div>
                             <div class="text-container">
                                 <h6>Business Jets</h6>
@@ -146,12 +143,12 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
               <a href="">
                   <div class="card-flyer">
                       <div class="text-box">
                           <div class="image-box">
-                              <img src="{% static 'images/slider/slider2.jpeg' %}" alt="" />
+                            <img src="{% static 'images/aviation/aviation7.jpg' %}" alt="" />
                           </div>
                           <div class="text-container">
                               <h6>Private Jets</h6>
@@ -160,13 +157,30 @@
                   </div>
               </a>
           </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
             <a href="">
                 <div class="card-flyer">
                     <div class="text-box">
                         <div class="image-box">
-                            <img src="{% static 'images/slider/slider2.jpeg' %}" alt="" />
+                          <img src="{% static 'images/aviation/aviation6.jpg' %}" alt="" />
+                        </div>
+                        <div class="text-container">
+                            <h6>Drones</h6>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+  <div class="row justify-content-center">
+
+          <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+            <a href="">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                          <img src="{% static 'images/aviation/aviation10.jpg' %}" alt="" />
                         </div>
                         <div class="text-container">
                             <h6>Engines</h6>
@@ -175,7 +189,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
           <a href="">
               <div class="card-flyer">
                   <div class="text-box">
@@ -189,7 +203,7 @@
               </div>
           </a>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
         <a href="">
             <div class="card-flyer">
                 <div class="text-box">
@@ -203,7 +217,7 @@
             </div>
         </a>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+    <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
       <a href="">
           <div class="card-flyer">
               <div class="text-box">
@@ -217,9 +231,24 @@
           </div>
       </a>
   </div>
+  <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+    <a href="">
+        <div class="card-flyer">
+            <div class="text-box">
+                <div class="image-box">
+                  <img src="{% static 'images/aviation/aviation5.jpg' %}" alt="" />
+                </div>
+                <div class="text-container">
+                    <h6>Tires</h6>
+                </div>
             </div>
         </div>
+    </a>
+</div>
+</div>
+        </div>
     </div>
+</div>
 
 
 <br><br><br><br>

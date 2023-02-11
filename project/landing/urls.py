@@ -10,4 +10,8 @@ urlpatterns = [
     path('gse',views.gse, name="gse"),
     path('finance',views.finance, name="finance"),
     path('ec',views.ec, name="ec"),
+    path('login',views.login, name="login"),
+    path('register',views.register, name="register"),
+    path('rec',views.rec, name="rec"),
+    path('profile',views.profile, name="profile"),
 ]

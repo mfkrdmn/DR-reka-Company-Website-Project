@@ -67,7 +67,7 @@
                 <a class="navbar-brand" href="{% url 'index' %}">
                     <img width="200ox" src="{% static 'images/logo.png' %}" alt="">
                 </a>
-      
+       
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class=""> </span>
                 </button>
@@ -87,7 +87,7 @@
                       <a class="nav-link" href="{% url 'ec' %}"> EC</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="about.html"> RE & C</a>
+                      <a class="nav-link" href="{% url 'rec' %}"> RE & C</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="{% url 'career' %}">Career</a>
@@ -95,9 +95,15 @@
                     <li class="nav-item">
                       <a class="nav-link" href="{% url 'contact' %}">Contact </a>
                     </li>
+                    {% if request.user.is_authenticated %}
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                      <a class="nav-link" href="{% url 'profile' %}"><i class="fa fa-user" aria-hidden="true"></i> {{request.user.username}} </a>
                     </li>
+                    {% else %}
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'login' %}"><i class="fa fa-user" aria-hidden="true"></i> Login </a>
+                    </li>
+                    {% endif %}
                     <div class="dropdown">
                       <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         EN
@@ -146,17 +152,29 @@
               
             </h4>
             <div class="info_links">
-              <a class="active" href="index.html" style="text-decoration: none ; ">
-                Home
+              <a class="active" href="{% url 'index' %}" style="text-decoration: none ; ">
+                HOME
               </a>
-              <a class="" href="service.html" style="text-decoration: none ; ">
-                Services
+              <a class="" href="{% url 'aviation' %}" style="text-decoration: none ; ">
+                AVIATION
               </a>
-              <a class="" href="about.html" style="text-decoration: none ; ">
-                About
+              <a class="" href="{% url 'gse' %}" style="text-decoration: none ; ">
+                MRO & GSE
+              </a>
+              <a class="" href="{% url 'finance' %}" style="text-decoration: none ; ">
+                FINANCE
+              </a>
+              <a class="" href="{% url 'ec' %}" style="text-decoration: none ; ">
+                EC
               </a>
               <a class="" href="contact.html" style="text-decoration: none ; ">
-                Contact Us
+                RE & C
+              </a>
+              <a class="" href="{% url 'career' %}" style="text-decoration: none ; ">
+                CAREER
+              </a>
+              <a class="" href="{% url 'contact' %}" style="text-decoration: none ; ">
+                CONTACT
               </a>
             </div>
           </div>
@@ -193,6 +211,9 @@
             <a href="" style="text-decoration: none; ">
               <i class="fa-brands fa-twitter"></i>
             </a>
+            <a href="">
+              <img src="{% static 'images/bip.png' %}" style="height: 35px !important; "  alt="...">
+            </a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 info_col ">
@@ -209,6 +230,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- end info section -->
 
