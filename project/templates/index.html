@@ -106,6 +106,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'profile' %}"><i class="fa fa-user" aria-hidden="true"></i> {{request.user.username}} </a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'logout' %}"> logout</a>
+                </li>
                 {% else %}
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'login' %}"><i class="fa fa-user" aria-hidden="true"></i> Login </a>
@@ -208,23 +211,24 @@
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-        <form action="/action_page.php">
+        <form action="" method="POST">
+          {% csrf_token %}
           <label for="fname">Part Number *:</label><br>
-          <input class="w-100" type="text" id="fname" name="fname" required><br><br>
+          <input class="w-100" type="text" id="fname" name="PartNumber" required><br><br>
           <label for="lname">Description:</label><br>
-          <input class="w-100" type="text" id="lname" name="lname" ><br><br>
-          <label for="lname">Quantitiy *:</label><br>
-          <input class="w-100" type="text" id="lname" name="lname" required><br><br>
+          <input class="w-100" type="text" id="lname" name="Description" ><br><br>
+          <label for="lname">Quantity *:</label><br>
+          <input class="w-100" type="text" id="lname" name="Quantity" required><br><br>
           <label for="lname">Condition:</label><br>
-          <input class="w-100" type="text" id="lname" name="lname" ><br><br>
+          <input class="w-100" type="text" id="lname" name="Condition" ><br><br>
           <label for="lname">Mail *:</label><br>
-          <input class="w-100" type="email" id="lname" name="lname" required><br><br>
+          <input class="w-100" type="email" id="lname" name="Mail" required><br><br>
           <label for="lname">Telephone:</label><br>
-          <input class="w-100" type="tel" id="lname" name="lname" ><br><br>
-          <label for="lname">Company:</label><br>
-          <input class="w-100" type="text" id="lname" name="lname" ><br><br>
+          <input class="w-100" type="tel" id="lname" name="Telephone" ><br><br>
+          <label for="lname">Company Name:</label><br>
+          <input class="w-100" type="text" id="lname" name="CompanyName" ><br><br>
           <label for="lname">Name Surname:</label><br>
-          <input class="w-100" type="text" id="lname" name="lname" ><br><br>
+          <input class="w-100" type="text" id="lname" name="fullname" ><br><br>
         
       </div>
       <div class="modal-footer" style="justify-content: center !important">

@@ -310,6 +310,9 @@ img {
 				<h1 class="login__title">
 					<span>Welcome!</span> 
 				</h1>
+				{% for field in messages %}
+					<li style="color: rgb(255, 255, 255); list-style: none;">{{field}}</li>
+				{% endfor %}
 			</div>
 
 			<div>
@@ -344,8 +347,8 @@ img {
 				<div class="login__buttons">
                     <input type="submit" value="Register" class="login__button">
 				</div>
-
-				<a href="{% url 'login' %}" class="login__forgot" style="color: white;">Already Have an Account?</a>
+				<a href="{% url 'login' %}" class="login__forgot" style="color: white;">Already Have an Account?</a> <br>
+				<a href="{% url 'index' %}" class="login__forgot" style="color: white;">Return to home page</a>
 			</div>
 		</form>
 	</div>

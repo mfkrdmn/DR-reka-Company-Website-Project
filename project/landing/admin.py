@@ -4,3 +4,4 @@ from .models import *
 admin.site.site_header = "REKA GLOBAL Admin Page"
 
 admin.site.register(Profile)
+admin.site.register(rfq)

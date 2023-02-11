@@ -7,7 +7,28 @@ from .models import *
 # Create your views here.
 
 def index(request):
-    return render(request,"index.html")
+
+    if request.method == "POST":
+        PartNumber = request.POST['PartNumber']
+        Description = request.POST['Description']
+        Quantity = request.POST['Quantity']
+        Condition = request.POST['Condition']
+        Mail = request.POST['Mail']
+        Telephone = request.POST['Telephone']
+        CompanyName = request.POST['CompanyName']
+        fullname = request.POST['fullname']
+
+        if request.method == "POST":
+
+            newRFQ = rfq.objects.create(PartNumber=PartNumber, Description=Description, 
+            Quantity=Quantity,Condition=Condition,Mail=Mail,Telephone=Telephone,CompanyName=CompanyName,fullname=fullname)
+            newRFQ.save()
+            return redirect('/')
+    
+    
+    return render(request, 'index.html')
+
+#############
 
 def contact(request):
     return render(request,"contact.html")
@@ -36,6 +57,8 @@ def rec(request):
 def profile(request):
         return render(request,"profile.html")
 
+#############
+
 def login(request):
     if request.method == 'POST':
         companyName = request.POST['companyName']
@@ -47,11 +70,12 @@ def login(request):
             auth.login(request, user)
             return redirect('/')
         else:
-            messages.info(request, 'User Invalid')
-            return redirect('/login/')
+            messages.info(request, 'User is Invalid!')
+            return redirect('/login')
     else:
         return render(request, 'login.html')
 
+#############
 
 def register(request):
     
@@ -88,3 +112,14 @@ def register(request):
 
     else:
         return render(request, 'register.html')
+
+
+#############
+
+
+def logout(request):
+    auth.logout(request)
+    messages.error(request, "You are logged out")
+    return redirect("login")
+
+############

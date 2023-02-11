@@ -304,12 +304,16 @@ img {
 	<div class="login__content">
 		<img src="{% static 'images/loginbg.jpg' %}" alt="login image" class="login__img">
 
+
         <form action="" method="POST" class="login__form">
             {% csrf_token %}
 			<div>
 				<h1 class="login__title">
 					<span>Welcome</span> Back!
 				</h1>
+				{% for field in messages %}
+					<li style="color: rgb(255, 255, 255); list-style: none;">{{field}}</li>
+				{% endfor %}
 			</div>
 
 			<div>
@@ -338,13 +342,13 @@ img {
 				<div class="login__buttons">
 					<button class="login__button">Log In</button>
 				</div>
-
-				<a href="#" class="login__forgot" style="color: white;">Forgot Password?</a> <br>
-				<a href="{% url 'register' %}" class="login__forgot" style="color: white;">Dont Have an Account?</a>
+				<a href="{% url 'register' %}" class="login__forgot" style="color: white;">Dont Have an Account?</a><br>
+				<a href="{% url 'index' %}" class="login__forgot" style="color: white;">Return to home page</a>
 			</div>
 		</form>
 	</div>
 </div>
+
 
 <script>
     /*=============== SHOW HIDDEN - PASSWORD ===============*/
