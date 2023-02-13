@@ -13,10 +13,10 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
+  <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="">
 
   <title> Reka Global </title>
-
+  <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -52,7 +52,7 @@
   <!-- {% comment %} <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}"> {% endcomment %} -->
 <style>
   .carousel-caption{
-    top: 45%;
+    top: 41%;
   }
 
   .sliderpic{
@@ -91,7 +91,7 @@
                   <a class="nav-link" href="{% url 'finance' %}">Finance</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'ec' %}"> EC</a>
+                  <a class="nav-link" href="{% url 'ec' %}">  MM & EC</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'rec' %}"> RE & C</a>
@@ -148,36 +148,36 @@
               <div class="carousel-item active">
                 <img src="{% static 'images/slider/slider1.jpg' %}" class="d-block w-100 sliderpic" style="height: 850px !important;" alt="...">
                 <div class="carousel-caption  d-md-block">
-                  <h5>We Build Trust</h5>
-                  <p>HUNDREDS OF BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN VARIOUS FIELDS.</p>
+                  <h1> <b> WE BUILD TRUST</b></h5>
+                  <p style="font-size: 25px;">HUNDREDS OF BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN VARIOUS FIELDS.</p>
                 </div>
               </div>
               <div class="carousel-item">
           <img src="{% static 'images/slider/slider2.jpeg' %}" class="d-block w-100 sliderpic"   style="height: 850px !important; " alt="...">
                 <div class="carousel-caption  d-md-block">
-                  <h5>International trade</h5>
-                  <p>REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN,  GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT.</p>
+                  <h1> <b> INTERNATIONAL TRADE</b></h5>
+                  <p style="font-size: 25px;">REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN,  GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT.</p>
                 </div>
               </div>
               <div class="carousel-item">
           <img src="{% static 'images/slider/slider3.jpg' %}" class="d-block w-100 sliderpic"   style="height: 850px !important; " alt="...">
                 <div class="carousel-caption  d-md-block">
-                  <h5> MRO & GROUND</h5>
-                  <p>Safety Requires Quality. Maintenance and Repair Operations, Ground Support Equipments, Low Maintenance Metrics.</p>
+                  <h1> <b>  MRO & GROUND</b></h5>
+                  <p style="font-size: 25px;">Safety Requires Quality. Maintenance and Repair Operations, Ground Support Equipments, Low Maintenance Metrics.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="{% static 'images/slider/slider4.jpg' %}" class="d-block w-100 sliderpic"  style="height: 850px !important; "  alt="...">
                       <div class="carousel-caption  d-md-block">
-                        <h5>COOPERATION CULTURE</h5>
-                        <p>CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES</p>
+                        <h1> <b> COOPERATION CULTURE</b></h5>
+                        <p style="font-size: 25px;">CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES</p>
                       </div>
               </div>
               <div class="carousel-item">
                 <img src="{% static 'images/slider/slider5.jpg' %}" class="d-block w-100 sliderpic"  style="height: 850px !important; "  alt="...">
                       <div class="carousel-caption  d-md-block">
-                        <h5>SKY IS THE LIMIT</h5>
-                        <p>EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION.</p>
+                        <h1> <b> SKY IS THE LIMIT</b></h5>
+                        <p style="font-size: 25px;">EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION.</p>
                       </div>
               </div>
               
@@ -440,6 +440,11 @@
                 About <span>Us</span>
               </h2>
             </div>
+            <p class="text-uppercase">Reka Global offers a wide range of international trade services for both import and export processes. Our main goal is to offer our customers a smooth and successful trade operation, free from the possible risks and difficulties of international trade. 
+
+             <p class="text-uppercase"> Our wide range of services offers managing or monitoring standard and non-standard trade operations as well as tailor-made solutions for your business.</p>
+              
+             <p class="text-uppercase"> By utilizing our existing sales channels among all over the world, we are serving SMEs as an outsider sales team</p></p>
             <p>
               REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT.
               <p>
@@ -632,36 +637,42 @@
               REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN,  GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT.            </p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
+        <div class="col-md-6 col-lg-4 mx-auto info_col">
           <div class="info_link_box">
             <h4>
               
             </h4>
-            <div class="info_links">
-              <a class="active" href="{% url 'index' %}" style="text-decoration: none ; ">
-                HOME
-              </a>
-              <a class="" href="{% url 'aviation' %}" style="text-decoration: none ; ">
-                AVIATION
-              </a>
-              <a class="" href="{% url 'gse' %}" style="text-decoration: none ; ">
-                MRO & GSE
-              </a>
-              <a class="" href="{% url 'finance' %}" style="text-decoration: none ; ">
-                FINANCE
-              </a>
-              <a class="" href="{% url 'ec' %}" style="text-decoration: none ; ">
-                EC
-              </a>
-              <a class="" href="contact.html" style="text-decoration: none ; ">
-                RE & C
-              </a>
-              <a class="" href="{% url 'career' %}" style="text-decoration: none ; ">
-                CAREER
-              </a>
-              <a class="" href="{% url 'contact' %}" style="text-decoration: none ; ">
-                CONTACT
-              </a>
+            <div class="container info_links">
+              <div class="row">
+                <div class="col-6">
+                  <a class="active" href="{% url 'index' %}" style="text-decoration: none ; ">
+                    HOME
+                  </a>
+                  <a class="" href="{% url 'aviation' %}" style="text-decoration: none ; ">
+                    AVIATION
+                  </a>
+                  <a class="" href="{% url 'gse' %}" style="text-decoration: none ; ">
+                    MRO & GSE
+                  </a>
+                  <a class="" href="{% url 'finance' %}" style="text-decoration: none ; ">
+                    FINANCE
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a class="" href="{% url 'ec' %}" style="text-decoration: none ; ">
+                    EC
+                  </a>
+                  <a class="" href="contact.html" style="text-decoration: none ; ">
+                    RE & C
+                  </a>
+                  <a class="" href="{% url 'career' %}" style="text-decoration: none ; ">
+                    CAREER
+                  </a>
+                  <a class="" href="{% url 'contact' %}" style="text-decoration: none ; ">
+                    CONTACT
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -688,30 +699,19 @@
           </div>
           <div class="info_social">
             <a href="" style="text-decoration: none ; ">
-              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-linkedin-in" style="color: rgb(77, 109, 255);"></i>
             </a>
             <a href="" style="text-decoration: none ; ">
-              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-whatsapp" style="color: rgb(35, 212, 35);"></i>
             </a>
     
             <a href="" style="text-decoration: none; ">
-              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-twitter" style="color: rgb(111, 136, 248);"></i>
             </a>
             <a href="">
               <img src="{% static 'images/bip.png' %}" style="height: 35px !important; "  alt="...">
             </a>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
         </div>
       </div>
     </div>

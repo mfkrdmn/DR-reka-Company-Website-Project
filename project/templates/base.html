@@ -13,10 +13,14 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
-
+  <link rel="icon" type="image/x-icon" href="{% static 'images/logo.png' %}">
   <title> Reka Global </title>
+<style>
+  html,body {
+  font-family: 'Trajan Pro', sans-serif !important;
+}
 
+</style>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -38,6 +42,8 @@
   <!-- Custom styles for this template -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet" />
   <!-- responsive style -->
+  <link href="{% static 'css/team.css' %}" rel="stylesheet" />
+  
   <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -84,7 +90,7 @@
                       <a class="nav-link" href="{% url 'finance' %}">Finance</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'ec' %}"> EC</a>
+                      <a class="nav-link" href="{% url 'ec' %}">  MM & EC</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="{% url 'rec' %}"> RE & C</a>
@@ -128,9 +134,16 @@
         </header>
         <!-- end header section -->
        
-
+        <div id="mySidenav" class="sidenav">
+          <a href="#" id="about" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span style="font-weight: 700;">RFQ</span> </a>
+      
+          <a href="#" id="mail"><i class="fa-regular fa-envelope ms-1" style="font-size: 25px;"></i></a>
+          <a href="#" id="projects"><i class="fa-brands fa-whatsapp  ms-1" style="font-size: 30px;"></i></a>
+        </div>
+      
     
       {% block content %}
+
 
 
       {% endblock %}
@@ -149,36 +162,42 @@
               REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN,  GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT.            </p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
+        <div class="col-md-6 col-lg-4 mx-auto info_col">
           <div class="info_link_box">
             <h4>
               
             </h4>
-            <div class="info_links">
-              <a class="active" href="{% url 'index' %}" style="text-decoration: none ; ">
-                HOME
-              </a>
-              <a class="" href="{% url 'aviation' %}" style="text-decoration: none ; ">
-                AVIATION
-              </a>
-              <a class="" href="{% url 'gse' %}" style="text-decoration: none ; ">
-                MRO & GSE
-              </a>
-              <a class="" href="{% url 'finance' %}" style="text-decoration: none ; ">
-                FINANCE
-              </a>
-              <a class="" href="{% url 'ec' %}" style="text-decoration: none ; ">
-                EC
-              </a>
-              <a class="" href="contact.html" style="text-decoration: none ; ">
-                RE & C
-              </a>
-              <a class="" href="{% url 'career' %}" style="text-decoration: none ; ">
-                CAREER
-              </a>
-              <a class="" href="{% url 'contact' %}" style="text-decoration: none ; ">
-                CONTACT
-              </a>
+            <div class="container info_links">
+              <div class="row">
+                <div class="col-6">
+                  <a class="active" href="{% url 'index' %}" style="text-decoration: none ; ">
+                    HOME
+                  </a>
+                  <a class="" href="{% url 'aviation' %}" style="text-decoration: none ; ">
+                    AVIATION
+                  </a>
+                  <a class="" href="{% url 'gse' %}" style="text-decoration: none ; ">
+                    MRO & GSE
+                  </a>
+                  <a class="" href="{% url 'finance' %}" style="text-decoration: none ; ">
+                    FINANCE
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a class="" href="{% url 'ec' %}" style="text-decoration: none ; ">
+                    EC
+                  </a>
+                  <a class="" href="contact.html" style="text-decoration: none ; ">
+                    RE & C
+                  </a>
+                  <a class="" href="{% url 'career' %}" style="text-decoration: none ; ">
+                    CAREER
+                  </a>
+                  <a class="" href="{% url 'contact' %}" style="text-decoration: none ; ">
+                    CONTACT
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -205,35 +224,23 @@
           </div>
           <div class="info_social">
             <a href="" style="text-decoration: none ; ">
-              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-linkedin-in" style="color: rgb(77, 109, 255);"></i>
             </a>
             <a href="" style="text-decoration: none ; ">
-              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-whatsapp" style="color: rgb(35, 212, 35);"></i>
             </a>
     
             <a href="" style="text-decoration: none; ">
-              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-twitter" style="color: rgb(111, 136, 248);"></i>
             </a>
             <a href="">
               <img src="{% static 'images/bip.png' %}" style="height: 35px !important; "  alt="...">
             </a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
       </div>
     </div>
   </section>
-
 
   <!-- end info section -->
 

@@ -54,10 +54,10 @@
   .our-team:after{
       width: 106%;
       left: 50%;
-      transform: translate(-50%, -50%) scaleY(0.25);
+      transform: translate(-50%, -50%) scaleY(0.6);
   }
   .our-team:hover:before{ transform: translateY(-50%) scaleX(0.7); }
-  .our-team:hover:after{ transform: translate(-50%, -50%) scaleY(0.7); }
+  .our-team:hover:after{ transform: translate(-50%, -50%) scaleY(2); }
   .our-team img{
       width: 100%;
       height: 290px;
