@@ -11,6 +11,85 @@
   p{
     font-size: 21px;
   }
+
+#cards_landscape_wrap-2{
+  text-align: center;
+  background: #F7F7F7;
+}
+#cards_landscape_wrap-2 .container{
+  padding-top: 80px; 
+  padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a{
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box{
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  transition:all .9s ease; 
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  opacity: 0.7;
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box{
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+  background: #FFFFFF;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+#cards_landscape_wrap-2 .card-flyer:hover{
+  background: #fff;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color:#d83744
+}
 </style>
 
 <!-- <div class="container-fluid m-0 p-0">
@@ -31,179 +110,276 @@
 </div>
 
 
-<div class="container mt-5">
-    <h2 style="margin-bottom:50px ;">MRO & GSE Product Range</h2>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card" >
-            <img class="card-img-top" src="{% static 'images/gse/gse1.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-            <div class="card-body text-center">
-              <h4 class="card-title">Miles Volta 25 Baggage Tractor</h4>
-            </div>
-          </div>
-    </div>
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/gse/gse2.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-                   <div class="card-body text-center">
-                  <h4 class="card-title">Catering Truck</h4>
-        
-                </div>
-              </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/gse/gse3.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-                     <div class="card-body text-center">
-                  <h4 class="card-title">Cabin Cleaning Truck</h4>
-        
-                </div>
-              </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/gse/gse4.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-                     <div class="card-body text-center">
-                  <h4 class="card-title">Seat Transfer Truck</h4>
-      
-                </div>
-              </div>
-        </div>
-    </div>
-    <div class="row mt-5">
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/gse/gse5.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-                  <div class="card-body text-center">
-                  <h4 class="card-title">Passenger Stairs</h4>
-          
-                </div>
-              </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" >
-              <img class="card-img-top" src="{% static 'images/gse/gse6.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-            <div class="card-body text-center">
-                <h4 class="card-title">Passenger Stairs</h4>
 
-              </div>
-            </div>
-      </div>
-        <div class="col-md-3">
-            <div class="card" >
-                <img class="card-img-top" src="{% static 'images/gse/gse7.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-              <div class="card-body text-center">
-                  <h4 class="card-title">Scissor Deck M.P.L</h4>
-      
+
+<div id="cards_landscape_wrap-2" style="background-color: white !important;">
+  <div class="container-fluid">
+      <div class="row justify-content-center mt-5">
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+              <a href="">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="image-box">
+                              <img src="{% static 'images/gse/gse1.jpg' %}" alt="" />
+                          </div>
+                          <div class="text-container">
+                              <h6>Miles Volta 25 Baggage Tractor </h6>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+            <a href="">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                          <img src="{% static 'images/gse/gse2.jpg' %}" alt="" />
+                        </div>
+                        <div class="text-container">
+                            <h6>Catering Truck</h6>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </a>
         </div>
-        <div class="col-md-3">
-          <div class="card" >
-              <img class="card-img-top" src="{% static 'images/gse/gse8.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-            <div class="card-body text-center">
-                <h4 class="card-title">Passenger Stairs</h4>
-      
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+          <a href="">
+              <div class="card-flyer">
+                  <div class="text-box">
+                      <div class="image-box">
+                        <img src="{% static 'images/gse/gse3.jpg' %}" alt="" />
+                      </div>
+                      <div class="text-container">
+                          <h6>Cabin Cleaning Truck</h6>
+                      </div>
+                  </div>
               </div>
-            </div>
+          </a>
       </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+        <a href="">
+            <div class="card-flyer">
+                <div class="text-box">
+                    <div class="image-box">
+                      <img src="{% static 'images/gse/gse4.jpg' %}" alt="" />
+                    </div>
+                    <div class="text-container">
+                        <h6>Seat Transfer Truck</h6>
+                    </div>
+                </div>
+            </div>
+        </a>
     </div>
-    <div class="row mt-5">
-      <div class="col-md-3">
-          <div class="card" >
-              <img class="card-img-top" src="{% static 'images/gse/gse9.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-              <div class="card-body text-center">
-                <h4 class="card-title">Ladder Maintenance Lift</h4>
-  
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse5.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Passenger Stairs</h6>
+                  </div>
               </div>
-            </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" >
-            <img class="card-img-top" src="{% static 'images/gse/gse10.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-           <div class="card-body text-center">
-              <h4 class="card-title">Passenger Stairs</h4>
-        
-            </div>
           </div>
-    </div>
-      <div class="col-md-3">
-          <div class="card" >
-              <img class="card-img-top" src="{% static 'images/gse/gse11.jpg' %}" alt="Card image"style="width:100%; height:180px;">
-             <div class="card-body text-center">
-                <h4 class="card-title">Manual Maintenance Lift</h4>
-    
-              </div>
-            </div>
-      </div>
-      <div class="col-md-3">
-          <div class="card" >
-              <img class="card-img-top" src="{% static 'images/gse/gse12.jpg' %}" alt="Card image"style="width:100%; height:180px;">
-               <div class="card-body text-center">
-                <h4 class="card-title">Toilet Service Truck</h4>
-      
-              </div>
-            </div>
-      </div>
+      </a>
   </div>
-  <div class="row mt-5">
-    <div class="col-md-3">
-        <div class="card" >
-            <img class="card-img-top" src="{% static 'images/gse/gse13.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-               <div class="card-body text-center">
-              <h4 class="card-title">Water Service Truck</h4>
-    
+
+
+<div class="row justify-content-center">
+
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse6.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Aircraft PRM Medical Lift</h6>
+                  </div>
+              </div>
+          </div>
+      </a>
+  </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+    <a href="">
+        <div class="card-flyer">
+            <div class="text-box">
+                <div class="image-box">
+                  <img src="{% static 'images/gse/gse7.jpg' %}" alt="" />
+                </div>
+                <div class="text-container">
+                    <h6>Scissor Deck M.P.L</h6>
+                </div>
             </div>
-          </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card" >
-            <img class="card-img-top" src="{% static 'images/gse/gse14.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-               <div class="card-body text-center">
-              <h4 class="card-title">Garbage Truck</h4>
-          
-            </div>
-          </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card" >
-          <img class="card-img-top" src="{% static 'images/gse/gse15.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-        <div class="card-body text-center">
-            <h4 class="card-title">Passenger Stairs</h4>
-          </div>
         </div>
-  </div>
-    <div class="col-md-3">
-        <div class="card" >
-            <img class="card-img-top" src="{% static 'images/gse/gse16.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-             <div class="card-body text-center">
-              <h4 class="card-title">Baggage Trailer</h4>
-      
-            </div>
+    </a>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2" >
+  <a href="">
+      <div class="card-flyer">
+          <div class="text-box">
+              <div class="image-box">
+                <img src="{% static 'images/gse/gse8.jpg' %}" alt="" />
+              </div>
+              <div class="text-container">
+                  <h6>Scissor Telescopic Deck M.P.L</h6>
+              </div>
           </div>
+      </div>
+  </a>
+</div>
+              
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+  <a href="">
+      <div class="card-flyer">
+          <div class="text-box">
+              <div class="image-box">
+                <img src="{% static 'images/gse/gse9.jpg' %}" alt="" />
+              </div>
+              <div class="text-container">
+                  <h6>Ladder Maintenance Lift</h6>
+              </div>
+          </div>
+      </div>
+  </a>
+</div>
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse10.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Aircraft Tire Transfer Truck</h6>
+                  </div>
+              </div>
+          </div>
+      </a>
     </div>
 </div>
-<div class="row mt-5">
-  <div class="col-md-3">
-      <div class="card" >
-          <img class="card-img-top" src="{% static 'images/gse/gse17.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-           <div class="card-body text-center">
-            <h4 class="card-title">Container Dolly</h4>
-        
+<div class="row justify-content-center">
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse11.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Manual Maintenance Lift</h6>
+                  </div>
+              </div>
           </div>
-        </div>
-  </div>
-  <div class="col-md-3">
-      <div class="card" >
-          <img class="card-img-top" src="{% static 'images/gse/gse18.jpg' %}" alt="Card image" style="width:100%; height:180px;">
-               <div class="card-body text-center">
-            <h4 class="card-title">Pallet Dolly</h4>
-        
+      </a>
+    </div>    
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse12.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Toilet Service Truck</h6>
+                  </div>
+              </div>
           </div>
-        </div>
+      </a>
+    </div>    
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse13.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Water Service Truck</h6>
+                  </div>
+              </div>
+          </div>
+      </a>
+    </div>   
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse14.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Garbage Truck</h6>
+                  </div>
+              </div>
+          </div>
+      </a>
+    </div>    
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse15.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Apron Mobile Service Vehicle</h6>
+                  </div>
+              </div>
+          </div>
+      </a>
+    </div>  
+  </div>  
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse16.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Baggage Trailer</h6>
+                  </div>
+              </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse17.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Container Dolly</h6>
+                  </div>
+              </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/gse/gse18.jpg' %}" alt="" />
+                  </div>
+                  <div class="text-container">
+                      <h6>Pallet Dolly</h6>
+                  </div>
+              </div>
+          </div>
+      </a>
+    </div>
+
   </div>
 </div>
 </div>
+
 
 <br><br><br><br>
 

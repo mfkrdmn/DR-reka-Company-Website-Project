@@ -127,4 +127,8 @@ def logout(request):
     messages.error(request, "You are logged out")
     return redirect("login")
 
-############
+
+############ GSE Individuals ##############
+
+def milesvolta(request):
+    return render(request,"milesvolta.html")
