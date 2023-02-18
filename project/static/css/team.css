@@ -10,25 +10,45 @@
     border-radius: 20px;
     z-index: 1100;
   }
-  
+
   
   #about {
     top: 200px;
      background-color: #f44336;
   
   }
-  
+
+  @media only screen and (min-width: 300px) {
+
+    #about {top: 340px;};
+} 
+
+
   #mail {
     top: 280px;
      background-color: #f44336;
   
   }
+
+  @media only screen and (min-width: 300px) {
+
+    #mail {top: 420px;};
+} 
+
+
   
   #projects {
     top: 360px;
     background-color: #f44336;
   }
   
+  @media only screen and (min-width: 300px) {
+
+    #projects {top: 500px;};
+} 
+  
+ 
+
   .demo{ background: #e5e5e5; }
   .our-team{
       border: 2px solid #ff3232;
@@ -37,7 +57,28 @@
       margin: 10px;
       z-index: 1;
       position: relative;
+      height: 330px;
   }
+
+  /* @media only screen and (min-width: 100px) {
+
+    .our-team {height: 20px;};
+  
+  }
+  
+  @media only screen and (min-width: 600px) {
+
+    .our-team {height: 650px;};
+  
+  }
+  
+  @media only screen and (min-width: 1300px) {
+
+   .our-team {height: 850px;};
+  
+  } */
+  
+
   .our-team:before,
   .our-team:after{
       content: "";

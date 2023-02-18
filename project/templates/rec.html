@@ -11,12 +11,53 @@
     p{
         font-size: 21px;
     }
+
+    .rec-top-img{
+    width:100%; 
+    height: 800px;
+}
+
+@media only screen and (min-width: 100px) {
+  /* For phones: */
+   .rec-top-img {height: 350px;};
+
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+   .rec-top-img {height: 650px;};
+
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+   .rec-top-img {height: 800px;};
+
+}
+
+@media only screen and (min-width: 100px) {
+  /* For phones: */
+   .recp {font-size: 15px;};
+
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+   .recp {font-size: 25px;};
+
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+   .recp {font-size: 30px;};
+
+}
 </style>
 
 <div class="container-fluid m-0 p-0">
     <div class="row">
         <div class="col-md-12">
-            <img src="{% static 'images/rec.jpg' %}" style="width:100%; height: 800px;">
+            <img src="{% static 'images/rec.jpg' %}" class="rec-top-img">
         </div>
     </div>
 </div>
@@ -24,8 +65,8 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-12 text-center">
-            <h2>Commercial Real Estate & Construction</h2>
-            <p>As a part of group companies, Reka RE & C  serves comprehensive commercial development consultancy, real estate management, leasing solutions & tenant-mix optimization to localized projects with a wide aspect of globalized know-how in order to expand limits.</p>
+            <h2><b>Commercial Real Estate & Construction</b></h2> <hr>
+            <p class="recp">As a part of group companies, Reka RE & C  serves comprehensive commercial development consultancy, real estate management, leasing solutions & tenant-mix optimization to localized projects with a wide aspect of globalized know-how in order to expand limits.</p>
         </div>
     </div>
 </div>

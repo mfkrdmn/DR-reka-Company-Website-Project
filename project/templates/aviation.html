@@ -48,7 +48,7 @@
   text-align: center;
 }
 #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
-  padding: 30px 18px;
+  padding: 18px 18px;
 }
 #cards_landscape_wrap-2 .card-flyer{
   background: #FFFFFF;
@@ -70,30 +70,73 @@
   transition: all 0.2s ease-in;
   margin-top: 50px;
 }
-#cards_landscape_wrap-2 .card-flyer .text-box p{
+#cards_landscape_wrap-2 .card-flyer .text-box span{
   margin-top: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px; 
-  font-size: 14px;
+  font-size: 1px;
   letter-spacing: 1px;
   color: #000000;
 }
-#cards_landscape_wrap-2 .card-flyer .text-box h6{
-  margin-top: 0px;
-  margin-bottom: 4px; 
-  font-size: 18px;
+#cards_landscape_wrap-2 .card-flyer .text-box  span{
+
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'Roboto Black', sans-serif;
   letter-spacing: 1px;
   color:#d83744
 }
+
+.aviation-top-img{
+    width:100%; 
+    height: 800px;
+}
+
+@media only screen and (min-width: 100px) {
+  /* For phones: */
+  .aviation-top-img {height: 350px;};
+
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .aviation-top-img {height: 650px;};
+
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+  .aviation-top-img {height: 800px;};
+
+}
+
+.card-flyer{
+    height: 300px;
+}
+
+@media only screen and (min-width: 100px) {
+  /* For phones: */
+  #cards_landscape_wrap-2 .card-flyer .text-box  span {font-size: 12px;};
+
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  #cards_landscape_wrap-2 .card-flyer .text-box  span {font-size: 15px;};
+
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+  #cards_landscape_wrap-2 .card-flyer .text-box  span {font-size: 18px;};
+
+}
+
 </style>
 
 <div class="container-fluid m-0 p-0">
     <div class="row">
         <div class="col-md-12">
-            <img src="{% static 'images/aviation/aviation_top_plane.jpg' %}" style="width:100%; height: 800px;">
+            <img src="{% static 'images/aviation/aviation_top_plane.jpg' %}" class="aviation-top-img" >
         </div>
     </div>
 </div>
@@ -105,71 +148,71 @@
             <div class="row justify-content-center mt-5">
               <h2>Aviation Segments</h2>
 
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+            <div class="col-6 col-md-3 col-lg-2 test" >
                     <a href="">
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
                                     <img src="{% static 'images/aviation/aviation9.jpg' %}" alt="" />
                                 </div>
-                                <div class="text-container">
-                                    <h6>Commercial Aircrafts </h6>
+                                <div class="text-container d-flex align-items-center justify-content-center ">
+                                    <span class="hsixtitles">Commercial Aircrafts </span>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+                <div class="col-6  col-md-3 col-lg-2" >
                   <a href="">
                       <div class="card-flyer">
                           <div class="text-box">
                               <div class="image-box">
                                 <img src="{% static 'images/aviation/aviation8.jpg' %}" alt="" />
                               </div>
-                              <div class="text-container">
-                                  <h6>Helicopters</h6>
+                          <div class="text-container d-flex align-items-center justify-content-center ">
+                                  <span class="hsixtitles">Helicopters</span>
                               </div>
                           </div>
                       </div>
                   </a>
               </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+            <div class="col-6 col-md-3 col-lg-2" >
                 <a href="">
                     <div class="card-flyer">
                         <div class="text-box">
                             <div class="image-box">
                               <img src="{% static 'images/aviation/aviation11.jpg' %}" alt="" />
                             </div>
-                            <div class="text-container">
-                                <h6>Business Jets</h6>
+                        <div class="text-container d-flex align-items-center justify-content-center ">
+                                <span class="hsixtitles">Business Jets</span>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
-                  <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+            <div class="col-6 col-md-3 col-lg-2" >
               <a href="">
                   <div class="card-flyer">
                       <div class="text-box">
                           <div class="image-box">
                             <img src="{% static 'images/aviation/aviation7.jpg' %}" alt="" />
                           </div>
-                          <div class="text-container">
-                              <h6>Private Aircrafts</h6>
+                      <div class="text-container d-flex align-items-center justify-content-center ">
+                              <span class="hsixtitles">Private Aircrafts</span>
                           </div>
                       </div>
                   </div>
               </a>
           </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+        <div class="col-6 col-md-3 col-lg-2" >
             <a href="">
                 <div class="card-flyer">
                     <div class="text-box">
                         <div class="image-box">
                           <img src="{% static 'images/aviation/aviation6.jpg' %}" alt="" />
                         </div>
-                        <div class="text-container">
-                            <h6>UAV (Unmanned Aerial Vehicle) - Drones</h6>
+                    <div class="text-container d-flex align-items-center justify-content-center ">
+                            <span class="hsixtitles">UAV (Unmanned Aerial Vehicle) - Drones</span>
                         </div>
                     </div>
                 </div>
@@ -179,71 +222,71 @@
 
   <div class="row justify-content-center">
 
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+        <div class="col-6  col-md-3 col-lg-2" >
             <a href="">
                 <div class="card-flyer">
                     <div class="text-box">
                         <div class="image-box">
                           <img src="{% static 'images/aviation/aviation10.jpg' %}" alt="" />
                         </div>
-                        <div class="text-container">
-                            <h6>Engines</h6>
+                    <div class="text-container d-flex align-items-center justify-content-center ">
+                            <span class="hsixtitles">Engines</span>
                         </div>
                     </div>
                 </div>
             </a>
         </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+        <div class="col-6 col-md-3 col-lg-2" >
           <a href="">
               <div class="card-flyer">
                   <div class="text-box">
                       <div class="image-box">
                         <img src="{% static 'images/aviation/aviation2.jpg' %}" alt="" />
                       </div>
-                      <div class="text-container">
-                          <h6>Avionics</h6>
+                  <div class="text-container d-flex align-items-center justify-content-center ">
+                          <span class="hsixtitles">Avionics</span>
                       </div>
                   </div>
               </div>
           </a>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2" >
+      <div class="col-6 col-md-2 col-lg-2" >
         <a href="">
             <div class="card-flyer">
                 <div class="text-box">
                     <div class="image-box">
                       <img src="{% static 'images/aviation/aviation5.jpg' %}" alt="" />
                     </div>
-                    <div class="text-container">
-                        <h6>TIRES & BRAKES</h6>
+                <div class="text-container d-flex align-items-center justify-content-center ">
+                        <span class="hsixtitles">TIRES & BRAKES</span>
                     </div>
                 </div>
             </div>
         </a>
     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+    <div class="col-6 col-md-3 col-lg-2" >
         <a href="">
             <div class="card-flyer">
                 <div class="text-box">
                     <div class="image-box">
                       <img src="{% static 'images/aviation/aviation4.jpg' %}" alt="" />
                     </div>
-                    <div class="text-container">
-                        <h6>Consumables</h6>
+                <div class="text-container d-flex align-items-center justify-content-center ">
+                        <span class="hsixtitles">Consumables</span>
                     </div>
                 </div>
             </div>
         </a>
     </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
+    <div class="col-6  col-md-3 col-lg-2" >
       <a href="">
           <div class="card-flyer">
               <div class="text-box">
                   <div class="image-box">
                     <img src="{% static 'images/aviation/aviation3.jpg' %}" alt="" />
                   </div>
-                  <div class="text-container">
-                      <h6>Standard Parts</h6>
+              <div class="text-container d-flex align-items-center justify-content-center ">
+                      <span class="hsixtitles">Standard Parts</span>
                   </div>
               </div>
           </div>
@@ -259,7 +302,7 @@
 <div class="container-fluid m-0 mt-5 mb-5 mb-0 p-0">
   <div class="row">
       <div class="col-md-12">
-          <img src="{% static 'images/aviation/aviationbottom.jpg' %}" style="width:100%; height: 800px;">
+          <img src="{% static 'images/aviation/aviationbottom.jpg' %}"  class="aviation-top-img" >
       </div>
   </div>
 </div>

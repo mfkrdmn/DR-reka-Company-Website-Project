@@ -9,7 +9,7 @@ html,body {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 30px 0;
 }
 
 .layout_padding2 {
@@ -88,7 +88,6 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,6 +308,64 @@ a:focus {
   z-index: -1;
 }
 
+.carousel-caption{
+  top: 39%;
+}
+
+
+.sliderpic{
+  filter: brightness(50%);
+  height: 850px;
+}
+
+@media only screen and (min-width: 100px) {
+  /* For phones: */
+  .sliderpic {height: 350px;};
+
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .sliderpic {height: 650px;};
+
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+  .sliderpic {height: 850px;};
+
+}
+
+@media only screen and (min-width: 100px) {
+  /* For phones: */
+  .slidertexts {font-size: 10px;}
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .slidertexts {font-size: 20px;}
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+  .slidertexts {font-size: 25px;}
+}
+
+@media only screen and (min-width: 100px) {
+  /* For phones: */
+  .slidertitles {font-size: 20px;}
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .slidertitles {font-size: 30px;}
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+  .slidertitles {font-size: 45px;}
+}
+
 .slider_section .slider_bg_box img {
   width: 100%;
   height: 100%;
@@ -339,7 +396,7 @@ a:focus {
 }
 
 .slider_section .detail-box {
-  color: #d83744;
+  color: #b67d82;
   text-align: center;
 }
 
@@ -477,14 +534,26 @@ a:focus {
 }
 
 .service_section .box .detail-box {
-  background-color: #f8f8f9;
+  background-color: #f5f5f5;
   padding: 75px 20px 20px 20px;
   text-align: center;
 }
 
+
+
 .service_section .box .detail-box h5 {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 100px) {
+  /* For phones: */
+  .service_section .box .detail-box h5  {font-size: 17px;}
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+  .service_section .box .detail-box  {height: 200px;}
 }
 
 .service_section .box .detail-box a {
