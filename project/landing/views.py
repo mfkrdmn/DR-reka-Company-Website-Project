@@ -20,7 +20,7 @@ def translate(language):
         activate(cur_language)
     return text
 def index(request):
-    trans = translate(language='tr')
+    trans = translate(language='en')
     if request.method == "POST":
         PartNumber = request.POST['PartNumber']
         Description = request.POST['Description']
@@ -44,35 +44,35 @@ def index(request):
 #############
 
 def contact(request):
-    trans = translate(language='tr')
+    trans = translate(language='en')
     return render(request,"contact.html",{"trans":trans})
 
 def career(request):
-    trans = translate(language='tr')
+    trans = translate(language='en')
     return render(request,"career.html",{"trans":trans})
 
 def test(request):
-    trans = translate(language='tr')
+    trans = translate(language='en')
     return render(request,"test.html",{"trans":trans})
 
 def aviation(request):
-    trans = translate(language='tr')
+    trans = translate(language='en')
     return render(request,"aviation.html",{"trans":trans})
     
 def gse(request):
-    trans = translate(language='tr')
+    trans = translate(language='en')
     return render(request,"gse.html",{"trans":trans})
 
 def finance(request):
-    trans = translate(language='tr')
+    trans = translate(language='en')
     return render(request,"finance.html",{"trans":trans})
 
 def ec(request):
-    trans = translate(language='tr')
+    trans = translate(language='en')
     return render(request,"ec.html",{"trans":trans})
 
 def rec(request):
-    trans = translate(language='tr')
+    trans = translate(language='en')
     return render(request,"rec.html",{"trans":trans})
 
 
