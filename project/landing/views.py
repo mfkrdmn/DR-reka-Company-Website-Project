@@ -5,9 +5,22 @@ from django.contrib import messages
 from .models import *
 # Create your views here.
 # Create your views here.
+from django.shortcuts import render
 
+from django.shortcuts import render
+from django.utils.translation  import gettext as _
+from django.utils.translation import get_language, activate, gettext
+def translate(language):
+    cur_language = get_language()
+    try:
+        activate(language)
+        text = gettext('Hello')
+        
+    finally:
+        activate(cur_language)
+    return text
 def index(request):
-
+    trans = translate(language='tr')
     if request.method == "POST":
         PartNumber = request.POST['PartNumber']
         Description = request.POST['Description']
@@ -26,33 +39,41 @@ def index(request):
             return redirect('/')
     
     
-    return render(request, 'index.html')
+    return render(request, 'index.html',{"trans":trans})
 
 #############
 
 def contact(request):
-    return render(request,"contact.html")
+    trans = translate(language='tr')
+    return render(request,"contact.html",{"trans":trans})
 
 def career(request):
-    return render(request,"career.html")
+    trans = translate(language='tr')
+    return render(request,"career.html",{"trans":trans})
 
 def test(request):
-    return render(request,"test.html")
+    trans = translate(language='tr')
+    return render(request,"test.html",{"trans":trans})
 
 def aviation(request):
-    return render(request,"aviation.html")
+    trans = translate(language='tr')
+    return render(request,"aviation.html",{"trans":trans})
     
 def gse(request):
-    return render(request,"gse.html")
+    trans = translate(language='tr')
+    return render(request,"gse.html",{"trans":trans})
 
 def finance(request):
-    return render(request,"finance.html")
+    trans = translate(language='tr')
+    return render(request,"finance.html",{"trans":trans})
 
 def ec(request):
-    return render(request,"ec.html")
+    trans = translate(language='tr')
+    return render(request,"ec.html",{"trans":trans})
 
 def rec(request):
-    return render(request,"rec.html")
+    trans = translate(language='tr')
+    return render(request,"rec.html",{"trans":trans})
 
 
 #############

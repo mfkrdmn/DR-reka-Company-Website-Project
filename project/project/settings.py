@@ -38,12 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'landing',
+    'rosetta',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    #
+    'django.middleware.locale.LocaleMiddleware',
+    #
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -105,11 +109,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
+
+USE_L10N = True
 
 USE_TZ = True
 
@@ -119,7 +123,17 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
+LANGUAGE_CODE = 'en'
+from django.utils.translation import gettext_lazy as _
+LANGUAGES = (
+    ('en', _('English')),
+    ('tr', _('Turkish')),
+    ('de', _('German')),
+    ('ar', _('arabic')),
+)
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale/'),
+)
 LOGIN_URL = "login"
 
 # Default primary key field type

@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load i18n %}
 <style>
     /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
@@ -347,8 +347,8 @@ img {
 				<div class="login__buttons">
                     <input type="submit" value="Register" class="login__button">
 				</div>
-				<a href="{% url 'login' %}" class="login__forgot" style="color: white;">Already Have an Account?</a> <br>
-				<a href="{% url 'index' %}" class="login__forgot" style="color: white;">Return to home page</a>
+				<a href="{% url 'landing:login' %}" class="login__forgot" style="color: white;">Already Have an Account?</a> <br>
+				<a href="{% url 'landing:index' %}" class="login__forgot" style="color: white;">Return to home page</a>
 			</div>
 		</form>
 	</div>

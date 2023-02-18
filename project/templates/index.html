@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load i18n %}
 <!DOCTYPE html>
 <html>
 
@@ -71,7 +71,7 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="{% url 'index' %}">
+            <a class="navbar-brand" href="{% url 'landing:index' %}">
                 <img width="200ox" src="{% static 'images/logo.png' %}" alt="">
             </a>
    
@@ -82,43 +82,51 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'aviation' %}">Aviation <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{% url 'landing:aviation' %}">Aviation <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'gse' %}">MRO & GSE</a>
+                  <a class="nav-link" href="{% url 'landing:gse' %}">MRO & GSE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'finance' %}">Finance</a>
+                  <a class="nav-link" href="{% url 'landing:finance' %}">Finance</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'ec' %}">  MM & EC</a>
+                  <a class="nav-link" href="{% url 'landing:ec' %}">  MM & EC</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'rec' %}"> RE & C</a>
+                  <a class="nav-link" href="{% url 'landing:rec' %}"> RE & C</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'career' %}">Career</a>
+                  <a class="nav-link" href="{% url 'landing:career' %}">Career</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'contact' %}">Contact </a>
+                  <a class="nav-link" href="{% url 'landing:contact' %}">Contact </a>
                 </li>
                 {% if request.user.is_authenticated %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'profile' %}"><i class="fa fa-user" aria-hidden="true"></i> {{request.user.username}} </a>
+                  <a class="nav-link" href="{% url 'landing:profile' %}"><i class="fa fa-user" aria-hidden="true"></i> {{request.user.username}} </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'logout' %}"> logout</a>
+                  <a class="nav-link" href="{% url 'landing:logout' %}"> logout</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'login' %}"><i class="fa fa-user" aria-hidden="true"></i> Login </a>
+                  <a class="nav-link" href="{% url 'landing:login' %}"><i class="fa fa-user" aria-hidden="true"></i> Login </a>
                 </li>
                 {% endif %}
                 <select class="selectpicker" data-width="fit" style="background-color: #d83744; border: 0px; color: white;">
-                  <option style="color: white;">EN</option>
-                  <option style="color: white;">TR</option>
-                  <option style="color: white;">GR</option>
-                  <option style="color: white;">AR</option>
+                  {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+
+            {% for lang in languages %}
+              <option style="color: white;">
+              <a class="dropdown-item" href="/{{ lang.code }}/">
+                  {{ lang.name_local }}
+              </a></option>
+              
+            {% endfor %}
+                  
                 </select>
       
                
@@ -651,30 +659,30 @@
             <div class="container info_links">
               <div class="row">
                 <div class="col-6">
-                  <a class="active" href="{% url 'index' %}" style="text-decoration: none ; ">
+                  <a class="active" href="{% url 'landing:index' %}" style="text-decoration: none ; ">
                     HOME
                   </a>
-                  <a class="" href="{% url 'aviation' %}" style="text-decoration: none ; ">
+                  <a class="" href="{% url 'landing:aviation' %}" style="text-decoration: none ; ">
                     AVIATION
                   </a>
-                  <a class="" href="{% url 'gse' %}" style="text-decoration: none ; ">
+                  <a class="" href="{% url 'landing:gse' %}" style="text-decoration: none ; ">
                     MRO & GSE
                   </a>
-                  <a class="" href="{% url 'finance' %}" style="text-decoration: none ; ">
+                  <a class="" href="{% url 'landing:finance' %}" style="text-decoration: none ; ">
                     FINANCE
                   </a>
                 </div>
                 <div class="col-6">
-                  <a class="" href="{% url 'ec' %}" style="text-decoration: none ; ">
+                  <a class="" href="{% url 'landing:ec' %}" style="text-decoration: none ; ">
                     EC
                   </a>
                   <a class="" href="contact.html" style="text-decoration: none ; ">
                     RE & C
                   </a>
-                  <a class="" href="{% url 'career' %}" style="text-decoration: none ; ">
+                  <a class="" href="{% url 'landing:career' %}" style="text-decoration: none ; ">
                     CAREER
                   </a>
-                  <a class="" href="{% url 'contact' %}" style="text-decoration: none ; ">
+                  <a class="" href="{% url 'landing:contact' %}" style="text-decoration: none ; ">
                     CONTACT
                   </a>
                 </div>
