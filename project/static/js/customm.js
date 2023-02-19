@@ -88,20 +88,20 @@
                 autoplayTimeout: 2000,
                 responsive: {
                     0: {
-                        items: 2,
+                        items: 4,
                         margin: 0
                     },
                     500: {
-                        items: 2,
+                        items: 4,
                         margin: 0
                     },
                     776: {
-                        items: 2,
+                        items: 3,
                         margin: 70
                     },
 
                     992: {
-                        items: 3,
+                        items: 4,
                         margin: 30
                     },
 

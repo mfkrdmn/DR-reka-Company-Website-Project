@@ -153,3 +153,8 @@ def logout(request):
 
 def milesvolta(request):
     return render(request,"milesvolta.html")
+
+############ Coming Soon ##############
+
+def Soon(request):
+    return render(request,"Soon.html")

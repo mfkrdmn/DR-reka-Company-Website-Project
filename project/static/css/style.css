@@ -1086,3 +1086,25 @@ a:focus {
   align-items: center;
   justify-content: center;
 }
+
+.brands-img {
+  margin-right: 0px !important;
+};
+
+@media only screen and (min-width: 100px) {
+  /* For phones: */
+  .brands-img {width: 150px !important;};
+
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .brands-img {width: 180px !important;};
+
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+  .brands-img {width: 200px !important;};
+
+}

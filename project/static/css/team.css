@@ -60,23 +60,23 @@
       height: 330px;
   }
 
-  /* @media only screen and (min-width: 100px) {
+  @media only screen and (min-width: 100px) {
 
-    .our-team {height: 20px;};
+    .our-team {height: 240px;};
   
   }
   
   @media only screen and (min-width: 600px) {
 
-    .our-team {height: 650px;};
+    .our-team {height: 280px;};
   
   }
   
   @media only screen and (min-width: 1300px) {
 
-   .our-team {height: 850px;};
+   .our-team {height: 340px;};
   
-  } */
+  } 
   
 
   .our-team:before,
@@ -105,6 +105,27 @@
       border-radius: 10px;
       transition: all 0.3s ease 0s;
   }
+
+    /**Our team photos responsive */
+
+    @media only screen and (min-width: 100px) {
+
+        .our-team img {height: 190px;};
+      
+      }
+      
+      @media only screen and (min-width: 600px) {
+    
+        .our-team img {height: 230px;};
+      
+      }
+      
+      @media only screen and (min-width: 1300px) {
+    
+       .our-team img {height: 290px;};
+      
+    } 
+
   .our-team .team-content{
       width: 93%;
       padding: 25px 0 10px;
@@ -118,6 +139,25 @@
       transform: translateX(-50%);
       transition: all 0.3s cubic-bezier(0.5, 0.2,0.1,0.9);
   }
+
+  @media only screen and (min-width: 100px) {
+
+    .our-team img {height: 190px;};
+  
+  }
+  
+  @media only screen and (min-width: 600px) {
+
+    .our-team img {height: 230px;};
+  
+  }
+  
+  @media only screen and (min-width: 1300px) {
+
+   .our-team img {height: 290px;};
+  
+} 
+
   .our-team:hover .team-content{
       bottom: 10px;
       opacity: 1;
@@ -130,6 +170,25 @@
       text-transform: capitalize;
       margin: 0;
   }
+
+  @media only screen and (min-width: 100px) {
+
+    .our-team .title { font-size: 13px;};
+  
+  }
+  
+  @media only screen and (min-width: 600px) {
+
+    .our-team .title { font-size: 18px;};
+  
+  }
+  
+  @media only screen and (min-width: 1300px) {
+
+   .our-team .title { font-size: 20px;};
+  
+} 
+
   .our-team .post{
       display: block;
       font-size: 14px;
@@ -138,6 +197,24 @@
       text-transform: uppercase;
       margin-bottom: 10px;
   }
+
+  @media only screen and (min-width: 100px) {
+
+    .our-team .post { font-size: 10px;};
+  
+  }
+  
+  @media only screen and (min-width: 600px) {
+
+    .our-team .post { font-size: 12px;};
+  
+  }
+  
+  @media only screen and (min-width: 1300px) {
+
+   .our-team .post { font-size: 14px;};
+  
+} 
   
   .our-team .post2{
       display: block;
@@ -146,31 +223,25 @@
       text-transform: uppercase;
       margin-bottom: 10px;
   }
-  .our-team .social{
-      padding: 0;
-      margin: 0;
-      list-style: none;
+
+  @media only screen and (min-width: 100px) {
+
+    .our-team .post2 { font-size: 9px;};
+  
   }
-  .our-team .social li{
-      display: inline-block;
-      margin: 0 5px;
+  
+  @media only screen and (min-width: 600px) {
+
+    .our-team .post2 { font-size: 12px;};
+  
   }
-  .our-team .social li a{
-      display: block;
-      width: 35px;
-      height: 35px;
-      line-height: 35px;
-      border-radius: 50%;
-      background: #fff;
-      font-size: 20px;
-      color: #ff3232;
-      transition: all 0.3s ease 0s;
-  }
-  .our-team .social li a:hover{
-      background: linear-gradient(to bottom,#ff3232, darkred);
-      box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
-      color: #fff;
-  }
+  
+  @media only screen and (min-width: 1300px) {
+
+   .our-team .post2 { font-size: 14px;};
+  
+} 
+  
   @media only screen and (max-width: 990px){
       .our-team{ margin-bottom: 30px; }
   }
