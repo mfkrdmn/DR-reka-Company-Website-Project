@@ -157,4 +157,4 @@ def milesvolta(request):
 ############ Coming Soon ##############
 
 def Soon(request):
-    return render(request,"Soon.html")
+    return render(request,"soon.html")

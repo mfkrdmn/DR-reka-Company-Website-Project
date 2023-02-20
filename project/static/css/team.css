@@ -13,39 +13,28 @@
 
   
   #about {
+    top: 120px;
+     background-color: #f44336;
+  
+  }
+
+
+
+  #mail {
     top: 200px;
      background-color: #f44336;
   
   }
 
-  @media only screen and (min-width: 300px) {
-
-    #about {top: 340px;};
-} 
-
-
-  #mail {
-    top: 280px;
-     background-color: #f44336;
-  
-  }
-
-  @media only screen and (min-width: 300px) {
-
-    #mail {top: 420px;};
-} 
 
 
   
   #projects {
-    top: 360px;
+    top: 280px;
     background-color: #f44336;
   }
   
-  @media only screen and (min-width: 300px) {
 
-    #projects {top: 500px;};
-} 
   
  
 
