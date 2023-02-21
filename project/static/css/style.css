@@ -1108,3 +1108,9 @@ a:focus {
   .brands-img {width: 200px !important;};
 
 }
+
+.picfit{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
