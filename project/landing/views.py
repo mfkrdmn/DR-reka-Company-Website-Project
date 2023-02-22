@@ -29,13 +29,13 @@ def send_email(request):
         'Mail Başlığı',
         'Mail Gövdesi',
         'rekaglobal1@gmail.com',
-        ['rekaglobal1@gmail.com'],
+        ['mfkrdmn@gmail.com'],
         reply_to=['rekaglobal1@gmail.com'],
         headers={'Message-ID': 'foo'},
     )
     email.send()
 def index(request):
-    
+    send_email(request)
     trans = translate(language='en')
     if request.method == "POST":
         PartNumber = request.POST['PartNumber']
