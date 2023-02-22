@@ -29,8 +29,8 @@ def send_email(request):
         'Mail Başlığı',
         'Mail Gövdesi',
         'rekaglobal1@gmail.com',
-        ['habipelis65@gmail.com'],
-        reply_to=['habipelis65@gmail.com'],
+        ['rekaglobal1@gmail.com'],
+        reply_to=['rekaglobal1@gmail.com'],
         headers={'Message-ID': 'foo'},
     )
     email.send()
