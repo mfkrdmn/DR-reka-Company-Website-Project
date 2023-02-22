@@ -174,3 +174,4 @@ def milesvolta(request):
 
 def Soon(request):
     return render(request,"soon.html")
+
