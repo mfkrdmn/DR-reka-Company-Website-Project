@@ -10,6 +10,8 @@ from django.shortcuts import render
 from django.shortcuts import render
 from django.utils.translation  import gettext as _
 from django.utils.translation import get_language, activate, gettext
+
+#translate
 def translate(language):
     cur_language = get_language()
     try:
@@ -19,7 +21,21 @@ def translate(language):
     finally:
         activate(cur_language)
     return text
+#translate
+from django.core.mail import EmailMessage
+
+def send_email(request):
+    email = EmailMessage(
+        'Mail Başlığı',
+        'Mail Gövdesi',
+        'rekaglobal1@gmail.com',
+        ['habipelis65@gmail.com'],
+        reply_to=['habipelis65@gmail.com'],
+        headers={'Message-ID': 'foo'},
+    )
+    email.send()
 def index(request):
+    send_email(request)
     trans = translate(language='en')
     if request.method == "POST":
         PartNumber = request.POST['PartNumber']
