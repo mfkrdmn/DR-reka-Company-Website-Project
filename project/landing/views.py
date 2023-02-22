@@ -35,7 +35,7 @@ def send_email(request):
     )
     email.send()
 def index(request):
-    send_email(request)
+    
     trans = translate(language='en')
     if request.method == "POST":
         PartNumber = request.POST['PartNumber']
