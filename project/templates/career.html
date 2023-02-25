@@ -5,7 +5,7 @@
 {% block content %}
 
 <style>
-    @media only screen and (min-width: 100px) {
+@media only screen and (min-width: 100px) {
   /* For phones: */
    .career-top-img {height: 350px;};
 
@@ -20,7 +20,23 @@
 @media only screen and (min-width: 1300px) {
   /* For desktop: */
    .career-top-img {height: 800px;};
+}
+/**/
+@media only screen and (min-width: 100px) {
+  /* For phones: */
+   .text {margin-top: 10px;};
 
+}
+
+@media only screen and (min-width: 700px) {
+  /* For tablets: */
+   .text {margin-top: -10px;};
+
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+   .text {margin-top: 30px;};
 }
 
 
@@ -35,7 +51,7 @@
 </div>
 
 
-<div class="container mt-5" style="margin-bottom: 30px;">
+<div class="container text" style="margin-bottom: 30px;">
    <div class="row">
     <div class="col-lg-12 text-center">
         <h2 style="color: red;">Join Our Global Team</h2>

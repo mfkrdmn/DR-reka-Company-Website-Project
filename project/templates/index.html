@@ -53,6 +53,14 @@
 
 </head>
 
+<style>
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 5px 5px white;
+}
+</style>
+
 
 <body>
 
@@ -104,7 +112,7 @@
                 </li>
                 {% else %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:comingsoon' %}"><i class="fa fa-user" aria-hidden="true"></i> Login </a>
+                  <a class="nav-link" href="{% url 'landing:comingsoon' %}"><i class="fa fa-user" aria-hidden="true"></i> LOGIN </a>
                 </li>
                 {% endif %}
                 <select class="selectpicker" data-width="fit" style="background-color: #d83744; border: 0px; color: white;">
@@ -384,7 +392,7 @@
                             </div>
                         </div>
                         <div class="item animate" data-animate="fadeInUp">
-                            <div class="service-box">
+                            <div class="service-box ">
                  
                                 <img src="{% static 'images/brands/3.png'%}" alt="" class="brands-img">
 
@@ -938,7 +946,7 @@
                 <i class="fa-brands fa-twitter" style="color: rgb(68, 100, 243);"></i>
               </span>
             </a>
-            <a href="">
+            <a href="https://bip.com/en/ " >
               <span id="test">
                 <img src="{% static 'images/bip.png' %}" style="height: 23px !important; "  alt="...">
               </span>
@@ -963,7 +971,7 @@
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">REKA Global</a>
+        <a href="{% url 'landing:index' %}">REKA Global</a>
         <span>Developed by REKA Design</span>
       </p>
     </div>
