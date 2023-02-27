@@ -83,13 +83,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'landing:aviation' %}">{% translate "Avıatıon" %} <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:aviation' %}">{% translate "Avıatıon" %} <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:gse' %}">MRO & GSE</a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:gse' %}">MRO & GSE</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:finance' %}">Fınance</a>
+                  <a class="nav-link" href="{% url 'landing:finance' %}">{% translate "Fınance" %}</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'landing:ec' %}">  MM & EC</a>

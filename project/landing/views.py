@@ -10,7 +10,8 @@ from django.shortcuts import render
 from django.shortcuts import render
 from django.utils.translation  import gettext as _
 from django.utils.translation import get_language, activate, gettext
-
+def dil_bilgisi():
+    return get_language()
 #translate
 def translate(language):
     cur_language = get_language()
@@ -35,6 +36,7 @@ def send_email(request):
     )
     email.send()
 def index(request):
+    dil = dil_bilgisi()
     send_email(request)
     trans = translate(language='en')
     if request.method == "POST":
@@ -55,7 +57,7 @@ def index(request):
             return redirect('/')
     
     
-    return render(request, 'index.html',{"trans":trans})
+    return render(request, 'index.html',{"trans":trans,"dil":dil})
 
 #############
 
@@ -77,7 +79,9 @@ def aviation(request):
     
 def gse(request):
     trans = translate(language='en')
-    return render(request,"gse.html",{"trans":trans})
+    ur = urun.objects.all()
+    dil = dil_bilgisi()
+    return render(request,"gse.html",{"trans":trans,"dil":dil,"ur":ur})
 
 def finance(request):
     trans = translate(language='en')
@@ -166,9 +170,15 @@ def logout(request):
 
 
 ############ GSE Individuals ##############
-
-def milesvolta(request):
-    return render(request,"milesvolta.html")
+from .models import urun
+from django.shortcuts import render,get_object_or_404
+def milesvolta(request,id,slug):
+    urunler = get_object_or_404(urun, id = id)
+    dil = dil_bilgisi()
+    content ={}
+    content["dil"] = dil
+    content["urun"] = urunler
+    return render(request,"milesvolta.html",content)
 
 ############ Coming Soon ##############
 

@@ -14,16 +14,32 @@ body{
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-9">
-            <h2 class="mb-4">MILES VOLTA 25 BAGGAGE TRACTOR</h2>
+            {% if dil == "tr" %}
+            <h2 class="mb-4">{{urun.isim_tr}}</h2>
+        {% elif dil == "en" %}
+        <h2 class="mb-4">{{urun.isim_en}}</h2>
+        {% elif dil == "de" %}
+        <h2 class="mb-4">{{urun.isim_de}}</h2>
+        {% else %}
+        <h2 class="mb-4">{{urun.isim_ar}}</h2>
+        {% endif %}
+            
             <div class="gse_ind_pic">
-                <img src="{% static 'images/gse/gse1.jpg' %}" class="w-75" alt="" />
+                <img src="{{urun.image.url}}" class="w-75" alt="" />
             </div>
             <div class="p w-75 mt-4">
-                <p>Miles 6041, Volta 25 Baggage Tractor is a product, manufactured according to the European Machinery Directives, assuring the highest level of quality control with mechanical, hydraulic and electronic system tests.</p>
-                <p>Miles Volta 25 is the new solution that Miles GSE brings for the ground handlers. Miles Volta 25 is a highly acclaimed Baggage Tractor available for the international market. After a long R&D process, Volta 25 was designed and manufactured in accordance with the latest technologies, while doing so Miles GSE gave great importance to the market’s needs and requests. Its single-piece turtle-like chassis helps Miles Volta 25 to withstand severe operating conditions. With its compact and unique design, Miles Volta 25 provides excellent agility for the driver.  Miles Volta 25’s aim is to provide ground handlers a high driving comfort while helping them succeed at baggage handling, and with its spacious & ergonomic cabin, Miles Volta 25 has already started to become the favorite of the ground handlers.</p>
-                <p>Aiming to support our customers to achieve uninterrupted operational excellence, Miles GSE designs and manufactures high-quality Baggage Tractors which not only significantly lowers maintenance costs, but also increases product life cycles throughout the usage of high-tech durable components.</p>
-                <p>We think of Ground Support Equipment as an investment, and we strive for our customers to get the best ROI.</p>
-            </div>
+               
+            
+            {% if dil == "tr" %}
+                {{urun.hakkimizda_tr|safe}}
+            {% elif dil == "en" %}
+                {{urun.hakkimizda_en|safe}}
+            {% elif dil == "de" %}
+                {{urun.hakkimizda_de|safe}}
+            {% else %}
+                {{urun.hakkimizda_ar|safe}}
+            {% endif %}
+        </div>
         </div>
         <div class="col-md-3">
             <h4>Model</h4>

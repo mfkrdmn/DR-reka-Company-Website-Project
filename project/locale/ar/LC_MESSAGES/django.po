@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-18 16:10+0300\n"
-"PO-Revision-Date: 2023-02-18 16:11+0000\n"
+"POT-Creation-Date: 2023-02-27 22:42+0300\n"
+"PO-Revision-Date: 2023-02-27 22:48+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,26 +19,33 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\project\landing\views.py:17
+#: .\project\landing\views.py:19
 msgid "Hello"
 msgstr ""
 
-#: .\project\project\settings.py:129
+#: .\project\project\settings.py:134
 msgid "English"
 msgstr ""
 
-#: .\project\project\settings.py:130
+#: .\project\project\settings.py:135
 msgid "Turkish"
 msgstr ""
 
-#: .\project\project\settings.py:131
+#: .\project\project\settings.py:136
 msgid "German"
 msgstr ""
 
-#: .\project\project\settings.py:132
+#: .\project\project\settings.py:137
 msgid "arabic"
 msgstr ""
 
-#: .\project\templates\index.html:86
-msgid "Aviation"
-msgstr "طيران"
+#: .\project\templates\index.html:87
+msgid "Avıatıon"
+msgstr "تمويل "
+
+#: .\project\templates\index.html:93
+msgid "Fınance"
+msgstr "تمويل"
+
+#~ msgid "Aviation"
+#~ msgstr "طيران"
