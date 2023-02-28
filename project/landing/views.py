@@ -25,12 +25,21 @@ def translate(language):
 #translate
 from django.core.mail import EmailMessage
 
-def send_email(request):
+def send_email(request,PartNumber,Description,Quantity,Condition,Mail,Telephone,CompanyName,fullname):
+    govde= """PartNumber = {}
+Description = {}
+Quantity = {}
+Condition = {}
+Mail = {}
+Telephone = {}
+Company Name = {}
+full name= {}
+    """.format(PartNumber,Description,Quantity,Condition,Mail,Telephone,CompanyName,fullname)
     email = EmailMessage(
-        'Mail Başlığı',
-        'Mail Gövdesi',
+        'Sipariş',
+        govde,
         'rekaglobal1@gmail.com',
-        ['mfkrdmn@gmail.com'],
+        ['aog@rekaglobal.com'],
         reply_to=['rekaglobal1@gmail.com'],
         headers={'Message-ID': 'foo'},
     )
@@ -48,7 +57,7 @@ def index(request):
         Telephone = request.POST['Telephone']
         CompanyName = request.POST['CompanyName']
         fullname = request.POST['fullname']
-
+        send_email(request,PartNumber,Description,Quantity,Condition,Mail,Telephone,CompanyName,fullname)
         if request.method == "POST":
 
             newRFQ = rfq.objects.create(PartNumber=PartNumber, Description=Description, 
