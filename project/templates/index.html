@@ -86,42 +86,42 @@
                   <a class="nav-link" href="/{{dil}}{% url 'landing:aviation' %}">{% translate "Avıatıon" %} <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/{{dil}}{% url 'landing:gse' %}">MRO & GSE</a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:gse' %}">{% translate "MRO & GSE" %}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:finance' %}">{% translate "Fınance" %}</a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:finance' %}">{% translate "Fınance" %}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:ec' %}">  MM & EC</a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:ec' %}">{% translate "MM & EC" %}  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:rec' %}"> RE & C</a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:rec' %}">{% translate "RE & C" %} </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:career' %}">Career</a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:career' %}">{% translate "Career" %}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:contact' %}">Contact </a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:contact' %}">{% translate "Contact" %} </a>
                 </li>
                 {% if request.user.is_authenticated %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:profile' %}"><i class="fa fa-user" aria-hidden="true"></i> {{request.user.username}} </a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:profile' %}"><i class="fa fa-user" aria-hidden="true"></i> {{request.user.username}} </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:logout' %}"> logout</a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:logout' %}">{% translate "logout" %} </a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'landing:comingsoon' %}"><i class="fa fa-user" aria-hidden="true"></i> LOGIN </a>
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:comingsoon' %}"><i class="fa fa-user" aria-hidden="true"></i>{% translate "LOGIN" %}   </a>
                 </li>
                 {% endif %}
-                <select class="selectpicker" data-width="fit" style="background-color: #d83744; border: 0px; color: white;">
+                <select onchange="window.location.href=this.value;" class="selectpicker" data-width="fit" style="background-color: #d83744; border: 0px; color: white;">
                   {% get_current_language as LANGUAGE_CODE %}
             {% get_available_languages as LANGUAGES %}
             {% get_language_info_list for LANGUAGES as languages %}
 
             {% for lang in languages %}
-              <option style="color: white;">
+              <option value="/{{ lang.code }}/"  style="color: white;">
               <a class="dropdown-item" href="/{{ lang.code }}/">
                   {{ lang.name_local }}
               </a></option>

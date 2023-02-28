@@ -25,18 +25,16 @@ class rfq(models.Model):
 
     def __str__(self) :
         return self.Description
-    
-from ckeditor.fields import RichTextField
 
 class urun(models.Model):
     isim_tr = models.CharField(verbose_name="İsim Türkçe" , max_length=200)
     isim_en = models.CharField(verbose_name="İsim inglizce" , max_length=200)
     isim_de = models.CharField(verbose_name="İsim almanca" , max_length=200)
     isim_ar = models.CharField(verbose_name="İsim arapca" , max_length=200)
-    hakkimizda_tr = RichTextField(verbose_name="Hakkımızda Yazısı Türkçe")
-    hakkimizda_en = RichTextField(verbose_name="Hakımızda Yazısı İngilizce",blank = True,null = True)
-    hakkimizda_de = RichTextField(verbose_name="Hakımızda Yazısı Almanca",blank = True,null = True)
-    hakkimizda_ar = RichTextField(verbose_name="Hakımızda Yazısı arapca",blank = True,null = True)
+    hakkimizda_tr = models.TextField(verbose_name="Hakkımızda Yazısı Türkçe")
+    hakkimizda_en = models.TextField(verbose_name="Hakımızda Yazısı İngilizce",blank = True,null = True)
+    hakkimizda_de = models.TextField(verbose_name="Hakımızda Yazısı Almanca",blank = True,null = True)
+    hakkimizda_ar = models.TextField(verbose_name="Hakımızda Yazısı arapca",blank = True,null = True)
     image  = models.ImageField(upload_to='cvfoto/',blank = True,null = True,verbose_name="Size Ait Olan Resmi Ekleyin")
 
     

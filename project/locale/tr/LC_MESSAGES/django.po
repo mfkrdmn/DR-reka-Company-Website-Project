@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-27 22:42+0300\n"
-"PO-Revision-Date: 2023-02-27 22:47+0000\n"
+"POT-Creation-Date: 2023-02-28 23:28+0300\n"
+"PO-Revision-Date: 2023-02-28 23:30+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,23 +19,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\project\landing\views.py:19
+#: .\project\landing\views.py:20
 msgid "Hello"
 msgstr ""
 
-#: .\project\project\settings.py:134
+#: .\project\project\settings.py:135
 msgid "English"
 msgstr ""
 
-#: .\project\project\settings.py:135
+#: .\project\project\settings.py:136
 msgid "Turkish"
 msgstr ""
 
-#: .\project\project\settings.py:136
+#: .\project\project\settings.py:137
 msgid "German"
 msgstr ""
 
-#: .\project\project\settings.py:137
+#: .\project\project\settings.py:138
 msgid "arabic"
 msgstr ""
 
@@ -43,9 +43,37 @@ msgstr ""
 msgid "Avıatıon"
 msgstr "Havacılık"
 
+#: .\project\templates\index.html:90
+msgid "MRO & GSE"
+msgstr "MRO & GSE"
+
 #: .\project\templates\index.html:93
 msgid "Fınance"
 msgstr "Finans"
+
+#: .\project\templates\index.html:96
+msgid "MM & EC"
+msgstr "MRO & GSE"
+
+#: .\project\templates\index.html:99
+msgid "RE & C"
+msgstr "RE & C"
+
+#: .\project\templates\index.html:102
+msgid "Career"
+msgstr "Kariyer"
+
+#: .\project\templates\index.html:105
+msgid "Contact"
+msgstr "İletişim"
+
+#: .\project\templates\index.html:112
+msgid "logout"
+msgstr "Çıkış Yap"
+
+#: .\project\templates\index.html:116
+msgid "LOGIN"
+msgstr "Giriş Yap"
 
 #~ msgid "Aviation"
 #~ msgstr "Havacılık"
