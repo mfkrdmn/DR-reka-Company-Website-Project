@@ -1,7 +1,7 @@
 {% load static %}
 {% load i18n %}
 <!DOCTYPE html>
-<html>
+<html lang="{{dil}}">
 
 <head>
   <!-- Basic -->
@@ -84,36 +84,36 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav  ">
                     <li class="nav-item active">
-                      <a class="nav-link" href="{% url 'landing:aviation' %}">Avıatıon <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="/{{dil}}{% url 'landing:aviation' %}">{% translate "Avıatıon" %} <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'landing:gse' %}">MRO & GSE</a>
+                      <a class="nav-link" href="/{{dil}}{% url 'landing:gse' %}">{% translate "MRO & GSE" %}</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'landing:finance' %}">Fınance</a>
+                      <a class="nav-link" href="/{{dil}}{% url 'landing:finance' %}">{% translate "Fınance" %}</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'landing:ec' %}">  MM & EC</a>
+                      <a class="nav-link" href="/{{dil}}{% url 'landing:ec' %}"> {% translate "MM & EC" %} </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'landing:rec' %}"> RE & C</a>
+                      <a class="nav-link" href="{% url 'landing:rec' %}"> {% translate "RE & C" %}</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'landing:career' %}">Career</a>
+                      <a class="nav-link" href="/{{dil}}{% url 'landing:career' %}">{% translate "Career" %}</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'landing:contact' %}">Contact </a>
+                      <a class="nav-link" href="/{{dil}}{% url 'landing:contact' %}">{% translate "Contact" %} </a>
                     </li>
                     {% if request.user.is_authenticated %}
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'landing:profile' %}"><i class="fa fa-user" aria-hidden="true"></i> {{request.user.username}} </a>
+                      <a class="nav-link" href="/{{dil}}{% url 'landing:profile' %}"><i class="fa fa-user" aria-hidden="true"></i> {{request.user.username}} </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'landing:logout' %}"> logout</a>
+                      <a class="nav-link" href="/{{dil}}{% url 'landing:logout' %}">{% translate "logout" %} </a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'landing:comingsoon' %}"><i class="fa fa-user" aria-hidden="true"></i> LOGIN </a>
+                      <a class="nav-link" href="/{{dil}}{% url 'landing:comingsoon' %}"><i class="fa fa-user" aria-hidden="true"></i> {% translate "LOGIN" %} </a>
                     </li>
                     {% endif %}
                     <select class="selectpicker" data-width="fit" style="background-color: #d83744; border: 0px; color: white;">
@@ -191,52 +191,51 @@
       {% endblock %}
 
   <!-- info section -->
-
   <section class="info_section layout_padding2">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_detail">
-            <h4>
-              REKA Group Companies
+            <h4>{% translate "REKA Group Companies" %}
             </h4>
             <p style="font-size: 16px !important;">
-              REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN,  GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT           </p>
+
+              {% translate "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT." %}" </p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mx-auto info_col">
           <div class="info_link_box">
             <h4>
-              
+
             </h4>
             <div class="container info_links">
               <div class="row">
                 <div class="col-6">
                   <a class="active" href="{% url 'landing:index' %}" style="text-decoration: none ; ">
-                    HOME
+                    {% translate "HOME" %}
                   </a>
                   <a class="" href="{% url 'landing:aviation' %}" style="text-decoration: none ; ">
-                    AVIATION
+                    {% translate "AVIATION" %}
                   </a>
                   <a class="" href="{% url 'landing:gse' %}" style="text-decoration: none ; ">
-                    MRO & GSE
+                    {% translate "MRO & GSE" %}
                   </a>
                   <a class="" href="{% url 'landing:finance' %}" style="text-decoration: none ; ">
-                    FINANCE
+                    {% translate "FINANCE" %}
                   </a>
                 </div>
                 <div class="col-6">
                   <a class="" href="{% url 'landing:ec' %}" style="text-decoration: none ; ">
-                    EC
+                    {% translate "EC" %}
                   </a>
                   <a class="" href="contact.html" style="text-decoration: none ; ">
-                    RE & C
+                    {% translate "RE & C" %}
                   </a>
                   <a class="" href="{% url 'landing:career' %}" style="text-decoration: none ; ">
-                    CAREER
+                    {% translate "CAREER" %}
                   </a>
                   <a class="" href="{% url 'landing:contact' %}" style="text-decoration: none ; ">
-                    CONTACT
+                    {% translate "CONTACT" %}
                   </a>
                 </div>
               </div>
@@ -246,20 +245,20 @@
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_contact">
             <h4>
-              AOG Line
+              {% translate "AOG Line" %}
             </h4>
             <div class="contact_link_box">
 
               <a href="tel:+905079009077" style="text-decoration: none ; ">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span >
+                <span>
                   +90 507 900 90 77
                 </span>
               </a>
               <a href="mailto:aog@rekaglobal.com" style="text-decoration: none ; ">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span >
-                  aog@rekaglobal.com 
+                <span>
+                  aog@rekaglobal.com
                 </span>
               </a>
             </div>
@@ -277,7 +276,7 @@
             </a>
             <a href="https://bip.com/en/ ">
               <span id="test">
-                <img src="{% static 'images/bip.png' %}" style="height: 23px !important; "  alt="...">
+                <img src="{% static 'images/bip.png' %}" style="height: 23px !important; " alt="...">
               </span>
             </a>
             <a target="_blank" href="https://wa.me/+905079009077" style="text-decoration: none; ">
@@ -290,7 +289,6 @@
       </div>
     </div>
   </section>
-
   <!-- end info section -->
 
       <!-- footer section -->

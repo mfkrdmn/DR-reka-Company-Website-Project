@@ -10,7 +10,8 @@ from django.shortcuts import render
 from django.shortcuts import render
 from django.utils.translation  import gettext as _
 from django.utils.translation import get_language, activate, gettext
-
+def dil_bilgisi():
+    return get_language()
 #translate
 def translate(language):
     cur_language = get_language()
@@ -24,18 +25,27 @@ def translate(language):
 #translate
 from django.core.mail import EmailMessage
 
-def send_email(request):
+def send_email(request,PartNumber,Description,Quantity,Condition,Mail,Telephone,CompanyName,fullname):
+    govde= """PartNumber = {}
+Description = {}
+Quantity = {}
+Condition = {}
+Mail = {}
+Telephone = {}
+Company Name = {}
+full name= {}
+    """.format(PartNumber,Description,Quantity,Condition,Mail,Telephone,CompanyName,fullname)
     email = EmailMessage(
-        'Mail Başlığı',
-        'Mail Gövdesi',
+        'Sipariş',
+        govde,
         'rekaglobal1@gmail.com',
-        ['mfkrdmn@gmail.com'],
+        ['aog@rekaglobal.com'],
         reply_to=['rekaglobal1@gmail.com'],
         headers={'Message-ID': 'foo'},
     )
     email.send()
 def index(request):
-
+    dil = dil_bilgisi()
     trans = translate(language='en')
     if request.method == "POST":
         PartNumber = request.POST['PartNumber']
@@ -46,7 +56,7 @@ def index(request):
         Telephone = request.POST['Telephone']
         CompanyName = request.POST['CompanyName']
         fullname = request.POST['fullname']
-
+        send_email(request,PartNumber,Description,Quantity,Condition,Mail,Telephone,CompanyName,fullname)
         if request.method == "POST":
 
             newRFQ = rfq.objects.create(PartNumber=PartNumber, Description=Description, 
@@ -55,7 +65,7 @@ def index(request):
             return redirect('/')
     
     
-    return render(request, 'index.html',{"trans":trans})
+    return render(request, 'index.html',{"trans":trans,"dil":dil})
 
 #############
 
@@ -77,7 +87,9 @@ def aviation(request):
     
 def gse(request):
     trans = translate(language='en')
-    return render(request,"gse.html",{"trans":trans})
+    ur = urun.objects.all()
+    dil = dil_bilgisi()
+    return render(request,"gse.html",{"trans":trans,"dil":dil,"ur":ur})
 
 def finance(request):
     trans = translate(language='en')
@@ -166,9 +178,15 @@ def logout(request):
 
 
 ############ GSE Individuals ##############
-
-def milesvolta(request):
-    return render(request,"milesvolta.html")
+from .models import urun
+from django.shortcuts import render,get_object_or_404
+def milesvolta(request,id,slug):
+    urunler = get_object_or_404(urun, id = id)
+    dil = dil_bilgisi()
+    content ={}
+    content["dil"] = dil
+    content["urun"] = urunler
+    return render(request,"milesvolta.html",content)
 
 ############ Coming Soon ##############
 

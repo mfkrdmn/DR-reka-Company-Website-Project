@@ -309,7 +309,7 @@ img {
             {% csrf_token %}
 			<div>
 				<h1 class="login__title">
-					<span>Welcome</span> Back!
+					<span>{% translate "Welcome" %} </span> {% translate "Back!" %}
 				</h1>
 				{% for field in messages %}
 					<li style="color: rgb(255, 255, 255); list-style: none;">{{field}}</li>
@@ -319,12 +319,12 @@ img {
 			<div>
 				<div class="login__inputs">
 					<div>
-						<label for="" class="login__label">Company Name</label>
+						<label for="" class="login__label">{% translate "Company Name" %}</label>
 						<input type="text" name="companyName" placeholder="Enter your Company Name" required class="login__input">
 					</div>
 
 					<div>
-						<label for="" class="login__label">Password</label>
+						<label for="" class="login__label">{% translate "Password" %}</label>
 						<div class="login__box">
 							<input type="password" name="password" placeholder="Enter your password" required class="login__input" id="input-pass">
 							<i class="ri-eye-off-line login__eye" id="input-icon"></i>
@@ -334,16 +334,16 @@ img {
 
 				<div class="login__check">
 					<input type="checkbox" class="login__check-input">
-					<label for="" class="login__check-label">Remember me</label>
+					<label for="" class="login__check-label">{% translate "Remember me" %}</label>
 				</div>
 			</div>
 
 			<div>
 				<div class="login__buttons">
-					<button class="login__button">Log In</button>
+					<button class="login__button">{% translate "Log In" %}</button>
 				</div>
-				<a href="{% url 'landing:register' %}" class="login__forgot" style="color: white;">Dont Have an Account?</a><br>
-				<a href="{% url 'landing:index' %}" class="login__forgot" style="color: white;">Return to home page</a>
+				<a href="{% url 'landing:register' %}" class="login__forgot" style="color: white;">{% translate "Dont Have an Account?" %}</a><br>
+				<a href="{% url 'landing:index' %}" class="login__forgot" style="color: white;">{% translate "Return to home page" %}</a>
 			</div>
 		</form>
 	</div>

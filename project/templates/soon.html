@@ -95,20 +95,20 @@ body {
     <div class="page">
         <div class="countdown-col col">
           <div class="time middle">
-            <span><div id="days">12</div> Days</span>
-            <span><div id="hours">06</div> Hours</span>
-            <span><div id="minutes">35</div> Minutes</span>
-            <span><div id="seconds">54</div> Seconds</span>
+            <span><div id="days">12</div> {% translate "Days" %}</span>
+            <span><div id="hours">06</div> {% translate "Hours" %}</span>
+            <span><div id="minutes">35</div> {% translate "Minutes" %}</span>
+            <span><div id="seconds">54</div>{% translate " Seconds" %}</span>
           </div>
         </div>
         <div class="newsletter-col col">
           <div class="newslatter middle">
             <img width="150ox" src="{% static 'images/logo.png' %}" alt="">
-            <h2>Coming Soon</h2>
-            <h4>Subscribe to get notification when we start</h4>
+            <h2>{% translate "Coming Soon" %}</h2>
+            <h4>{% translate "Subscribe to get notification when we start" %}</h4>
             <form>
               <input type="text" placeholder="Enter Your Email"/>
-              <button type="button" class="newslatter-button">Subscribe</button>
+              <button type="button" class="newslatter-button">{% translate "Subscribe" %}Subscribe</button>
             </form>
           </div>
         </div>

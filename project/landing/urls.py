@@ -15,6 +15,6 @@ urlpatterns = [
     path('logout',views.logout, name="logout"),
     path('rec',views.rec, name="rec"),
     path('profile',views.profile, name="profile"),
-    path('milesvolta',views.milesvolta, name="milesvolta"),
+    path('<int:id>/<str:slug>/',views.milesvolta, name="milesvolta"),
     path('comingsoon',views.Soon, name="comingsoon"),
 ]
