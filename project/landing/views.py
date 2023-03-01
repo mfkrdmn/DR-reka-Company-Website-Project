@@ -46,7 +46,6 @@ full name= {}
     email.send()
 def index(request):
     dil = dil_bilgisi()
-    
     trans = translate(language='en')
     if request.method == "POST":
         PartNumber = request.POST['PartNumber']
