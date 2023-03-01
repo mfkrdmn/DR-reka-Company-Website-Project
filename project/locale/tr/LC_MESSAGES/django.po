@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-01 01:05+0300\n"
+"POT-Creation-Date: 2023-03-02 00:16+0300\n"
 "PO-Revision-Date: 2023-02-28 23:30+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,7 @@ msgid "Avıatıon"
 msgstr "Havacılık"
 
 #: .\project\templates\base.html:91 .\project\templates\base.html:222
-#: .\project\templates\index.html:98 .\project\templates\index.html:916
+#: .\project\templates\index.html:98 .\project\templates\index.html:908
 msgid "MRO & GSE"
 msgstr "MRO & GSE"
 
@@ -97,7 +97,7 @@ msgid "MM & EC"
 msgstr "MRO & GSE"
 
 #: .\project\templates\base.html:100 .\project\templates\base.html:233
-#: .\project\templates\index.html:107 .\project\templates\index.html:927
+#: .\project\templates\index.html:107 .\project\templates\index.html:919
 msgid "RE & C"
 msgstr "RE & C"
 
@@ -117,46 +117,46 @@ msgstr "Çıkış Yap"
 msgid "LOGIN"
 msgstr "Giriş Yap"
 
-#: .\project\templates\base.html:200 .\project\templates\index.html:894
+#: .\project\templates\base.html:200 .\project\templates\index.html:886
 msgid "REKA Group Companies"
 msgstr ""
 
-#: .\project\templates\base.html:204 .\project\templates\index.html:898
+#: .\project\templates\base.html:204 .\project\templates\index.html:890
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
 "ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, "
 "COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgstr ""
 
-#: .\project\templates\base.html:216 .\project\templates\index.html:910
+#: .\project\templates\base.html:216 .\project\templates\index.html:902
 msgid "HOME"
 msgstr ""
 
-#: .\project\templates\base.html:219 .\project\templates\index.html:913
+#: .\project\templates\base.html:219 .\project\templates\index.html:905
 msgid "AVIATION"
 msgstr ""
 
-#: .\project\templates\base.html:225 .\project\templates\index.html:919
+#: .\project\templates\base.html:225 .\project\templates\index.html:911
 msgid "FINANCE"
 msgstr ""
 
-#: .\project\templates\base.html:230 .\project\templates\index.html:924
+#: .\project\templates\base.html:230 .\project\templates\index.html:916
 msgid "EC"
 msgstr ""
 
-#: .\project\templates\base.html:236 .\project\templates\index.html:930
+#: .\project\templates\base.html:236 .\project\templates\index.html:922
 msgid "CAREER"
 msgstr ""
 
-#: .\project\templates\base.html:239 .\project\templates\index.html:933
+#: .\project\templates\base.html:239 .\project\templates\index.html:925
 msgid "CONTACT"
 msgstr ""
 
-#: .\project\templates\base.html:249 .\project\templates\index.html:943
+#: .\project\templates\base.html:249 .\project\templates\index.html:935
 msgid "AOG Line"
 msgstr ""
 
-#: .\project\templates\career.html:57
+#: .\project\templates\career.html:63
 msgid "Join Our Global Team"
 msgstr ""
 
@@ -166,7 +166,7 @@ msgstr ""
 msgid "Contact Us"
 msgstr "İletişim"
 
-#: .\project\templates\ec.html:74
+#: .\project\templates\ec.html:92
 msgid ""
 "Modernization of trade requires differentiation of approaches for "
 "international markets. We serve corporate integration to new generation e-"
@@ -174,7 +174,7 @@ msgid ""
 "international trade services for both import and export processes."
 msgstr ""
 
-#: .\project\templates\ec.html:76
+#: .\project\templates\ec.html:94
 msgid ""
 "Our main goal is to offer our customers a smooth and successful trade "
 "operation, free from the possible risks and difficulties of international "
@@ -184,7 +184,7 @@ msgid ""
 "we are serving SMEs as an outsider sales team."
 msgstr ""
 
-#: .\project\templates\finance.html:51
+#: .\project\templates\finance.html:58
 msgid ""
 "Investment solutions against dynamic economical volatilty. Asset management "
 "and private financial consultancy. Corporate audit, financial control "
@@ -196,81 +196,112 @@ msgstr ""
 msgid "WE BUILD TRUST"
 msgstr ""
 
-#: .\project\templates\index.html:183
+#: .\project\templates\index.html:175
+msgid ""
+"HUNDREDS OF BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN "
+"VARIOUS FIELDS"
+msgstr ""
+
+#: .\project\templates\index.html:182
 msgid "INTERNATIONAL TRADE"
 msgstr ""
 
-#: .\project\templates\index.html:195
+#: .\project\templates\index.html:183
+msgid ""
+"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
+"ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL SERVES EXCELLENT "
+"AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, "
+"AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE "
+"AND DEVELOPMENT"
+msgstr ""
+
+#: .\project\templates\index.html:190
 msgid "MRO & GROUND HANDLING"
 msgstr ""
 
-#: .\project\templates\index.html:204
+#: .\project\templates\index.html:191
+msgid ""
+"Safety Requires Quality. Maintenance and Repair Operations, Ground Support "
+"Equipments, Low Maintenance Metrics"
+msgstr ""
+
+#: .\project\templates\index.html:198
 msgid "COOPERATION CULTURE"
 msgstr ""
 
-#: .\project\templates\index.html:302
+#: .\project\templates\index.html:199
+msgid "CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
+msgstr ""
+
+#: .\project\templates\index.html:207
+msgid ""
+"EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
+msgstr ""
+
+#: .\project\templates\index.html:294
 msgid "MRO & Ground Handling"
 msgstr ""
 
-#: .\project\templates\index.html:304
+#: .\project\templates\index.html:296
 msgid ""
 "Relaible Maintenannce and Repair with OEM spare parts. Disciplined Ground "
 "Handling"
 msgstr ""
 
-#: .\project\templates\index.html:316
+#: .\project\templates\index.html:308
 msgid "Distributorships"
 msgstr ""
 
-#: .\project\templates\index.html:317
+#: .\project\templates\index.html:309
 msgid ""
 "Exclusive distribution of premium brands with EXW, CIP, DDP delivery "
 "logistic services"
 msgstr ""
 
-#: .\project\templates\index.html:330
+#: .\project\templates\index.html:322
 msgid "Real Estate"
 msgstr ""
 
-#: .\project\templates\index.html:331
+#: .\project\templates\index.html:323
 msgid ""
 "Trustful commercial property partner for long term localization. "
 "Professional leasing and Tenant Mix solutions"
 msgstr ""
 
-#: .\project\templates\index.html:344 .\project\templates\rec.html:69
+#: .\project\templates\index.html:336 .\project\templates\rec.html:75
 msgid "Construction"
 msgstr ""
 
-#: .\project\templates\index.html:345
+#: .\project\templates\index.html:337
 msgid ""
 "Elegant design & construction project management with strick application "
 "quality principles"
 msgstr ""
 
-#: .\project\templates\index.html:358
+#: .\project\templates\index.html:350
 #, fuzzy
 #| msgid "Fınance"
 msgid "Finance"
 msgstr "Finans"
 
-#: .\project\templates\index.html:359
+#: .\project\templates\index.html:351
 msgid ""
 "Corporate Audit, financial control systems with customized accounting "
 "software solutions. Accurate forecast of global economy"
 msgstr ""
 
-#: .\project\templates\index.html:372
+#: .\project\templates\index.html:364
 msgid "E-Commerce"
 msgstr ""
 
-#: .\project\templates\index.html:373
+#: .\project\templates\index.html:365
 msgid ""
 "Modernization of trade for international markets. Corporatintegration to new "
 "generation e-commerce applications"
 msgstr ""
 
-#: .\project\templates\index.html:687
+#: .\project\templates\index.html:679
 msgid ""
 "Reka Global offers a wide range ofinternational trade services for both "
 "import and export processes. Our main goal is to offer our customers a "
@@ -278,72 +309,72 @@ msgid ""
 "difficulties of international trade."
 msgstr ""
 
-#: .\project\templates\index.html:689
+#: .\project\templates\index.html:681
 msgid ""
 " Our wide range of services offers managing or monitoring standard and non-"
 "standard trade operations as well as tailor-made solutions for your business."
 msgstr ""
 
-#: .\project\templates\index.html:691
+#: .\project\templates\index.html:683
 msgid ""
 " By utilizing our existing sales channels among all over the world, we are "
 "serving SMEs as an outsider sales team"
 msgstr ""
 
-#: .\project\templates\index.html:694
+#: .\project\templates\index.html:686
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
 "ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
 "COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgstr ""
 
-#: .\project\templates\index.html:697
+#: .\project\templates\index.html:689
 msgid ""
 "HUNDREDS OF OUR BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION "
 "IN VARIOUS FIELDS."
 msgstr ""
 
-#: .\project\templates\index.html:728
+#: .\project\templates\index.html:720
 msgid "COUNTRIES SERVED"
 msgstr ""
 
-#: .\project\templates\index.html:738
+#: .\project\templates\index.html:730
 msgid "PROJECTS COMPLETED"
 msgstr ""
 
-#: .\project\templates\index.html:748
+#: .\project\templates\index.html:740
 msgid "SUCCESSFULL DELIVERIES"
 msgstr ""
 
-#: .\project\templates\index.html:758
+#: .\project\templates\index.html:750
 msgid "SATISFIED CLIENTS"
 msgstr ""
 
-#: .\project\templates\index.html:781
+#: .\project\templates\index.html:773
 msgid "General Manager"
 msgstr ""
 
-#: .\project\templates\index.html:794
+#: .\project\templates\index.html:786
 msgid "Trade & Logistic Coordinator"
 msgstr ""
 
-#: .\project\templates\index.html:807
+#: .\project\templates\index.html:799
 msgid "Procurement & Logistic Specialist"
 msgstr ""
 
-#: .\project\templates\index.html:820 .\project\templates\index.html:835
+#: .\project\templates\index.html:812 .\project\templates\index.html:827
 msgid "CRM Coordinator"
 msgstr ""
 
-#: .\project\templates\index.html:848
+#: .\project\templates\index.html:840
 msgid "Procurement Specialist"
 msgstr ""
 
-#: .\project\templates\index.html:861
+#: .\project\templates\index.html:853
 msgid "Quality Control Specialist"
 msgstr ""
 
-#: .\project\templates\index.html:874
+#: .\project\templates\index.html:866
 msgid "Logistic Specialist"
 msgstr ""
 
@@ -379,11 +410,11 @@ msgstr ""
 msgid "Return to home page"
 msgstr ""
 
-#: .\project\templates\rec.html:69
+#: .\project\templates\rec.html:75
 msgid "Commercial Real Estate"
 msgstr ""
 
-#: .\project\templates\rec.html:71
+#: .\project\templates\rec.html:77
 msgid ""
 "As a part of group companies, Reka RE & C  serves comprehensive commercial "
 "development consultancy, real estate management, leasing solutions & tenant-"
@@ -391,7 +422,7 @@ msgid ""
 "how in order to expand limits."
 msgstr ""
 
-#: .\project\templates\rec.html:72
+#: .\project\templates\rec.html:78
 msgid ""
 "Trustful commercial property partner for long term localization. Project "
 "management specialized in industrial, mall, office and mixed use "
