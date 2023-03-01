@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 00:16+0300\n"
-"PO-Revision-Date: 2023-02-28 23:30+0000\n"
+"PO-Revision-Date: 2023-03-02 00:29+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: .\project\templates\aviation.html:177
 msgid "COMMERCIAL AIRCRAFTS "
-msgstr ""
+msgstr "Ticari Havaaraçları"
 
 #: .\project\templates\aviation.html:191
 msgid "HELICOPTERS"
@@ -123,9 +123,9 @@ msgstr ""
 
 #: .\project\templates\base.html:204 .\project\templates\index.html:890
 msgid ""
-"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
-"ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, "
-"COMMERCE, REAL ESTATE AND DEVELOPMENT."
+"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
+" ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgstr ""
 
 #: .\project\templates\base.html:216 .\project\templates\index.html:902
@@ -169,8 +169,8 @@ msgstr "İletişim"
 #: .\project\templates\ec.html:92
 msgid ""
 "Modernization of trade requires differentiation of approaches for "
-"international markets. We serve corporate integration to new generation e-"
-"commerce applications.Reka Global offers a wide range of new generarion "
+"international markets. We serve corporate integration to new generation "
+"e-commerce applications.Reka Global offers a wide range of new generarion "
 "international trade services for both import and export processes."
 msgstr ""
 
@@ -178,8 +178,8 @@ msgstr ""
 msgid ""
 "Our main goal is to offer our customers a smooth and successful trade "
 "operation, free from the possible risks and difficulties of international "
-"trade. Our wide range of services offers managing or monitoring standard and "
-"non-standard trade operations as well as tailor-made solutions for your "
+"trade. Our wide range of services offers managing or monitoring standard and"
+" non-standard trade operations as well as tailor-made solutions for your "
 "business.By utilizing our existing sales channels among all over the world, "
 "we are serving SMEs as an outsider sales team."
 msgstr ""
@@ -208,8 +208,8 @@ msgstr ""
 
 #: .\project\templates\index.html:183
 msgid ""
-"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
-"ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
+" ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
 "FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL SERVES EXCELLENT "
 "AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, "
 "AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE "
@@ -231,7 +231,8 @@ msgid "COOPERATION CULTURE"
 msgstr ""
 
 #: .\project\templates\index.html:199
-msgid "CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
+msgid ""
+"CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
 msgstr ""
 
 #: .\project\templates\index.html:207
@@ -297,8 +298,8 @@ msgstr ""
 
 #: .\project\templates\index.html:365
 msgid ""
-"Modernization of trade for international markets. Corporatintegration to new "
-"generation e-commerce applications"
+"Modernization of trade for international markets. Corporatintegration to new"
+" generation e-commerce applications"
 msgstr ""
 
 #: .\project\templates\index.html:679
@@ -312,7 +313,8 @@ msgstr ""
 #: .\project\templates\index.html:681
 msgid ""
 " Our wide range of services offers managing or monitoring standard and non-"
-"standard trade operations as well as tailor-made solutions for your business."
+"standard trade operations as well as tailor-made solutions for your "
+"business."
 msgstr ""
 
 #: .\project\templates\index.html:683
@@ -323,8 +325,8 @@ msgstr ""
 
 #: .\project\templates\index.html:686
 msgid ""
-"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
-"ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
+"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
+" ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
 "COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgstr ""
 
@@ -418,8 +420,8 @@ msgstr ""
 msgid ""
 "As a part of group companies, Reka RE & C  serves comprehensive commercial "
 "development consultancy, real estate management, leasing solutions & tenant-"
-"mix optimization to localized projects with a wide aspect of globalized know-"
-"how in order to expand limits."
+"mix optimization to localized projects with a wide aspect of globalized "
+"know-how in order to expand limits."
 msgstr ""
 
 #: .\project\templates\rec.html:78

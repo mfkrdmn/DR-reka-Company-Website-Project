@@ -70,20 +70,24 @@ def index(request):
 #############
 
 def contact(request):
+    dil = dil_bilgisi()
     trans = translate(language='en')
-    return render(request,"contact.html",{"trans":trans})
+    return render(request,"contact.html",{"trans":trans,"dil":dil})
 
 def career(request):
+    dil = dil_bilgisi()
     trans = translate(language='en')
-    return render(request,"career.html",{"trans":trans})
+    return render(request,"career.html",{"trans":trans,"dil":dil})
 
 def test(request):
+    dil = dil_bilgisi()
     trans = translate(language='en')
-    return render(request,"test.html",{"trans":trans})
+    return render(request,"test.html",{"trans":trans,"dil":dil})
 
 def aviation(request):
+    dil = dil_bilgisi()
     trans = translate(language='en')
-    return render(request,"aviation.html",{"trans":trans})
+    return render(request,"aviation.html",{"trans":trans,"dil":dil})
     
 def gse(request):
     trans = translate(language='en')
@@ -92,16 +96,19 @@ def gse(request):
     return render(request,"gse.html",{"trans":trans,"dil":dil,"ur":ur})
 
 def finance(request):
+    dil = dil_bilgisi()
     trans = translate(language='en')
-    return render(request,"finance.html",{"trans":trans})
+    return render(request,"finance.html",{"trans":trans,"dil":dil})
 
 def ec(request):
+    dil = dil_bilgisi()
     trans = translate(language='en')
-    return render(request,"ec.html",{"trans":trans})
+    return render(request,"ec.html",{"trans":trans,"dil":dil})
 
 def rec(request):
     trans = translate(language='en')
-    return render(request,"rec.html",{"trans":trans})
+    dil = dil_bilgisi()
+    return render(request,"rec.html",{"trans":trans,"dil":dil})
 
 
 #############
@@ -109,11 +116,13 @@ def rec(request):
 
 @login_required(login_url='/login')
 def profile(request):
+        dil = dil_bilgisi()
         return render(request,"profile.html")
 
 #############
 
 def login(request):
+    dil = dil_bilgisi()
     if request.method == 'POST':
         companyName = request.POST['companyName']
         password = request.POST['password']
@@ -132,7 +141,7 @@ def login(request):
 #############
 
 def register(request):
-    
+    dil = dil_bilgisi()
     if request.method == "POST":
         email = request.POST['email']
         companyName = request.POST['companyName']
