@@ -30,19 +30,20 @@ body{
             <div class="p w-75 mt-4">
                
             
-            {% if dil == "tr" %}
-                {{urun.hakkimizda_tr|safe}}
-            {% elif dil == "en" %}
-                {{urun.hakkimizda_en|safe}}
-            {% elif dil == "de" %}
-                {{urun.hakkimizda_de|safe}}
-            {% else %}
-                {{urun.hakkimizda_ar|safe}}
-            {% endif %}
+           
         </div>
         </div>
         <div class="col-md-3">
             <h4>Model</h4>
+            {% if dil == "tr" %}
+            {{urun.hakkimizda_tr|safe}}
+        {% elif dil == "en" %}
+            {{urun.hakkimizda_en|safe}}
+        {% elif dil == "de" %}
+            {{urun.hakkimizda_de|safe}}
+        {% else %}
+            {{urun.hakkimizda_ar|safe}}
+        {% endif %}
             <hr>
             < span><b>Volta 25 Baggage Tractor</b> (Miles 6041)</h5>
             < span><b>Volta 25E Baggage Tractor </b>(Miles 6042)</h5> <br>

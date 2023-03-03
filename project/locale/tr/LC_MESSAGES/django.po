@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 00:16+0300\n"
-"PO-Revision-Date: 2023-03-02 23:22+0000\n"
+"PO-Revision-Date: 2023-03-03 21:13+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -165,7 +165,6 @@ msgid "Join Our Global Team"
 msgstr "Ekibimize Katıl"
 
 #: .\project\templates\contact.html:49
-#, fuzzy
 #| msgid "Contact"
 msgid "Contact Us"
 msgstr "İletişim"
@@ -315,7 +314,6 @@ msgstr ""
 "Üstün uygulama kalitesi ilkeleri ile zarif tasarım ve inşaat proje yönetimi"
 
 #: .\project\templates\index.html:350
-#, fuzzy
 #| msgid "Fınance"
 msgid "Finance"
 msgstr "Finans"

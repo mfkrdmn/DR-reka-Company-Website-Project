@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 00:16+0300\n"
-"PO-Revision-Date: 2023-02-28 23:32+0000\n"
+"PO-Revision-Date: 2023-03-03 21:44+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -21,63 +21,63 @@ msgstr ""
 
 #: .\project\landing\views.py:20
 msgid "Hello"
-msgstr ""
+msgstr "Hallo"
 
 #: .\project\project\settings.py:135
 msgid "English"
-msgstr ""
+msgstr "Englisch"
 
 #: .\project\project\settings.py:136
 msgid "Turkish"
-msgstr ""
+msgstr "Türkisch"
 
 #: .\project\project\settings.py:137
 msgid "German"
-msgstr ""
+msgstr "Deutsch"
 
 #: .\project\project\settings.py:138
 msgid "arabic"
-msgstr ""
+msgstr "Arabisch"
 
 #: .\project\templates\aviation.html:177
 msgid "COMMERCIAL AIRCRAFTS "
-msgstr ""
+msgstr "KOMMERZIELLE FLUGZEUGE"
 
 #: .\project\templates\aviation.html:191
 msgid "HELICOPTERS"
-msgstr ""
+msgstr "HUBSCHRAUBER"
 
 #: .\project\templates\aviation.html:205
 msgid "BUSINESS JETS"
-msgstr ""
+msgstr "GESCHÄFTSJETS"
 
 #: .\project\templates\aviation.html:219
 msgid "PRIVATE AIRCRAFTS"
-msgstr ""
+msgstr "PRIVATE FLUGZEUGE"
 
 #: .\project\templates\aviation.html:233
 msgid "UAV (UNMANNED AERIAL VEHICLE) - DRONES"
-msgstr ""
+msgstr "UAV (UNMANNED AERIAL VEHICLE) – DROHNEN"
 
 #: .\project\templates\aviation.html:259
 msgid "ENGINES"
-msgstr ""
+msgstr "MOTOREN"
 
 #: .\project\templates\aviation.html:273
 msgid "AVIONICS"
-msgstr ""
+msgstr "AVIONIK"
 
 #: .\project\templates\aviation.html:287
 msgid "TIRES & BRAKES"
-msgstr ""
+msgstr "REIFEN & BREMSEN"
 
 #: .\project\templates\aviation.html:301
 msgid "CONSUMABLES"
-msgstr ""
+msgstr "VERBRAUCHSMATERIAL"
 
 #: .\project\templates\aviation.html:315
 msgid "STANDARD PARTS"
-msgstr ""
+msgstr "STANDARDTEILE"
 
 #: .\project\templates\base.html:88 .\project\templates\index.html:94
 msgid "Avıatıon"
@@ -119,49 +119,52 @@ msgstr "ANMELDUNG"
 
 #: .\project\templates\base.html:200 .\project\templates\index.html:886
 msgid "REKA Group Companies"
-msgstr ""
+msgstr "Unternehmen der REKA-Gruppe"
 
 #: .\project\templates\base.html:204 .\project\templates\index.html:890
 msgid ""
-"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
-"ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, "
-"COMMERCE, REAL ESTATE AND DEVELOPMENT."
+"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
+" ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgstr ""
+"REKA GLOBAL UNTERSTÜTZT AUSGEZEICHNETE LUFTFAHRTBETRIEBE MIT EXPERTEN, UM "
+"VERTRAUEN IN DEN INTERNATIONALEN HANDEL, LUFTFAHRT-LIEFERKETTE, GSE-"
+"UNTERSTÜTZUNGSDIENSTE, FINANZEN, HANDEL, IMMOBILIEN UND ENTWICKLUNG ZU "
+"SCHAFFEN."
 
 #: .\project\templates\base.html:216 .\project\templates\index.html:902
 msgid "HOME"
-msgstr ""
+msgstr "HEIM"
 
 #: .\project\templates\base.html:219 .\project\templates\index.html:905
 msgid "AVIATION"
-msgstr ""
+msgstr "LUFTFAHRT"
 
 #: .\project\templates\base.html:225 .\project\templates\index.html:911
 msgid "FINANCE"
-msgstr ""
+msgstr "FINANZEN"
 
 #: .\project\templates\base.html:230 .\project\templates\index.html:916
 msgid "EC"
-msgstr ""
+msgstr "EG"
 
 #: .\project\templates\base.html:236 .\project\templates\index.html:922
 msgid "CAREER"
-msgstr ""
+msgstr "KARRIERE"
 
 #: .\project\templates\base.html:239 .\project\templates\index.html:925
 msgid "CONTACT"
-msgstr ""
+msgstr "KONTAKT"
 
 #: .\project\templates\base.html:249 .\project\templates\index.html:935
 msgid "AOG Line"
-msgstr ""
+msgstr "AOG-Linie"
 
 #: .\project\templates\career.html:63
 msgid "Join Our Global Team"
-msgstr ""
+msgstr "Treten Sie unserem globalen Team bei"
 
 #: .\project\templates\contact.html:49
-#, fuzzy
 #| msgid "Contact"
 msgid "Contact Us"
 msgstr "Kontakt"
@@ -169,20 +172,32 @@ msgstr "Kontakt"
 #: .\project\templates\ec.html:92
 msgid ""
 "Modernization of trade requires differentiation of approaches for "
-"international markets. We serve corporate integration to new generation e-"
-"commerce applications.Reka Global offers a wide range of new generarion "
+"international markets. We serve corporate integration to new generation "
+"e-commerce applications.Reka Global offers a wide range of new generarion "
 "international trade services for both import and export processes."
 msgstr ""
+"Die Modernisierung des Handels erfordert eine Differenzierung der Ansätze "
+"für internationale Märkte. Wir dienen der Unternehmensintegration in "
+"E-Commerce-Anwendungen der neuen Generation. Reka Global bietet eine breite "
+"Palette internationaler Handelsdienstleistungen der neuen Generation für "
+"Import- und Exportprozesse."
 
 #: .\project\templates\ec.html:94
 msgid ""
 "Our main goal is to offer our customers a smooth and successful trade "
 "operation, free from the possible risks and difficulties of international "
-"trade. Our wide range of services offers managing or monitoring standard and "
-"non-standard trade operations as well as tailor-made solutions for your "
+"trade. Our wide range of services offers managing or monitoring standard and"
+" non-standard trade operations as well as tailor-made solutions for your "
 "business.By utilizing our existing sales channels among all over the world, "
 "we are serving SMEs as an outsider sales team."
 msgstr ""
+"Unser Hauptziel ist es, unseren Kunden einen reibungslosen und erfolgreichen"
+" Handelsbetrieb zu bieten, frei von den möglichen Risiken und "
+"Schwierigkeiten des internationalen Handels. Unser breites Leistungsspektrum"
+" bietet die Verwaltung oder Überwachung von Standard- und Nicht-Standard-"
+"Handelsoperationen sowie maßgeschneiderte Lösungen für Ihr Unternehmen. "
+"Durch die Nutzung unserer bestehenden Vertriebskanäle auf der ganzen Welt "
+"bedienen wir KMU als externes Vertriebsteam."
 
 #: .\project\templates\finance.html:58
 msgid ""
@@ -191,96 +206,119 @@ msgid ""
 "systems with customized accounting software solutions. Accurate forecast of "
 "global economy."
 msgstr ""
+"Anlagelösungen gegen dynamische wirtschaftliche Volatilität. "
+"Vermögensverwaltung und private Finanzberatung. Unternehmensrevision, "
+"Finanzkontrollsysteme mit maßgeschneiderten Buchhaltungssoftwarelösungen. "
+"Genaue Prognose der Weltwirtschaft."
 
 #: .\project\templates\index.html:174
 msgid "WE BUILD TRUST"
-msgstr ""
+msgstr "WIR SCHAFFEN VERTRAUEN"
 
 #: .\project\templates\index.html:175
 msgid ""
 "HUNDREDS OF BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN "
 "VARIOUS FIELDS"
 msgstr ""
+"HUNDERTE VON GESCHÄFTSPARTNERN ARBEITEN IN ÜBERSEE MIT VERTRAUENSVOLLER "
+"ZUSAMMENARBEIT IN VERSCHIEDENEN BEREICHEN"
 
 #: .\project\templates\index.html:182
 msgid "INTERNATIONAL TRADE"
-msgstr ""
+msgstr "INTERNATIONALER HANDEL"
 
 #: .\project\templates\index.html:183
 msgid ""
-"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
-"ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
+" ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
 "FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL SERVES EXCELLENT "
 "AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, "
 "AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE "
 "AND DEVELOPMENT"
 msgstr ""
+"REKA GLOBAL DIENST AUSGEZEICHNETE LUFTFAHRTUNTERNEHMEN MIT EXPERTEN, UM "
+"VERTRAUEN AUF INTERNATIONALEN HANDEL, LUFTFAHRT-LIEFERKETTE, GSE-"
+"UNTERSTÜTZUNGSDIENSTE, FINANZEN, HANDEL, IMMOBILIEN UND ENTWICKLUNG ZU "
+"SCHAFFEN CHAIN, GSE SUPPORT SERVICES, FINANZEN, HANDEL, IMMOBILIEN UND "
+"ENTWICKLUNG"
 
 #: .\project\templates\index.html:190
 msgid "MRO & GROUND HANDLING"
-msgstr ""
+msgstr "MRO & BODENABFERTIGUNG"
 
 #: .\project\templates\index.html:191
 msgid ""
 "Safety Requires Quality. Maintenance and Repair Operations, Ground Support "
 "Equipments, Low Maintenance Metrics"
 msgstr ""
+"Sicherheit braucht Qualität. Wartungs- und Reparaturvorgänge, "
+"Bodenunterstützungsausrüstungen, Metriken für geringe Wartung"
 
 #: .\project\templates\index.html:198
 msgid "COOPERATION CULTURE"
-msgstr ""
+msgstr "KOOPERATIONSKULTUR"
 
 #: .\project\templates\index.html:199
-msgid "CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
+msgid ""
+"CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
 msgstr ""
+"UNTERNEHMERISCHE TEAMARBEIT FÜHRT MIT GRUNDSÄTZEN DER ZUSAMMENARBEIT ZUM "
+"WELTWEITEN ERFOLG"
 
 #: .\project\templates\index.html:207
 msgid ""
 "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
-msgstr ""
+msgstr "ERWARTUNG VON LEISTUNGEN ÜBER GRENZEN MIT KREATIVITÄT UND INSPIRATION"
 
 #: .\project\templates\index.html:294
 msgid "MRO & Ground Handling"
-msgstr ""
+msgstr "MRO & Bodenabfertigung"
 
 #: .\project\templates\index.html:296
 msgid ""
 "Relaible Maintenannce and Repair with OEM spare parts. Disciplined Ground "
 "Handling"
 msgstr ""
+"Zuverlässige Wartung und Reparatur mit OEM-Ersatzteilen. Diszipliniertes "
+"Groundhandling"
 
 #: .\project\templates\index.html:308
 msgid "Distributorships"
-msgstr ""
+msgstr "Vertriebspartnerschaften"
 
 #: .\project\templates\index.html:309
 msgid ""
 "Exclusive distribution of premium brands with EXW, CIP, DDP delivery "
 "logistic services"
 msgstr ""
+"Exklusiver Vertrieb von Premium-Marken mit EXW-, CIP-, DDP-"
+"Lieferlogistikdiensten"
 
 #: .\project\templates\index.html:322
 msgid "Real Estate"
-msgstr ""
+msgstr "Immobilie"
 
 #: .\project\templates\index.html:323
 msgid ""
 "Trustful commercial property partner for long term localization. "
 "Professional leasing and Tenant Mix solutions"
 msgstr ""
+"Vertrauenswürdiger Partner für Gewerbeimmobilien für langfristige "
+"Lokalisierung. Professionelle Leasing- und Mietermix-Lösungen"
 
 #: .\project\templates\index.html:336 .\project\templates\rec.html:75
 msgid "Construction"
-msgstr ""
+msgstr "Konstruktion"
 
 #: .\project\templates\index.html:337
 msgid ""
 "Elegant design & construction project management with strick application "
 "quality principles"
 msgstr ""
+"Elegantes Design- und Bauprojektmanagement mit strengen Qualitätsprinzipien "
+"für die Anwendung"
 
 #: .\project\templates\index.html:350
-#, fuzzy
 #| msgid "Fınance"
 msgid "Finance"
 msgstr "Finanzen"
@@ -290,16 +328,20 @@ msgid ""
 "Corporate Audit, financial control systems with customized accounting "
 "software solutions. Accurate forecast of global economy"
 msgstr ""
+"Corporate Audit, Finanzkontrollsysteme mit maßgeschneiderten "
+"Buchhaltungssoftwarelösungen. Genaue Prognose der Weltwirtschaft"
 
 #: .\project\templates\index.html:364
 msgid "E-Commerce"
-msgstr ""
+msgstr "E-Commerce"
 
 #: .\project\templates\index.html:365
 msgid ""
-"Modernization of trade for international markets. Corporatintegration to new "
-"generation e-commerce applications"
+"Modernization of trade for international markets. Corporatintegration to new"
+" generation e-commerce applications"
 msgstr ""
+"Modernisierung des Handels für internationale Märkte. "
+"Unternehmensintegration in E-Commerce-Anwendungen der neuen Generation"
 
 #: .\project\templates\index.html:679
 msgid ""
@@ -308,119 +350,140 @@ msgid ""
 "smooth and successful trade operation, free from the possible risks and "
 "difficulties of international trade."
 msgstr ""
+"Reka Global bietet eine breite Palette internationaler "
+"Handelsdienstleistungen für Import- und Exportprozesse an. Unser Hauptziel "
+"ist es, unseren Kunden einen reibungslosen und erfolgreichen Handelsbetrieb "
+"zu bieten, frei von den möglichen Risiken und Schwierigkeiten des "
+"internationalen Handels."
 
 #: .\project\templates\index.html:681
 msgid ""
 " Our wide range of services offers managing or monitoring standard and non-"
-"standard trade operations as well as tailor-made solutions for your business."
+"standard trade operations as well as tailor-made solutions for your "
+"business."
 msgstr ""
+"Unser breites Leistungsspektrum bietet die Verwaltung oder Überwachung von "
+"Standard- und Nicht-Standard-Handelsvorgängen sowie maßgeschneiderte "
+"Lösungen für Ihr Unternehmen."
 
 #: .\project\templates\index.html:683
 msgid ""
 " By utilizing our existing sales channels among all over the world, we are "
 "serving SMEs as an outsider sales team"
 msgstr ""
+"Durch die Nutzung unserer bestehenden Vertriebskanäle auf der ganzen Welt "
+"dienen wir KMUs als externes Vertriebsteam"
 
 #: .\project\templates\index.html:686
 msgid ""
-"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
-"ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
+"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
+" ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
 "COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgstr ""
+"REKA GLOBAL UNTERSTÜTZT AUSGEZEICHNETE LUFTFAHRTUNTERNEHMEN MIT EXPERTEN, UM"
+" VERTRAUEN IN DEN INTERNATIONALEN HANDEL, DIE LUFTFAHRT-LIEFERKETTE, GSE-"
+"UNTERSTÜTZUNGSDIENSTE, FINANZEN, HANDEL, IMMOBILIEN UND ENTWICKLUNG ZU "
+"SCHAFFEN."
 
 #: .\project\templates\index.html:689
 msgid ""
 "HUNDREDS OF OUR BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION "
 "IN VARIOUS FIELDS."
 msgstr ""
+"HUNDERTE UNSERER GESCHÄFTSPARTNER ARBEITEN IN ÜBERSEE MIT VERTRAUENSVOLLER "
+"ZUSAMMENARBEIT IN VERSCHIEDENEN BEREICHEN."
 
 #: .\project\templates\index.html:720
 msgid "COUNTRIES SERVED"
-msgstr ""
+msgstr "BEDIENTE LÄNDER"
 
 #: .\project\templates\index.html:730
 msgid "PROJECTS COMPLETED"
-msgstr ""
+msgstr "PROJEKTE ABGESCHLOSSEN"
 
 #: .\project\templates\index.html:740
 msgid "SUCCESSFULL DELIVERIES"
-msgstr ""
+msgstr "ERFOLGREICHE LIEFERUNGEN"
 
 #: .\project\templates\index.html:750
 msgid "SATISFIED CLIENTS"
-msgstr ""
+msgstr "ZUFRIEDENE KUNDEN"
 
 #: .\project\templates\index.html:773
 msgid "General Manager"
-msgstr ""
+msgstr "Hauptgeschäftsführer"
 
 #: .\project\templates\index.html:786
 msgid "Trade & Logistic Coordinator"
-msgstr ""
+msgstr "Handels- und Logistikkoordinator"
 
 #: .\project\templates\index.html:799
 msgid "Procurement & Logistic Specialist"
-msgstr ""
+msgstr "Handels- und Logistik koordinator"
 
 #: .\project\templates\index.html:812 .\project\templates\index.html:827
 msgid "CRM Coordinator"
-msgstr ""
+msgstr "CRM-Koordinator"
 
 #: .\project\templates\index.html:840
 msgid "Procurement Specialist"
-msgstr ""
+msgstr "Beschaffungsspezialist"
 
 #: .\project\templates\index.html:853
 msgid "Quality Control Specialist"
-msgstr ""
+msgstr "Spezialist für Qualitätskontrolle"
 
 #: .\project\templates\index.html:866
 msgid "Logistic Specialist"
-msgstr ""
+msgstr "Logistiker"
 
 #: .\project\templates\login.html:312
 msgid "Welcome"
-msgstr ""
+msgstr "Willkommen"
 
 #: .\project\templates\login.html:312
 msgid "Back!"
-msgstr ""
+msgstr "Zurück!"
 
 #: .\project\templates\login.html:322 .\project\templates\register.html:321
 msgid "Company Name"
-msgstr ""
+msgstr "Name der Firma"
 
 #: .\project\templates\login.html:327 .\project\templates\register.html:330
 msgid "Password"
-msgstr ""
+msgstr "Passwort"
 
 #: .\project\templates\login.html:337
 msgid "Remember me"
-msgstr ""
+msgstr "Mich erinnern"
 
 #: .\project\templates\login.html:343
 msgid "Log In"
-msgstr ""
+msgstr "Anmeldung"
 
 #: .\project\templates\login.html:345
 msgid "Dont Have an Account?"
-msgstr ""
+msgstr "Sie haben kein Konto?"
 
 #: .\project\templates\login.html:346 .\project\templates\register.html:351
 msgid "Return to home page"
-msgstr ""
+msgstr "Zur Startseite zurückkehren"
 
 #: .\project\templates\rec.html:75
 msgid "Commercial Real Estate"
-msgstr ""
+msgstr "Gewerbeimmobilien"
 
 #: .\project\templates\rec.html:77
 msgid ""
 "As a part of group companies, Reka RE & C  serves comprehensive commercial "
 "development consultancy, real estate management, leasing solutions & tenant-"
-"mix optimization to localized projects with a wide aspect of globalized know-"
-"how in order to expand limits."
+"mix optimization to localized projects with a wide aspect of globalized "
+"know-how in order to expand limits."
 msgstr ""
+"Als Teil von Gruppenunternehmen bietet Reka RE & C umfassende kommerzielle "
+"Entwicklungsberatung, Immobilienverwaltung, Vermietungslösungen und "
+"Optimierung des Mietermixes für lokalisierte Projekte mit einem breiten "
+"Aspekt an globalisiertem Know-how, um Grenzen zu erweitern."
 
 #: .\project\templates\rec.html:78
 msgid ""
@@ -429,50 +492,55 @@ msgid ""
 "developments. Licenced real estate agents for professional leasing and "
 "Tenant Mix solutions."
 msgstr ""
+"Vertrauenswürdiger Partner für Gewerbeimmobilien für langfristige "
+"Lokalisierung. Projektmanagement spezialisiert auf Industrie-, "
+"Einkaufszentren-, Büro- und Mischnutzungsentwicklungen. Lizenzierte "
+"Immobilienmakler für professionelle Vermietung und Mietermix-Lösungen."
 
 #: .\project\templates\register.html:311
 msgid "Welcome!"
-msgstr ""
+msgstr "Willkommen!"
 
 #: .\project\templates\register.html:325
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: .\project\templates\register.html:337
 msgid "Password again"
-msgstr ""
+msgstr "Passwort erneut"
 
 #: .\project\templates\register.html:350
 msgid "Already Have an Account?"
-msgstr ""
+msgstr "Sie haben bereits ein Konto?"
 
 #: .\project\templates\soon.html:98
 msgid "Days"
-msgstr ""
+msgstr "Tage"
 
 #: .\project\templates\soon.html:99
 msgid "Hours"
-msgstr ""
+msgstr "Std"
 
 #: .\project\templates\soon.html:100
 msgid "Minutes"
-msgstr ""
+msgstr "Protokoll"
 
 #: .\project\templates\soon.html:101
 msgid " Seconds"
-msgstr ""
+msgstr "Sekunden"
 
 #: .\project\templates\soon.html:107
 msgid "Coming Soon"
-msgstr ""
+msgstr "Demnächst"
 
 #: .\project\templates\soon.html:108
 msgid "Subscribe to get notification when we start"
 msgstr ""
+"Abonnieren Sie, um eine Benachrichtigung zu erhalten, wenn wir beginnen"
 
 #: .\project\templates\soon.html:111
 msgid "Subscribe"
-msgstr ""
+msgstr "Abonnieren"
 
 #~ msgid "Aviation"
 #~ msgstr "Luftfahrt"
