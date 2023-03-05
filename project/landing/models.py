@@ -37,4 +37,5 @@ class urun(models.Model):
     hakkimizda_ar = models.TextField(verbose_name="Hakımızda Yazısı arapca",blank = True,null = True)
     image  = models.ImageField(upload_to='cvfoto/',blank = True,null = True,verbose_name="Size Ait Olan Resmi Ekleyin")
 
-    
+    def __str__(self) :
+        return self.isim_en

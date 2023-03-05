@@ -65,6 +65,25 @@
     outline: 0;
     box-shadow: 0 0 5px 5px white;
   }
+
+  #pageMessages {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 30%;
+}
+
+.myAlert-top{
+    position: fixed;
+    top: 5px; 
+    left:2%;
+    width: 96%;
+    z-index: 1;
+}
+
+.alert{
+    display: none;
+}
 </style>
 
 
@@ -264,15 +283,16 @@
         </div>
         <div class="modal-footer" style="justify-content: center !important">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <input type="submit" class="btn btn-danger" value="Submit">
+          <input type="submit" class="btn btn-danger" value="Submit"  onclick="myAlertTop()">
           </form>
+          <div class="myAlert-top alert alert-info">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>RFQ is submitted successfully!</strong> Our sales team will contact with you in 48 hours.
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-
-  <!-- service section -->
 
   <section class="service_section layout_padding">
     <div class="service_container">
@@ -1020,18 +1040,7 @@
 
   <script src="{% static 'js/owl.carousel.min.js' %}"></script>
 
-  <script>
-    $('.count').countUp({
-      delay: 10,
-      time: 2500
-    });
 
-    $('#carouselFade').carousel();
-
-    $(function () {
-      $('.selectpicker').selectpicker();
-    });
-  </script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->

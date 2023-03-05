@@ -8,6 +8,13 @@
 body{
     color: #d83744 !important
 }
+.tt{
+      background: url('{{urun.image.url}}')  no-repeat;
+      width: 670px;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+    }
 </style>
 
 
@@ -24,32 +31,24 @@ body{
         <h2 class="mb-4">{{urun.isim_ar}}</h2>
         {% endif %}
             
-            <div class="gse_ind_pic">
-                <img src="{{urun.image.url}}" class="w-75" alt="" />
-            </div>
-            <div class="p w-75 mt-4">
-               
+
+            <div class="container-fluid m-0 p-0 ">
+                <div class="row tt">
+                   
+                </div>
+              </div>
             
-           
-        </div>
         </div>
         <div class="col-md-3">
             <h4>Model</h4>
-            {% if dil == "tr" %}
-            {{urun.hakkimizda_tr|safe}}
-        {% elif dil == "en" %}
-            {{urun.hakkimizda_en|safe}}
-        {% elif dil == "de" %}
-            {{urun.hakkimizda_de|safe}}
-        {% else %}
-            {{urun.hakkimizda_ar|safe}}
-        {% endif %}
+
             <hr>
-            < span><b>Volta 25 Baggage Tractor</b> (Miles 6041)</h5>
-            < span><b>Volta 25E Baggage Tractor </b>(Miles 6042)</h5> <br>
+            <span><b>Volta 25 Baggage Tractor</b> (Miles 6041)</h5>
+            <span><b>Volta 25E Baggage Tractor </b>(Miles 6042)</h5> <br>
+                <hr>
             <h4>Technical specifications</h4>
-            <hr>
-            < span><b> Engine:</b> Deutz D 2011 L 04 I <br>
+
+            <spa><b> Engine:</b> Deutz D 2011 L 04 I <br>
 
                 <b> Performance:</b> 45.9 kW at 2500 RPM <br>
                 
@@ -75,7 +74,7 @@ body{
                 
                 <b> Wheels/tires (rear):</b> 225/70 R 15 C <br>
                 
-                <b> Deadweight (with closed cab):</b> Approx. 3500 kg</ span>
+                <b> Deadweight (with closed cab):</b> Approx. 3500 kg</span>
         </div>
     </div>
 </div>

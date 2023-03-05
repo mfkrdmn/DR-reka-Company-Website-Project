@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-02 00:16+0300\n"
-"PO-Revision-Date: 2023-03-03 20:39+0000\n"
+"PO-Revision-Date: 2023-03-05 17:00+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -317,7 +317,6 @@ msgstr ""
 "quality principles"
 
 #: .\project\templates\index.html:350
-#, fuzzy
 #| msgid "Fınance"
 msgid "Finance"
 msgstr "Fınance"

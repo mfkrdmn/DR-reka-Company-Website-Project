@@ -42,3 +42,15 @@ function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 
+
+/**
+    alert
+*/
+
+function myAlertTop(){
+    $(".myAlert-top").show();
+    setTimeout(function(){
+      $(".myAlert-top").hide(); 
+    }, 19000);
+}
+  
