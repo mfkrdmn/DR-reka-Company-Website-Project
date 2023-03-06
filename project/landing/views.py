@@ -47,6 +47,7 @@ full name= {}
 def index(request):
     dil = dil_bilgisi()
     trans = translate(language='en')
+    link = ""
     if request.method == "POST":
         PartNumber = request.POST['PartNumber']
         Description = request.POST['Description']
@@ -65,19 +66,21 @@ def index(request):
             return redirect('/')
     
     
-    return render(request, 'index.html',{"trans":trans,"dil":dil})
+    return render(request, 'index.html',{"trans":trans,"dil":dil,"link":link})
 
 #############
 
 def contact(request):
     dil = dil_bilgisi()
     trans = translate(language='en')
-    return render(request,"contact.html",{"trans":trans,"dil":dil})
+    link = "contactus"
+    return render(request,"contact.html",{"trans":trans,"dil":dil,"link":link})
 
 def career(request):
     dil = dil_bilgisi()
     trans = translate(language='en')
-    return render(request,"career.html",{"trans":trans,"dil":dil})
+    link = "career"
+    return render(request,"career.html",{"trans":trans,"dil":dil,"link":link})
 
 def test(request):
     dil = dil_bilgisi()
@@ -86,29 +89,34 @@ def test(request):
 
 def aviation(request):
     dil = dil_bilgisi()
+    link = "aviation"
     trans = translate(language='en')
-    return render(request,"aviation.html",{"trans":trans,"dil":dil})
+    return render(request,"aviation.html",{"trans":trans,"dil":dil,"link":link})
     
 def gse(request):
     trans = translate(language='en')
     ur = urun.objects.all()
+    link = "gse"
     dil = dil_bilgisi()
-    return render(request,"gse.html",{"trans":trans,"dil":dil,"ur":ur})
+    return render(request,"gse.html",{"trans":trans,"dil":dil,"ur":ur,"link":link})
 
 def finance(request):
     dil = dil_bilgisi()
+    link = "finance"
     trans = translate(language='en')
-    return render(request,"finance.html",{"trans":trans,"dil":dil})
+    return render(request,"finance.html",{"trans":trans,"dil":dil,"link":link})
 
 def ec(request):
     dil = dil_bilgisi()
+    link = "ec"
     trans = translate(language='en')
-    return render(request,"ec.html",{"trans":trans,"dil":dil})
+    return render(request,"ec.html",{"trans":trans,"dil":dil,"link":link})
 
 def rec(request):
     trans = translate(language='en')
+    link = "rec"
     dil = dil_bilgisi()
-    return render(request,"rec.html",{"trans":trans,"dil":dil})
+    return render(request,"rec.html",{"trans":trans,"dil":dil,"link":link})
 
 
 #############

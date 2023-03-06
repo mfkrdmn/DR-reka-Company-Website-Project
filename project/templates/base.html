@@ -66,14 +66,12 @@
 </style>
 <body>
 
-
-
         <!-- header section strats -->
         <header class="header_section">
           <div class="header_bottom">
             <div class="container-fluid">
               <nav class="navbar navbar-expand-lg custom_nav-container ">
-                <a class="navbar-brand" href="{% url 'landing:index' %}">
+                <a class="navbar-brand" href="/{{dil}}{% url 'landing:index' %}">
                   <img width="150ox" src="{% static 'images/logo.png' %}" alt="">
                 </a>
        
@@ -116,19 +114,21 @@
                       <a class="nav-link" href="/{{dil}}{% url 'landing:comingsoon' %}"><i class="fa fa-user" aria-hidden="true"></i> {% translate "LOGIN" %} </a>
                     </li>
                     {% endif %}
-                    <select class="selectpicker" data-width="fit" style="background-color: #d83744; border: 0px; color: white;">
+                    <select onchange="window.location.href=this.value;" class="selectpicker" data-width="fit"
+                  style="background-color: #d83744; border: 0px; color: white;">
                   {% get_current_language as LANGUAGE_CODE %}
-            {% get_available_languages as LANGUAGES %}
-            {% get_language_info_list for LANGUAGES as languages %}
+                  {% get_available_languages as LANGUAGES %}
+                  {% get_language_info_list for LANGUAGES as languages %}
+                    <option value="/{{ lang.code }}/">language</option>
+                  {% for lang in languages %}
+                  <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+                    <a class="dropdown-item" href="/{{ lang.code }}/{{link}}">
+                      {{ lang.name_local }}
+                    </a>
+                  </option>
 
-            {% for lang in languages %}
-              <option style="color: white;">
-              <a class="dropdown-item" href="/{{ lang.code }}/">
-                  {{ lang.name_local }}
-              </a></option>
-              
-            {% endfor %}
-                  
+                  {% endfor %}
+
                 </select>
           
                    
