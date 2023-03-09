@@ -87,25 +87,6 @@
 }
 
 
-
-@media only screen and (min-width: 100px) {
-  /* For phones: */
-  .aviation-top-img {height: 250px;};
-
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .aviation-top-img {height: 650px;};
-
-}
-
-@media only screen and (min-width: 1300px) {
-  /* For desktop: */
-  .aviation-top-img {height: 800px;};
-
-}
-
 @media only screen and (min-width: 100px) {
   /* For phones: */
   .card-flyer{height: 280px;};
@@ -146,37 +127,53 @@
       background: url('/static/images/aviation/aviation_top_plane.jpg')  no-repeat;
       box-shadow: 0px -60px 30px -30px  white inset;
       width: 100%;
-      height: 900px;
+      height: 100%;
       background-size: cover;
       background-position: center;
+
     }
 
     .tt2{
       background: url('/static/images/aviation/aviationbottom.jpg')  no-repeat;
       box-shadow: 0px 56px 34px -33px white inset;
       width: 100%;
-      height: 900px;
+      height: 100%;
       background-size: cover;
       background-position: center;
     }
 
+    @media only screen and (min-width: 100px) {
+  /* For phones: */
+  .aviationimg {height: 250px;};
+
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .aviationimg {height: 650px;};
+
+}
+
+@media only screen and (min-width: 1300px) {
+  /* For desktop: */
+  .aviationimg {height: 800px;};
+
+}
+
 </style>
 
-<div class="container-fluid m-0 p-0 ">
+<div class="container-fluid m-0 p-0 aviationimg">
   <div class="row tt m-0">
      
   </div>
 </div>
-
-
-
        <!-- Topic Cards -->
       <div id="cards_landscape_wrap-2" style="background-color: white !important;">
         <div class="container-fluid">
             <div class="row justify-content-center mt-5">
      
               <h2>
-                <span style="color: gray; text-transform: uppercase;"><b>AVIATION</b></span> <span style="text-transform: uppercase;"><b>Segments</b></span>
+                <span style="color: rgb(165, 165, 165); text-transform: uppercase;"><b>AVIATION</b></span> <span style="text-transform: uppercase;"><b>Segments</b></span>
                </h2>
               <div class="col-6 col-md-3 col-lg-2 test"  >
                       <a href="">
@@ -253,7 +250,7 @@
         <div class="row justify-content-center mt-5">
           <div class="col-12">
               <h2>
-                <span style="color: gray;"> <b>OEM & PMA</b></span> <span><b>SEGMENTS</b></span>
+                <span style="color: rgb(165, 165, 165);"> <b>OEM & PMA</b></span> <span><b>SEGMENTS</b></span>
               </h2>
           </div>
         </div>
@@ -296,7 +293,7 @@
                             <img src="{% static 'images/aviation/aviation5.jpg' %}" alt="" class="picfit" />
                           </div>
                       <div class="text-container d-flex align-items-center justify-content-center ">
-                              <span class="hsixtitles">{% translate "TIRES & BRAKES" %}</span>
+                              <span class="hsixtitles">{% translate "Tires, Breaks, Gears, Bearings" %}</span>
                           </div>
                       </div>
                   </div>
@@ -324,20 +321,99 @@
                           <img src="{% static 'images/aviation/aviation3.jpg' %}" alt="" class="picfit" />
                         </div>
                     <div class="text-container d-flex align-items-center justify-content-center ">
-                            <span class="hsixtitles">{% translate "STANDARD PARTS" %}</span>
+                            <span class="hsixtitles">{% translate "Hardware & Standart Parts" %}</span>
                         </div>
                     </div>
                 </div>
             </a>
         </div>
       </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-12">
+            <h2>
+             <span><b>INTERIORS</b></span>
+            </h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-6  col-md-3 col-lg-2" >
+            <a href="">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                          <img src="{% static 'images/aviation/aviation12.jpg' %}" alt=""  class="picfit"/>
+                        </div>
+                    <div class="text-container d-flex align-items-center justify-content-center ">
+                            <span class="hsixtitles">{% translate "Structual" %}</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2" >
+          <a href="">
+              <div class="card-flyer">
+                  <div class="text-box">
+                      <div class="image-box">
+                        <img src="{% static 'images/aviation/aviation13.jpg' %}" alt=""  class="picfit"/>
+                      </div>
+                  <div class="text-container d-flex align-items-center justify-content-center ">
+                          <span class="hsixtitles">{% translate "Safety & Oxygen" %}</span>
+                      </div>
+                  </div>
+              </div>
+          </a>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2" >
+        <a href="">
+            <div class="card-flyer">
+                <div class="text-box">
+                    <div class="image-box">
+                      <img src="{% static 'images/aviation/aviation14.jpg' %}" alt="" class="picfit" />
+                    </div>
+                <div class="text-container d-flex align-items-center justify-content-center ">
+                        <span class="hsixtitles">{% translate "Ground Supporting Equipments" %}</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2" >
+        <a href="">
+            <div class="card-flyer">
+                <div class="text-box">
+                    <div class="image-box">
+                      <img src="{% static 'images/aviation/aviation15.jpg' %}" alt="" class="picfit" />
+                    </div>
+                <div class="text-container d-flex align-items-center justify-content-center ">
+                        <span class="hsixtitles">{% translate "Sustainable Aviation Solutions" %}</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-6  col-md-3 col-lg-2" >
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                    <img src="{% static 'images/aviation/aviation3.jpg' %}" alt="" class="picfit" />
+                  </div>
+              <div class="text-container d-flex align-items-center justify-content-center ">
+                      <span class="hsixtitles">{% translate "Hardware & Standart Parts" %}</span>
+                  </div>
+              </div>
+          </div>
+      </a>
+  </div>
+</div>
         </div>
     </div>
 </div>
 
 
 
-<div class="container-fluid m-0 mt-5 p-0 ">
+<div class="container-fluid m-0 mt-5 p-0 aviationimg">
   <div class="row tt2 m-0">
      
   </div>

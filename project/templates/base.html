@@ -141,48 +141,57 @@
         <!-- end header section -->
        
         <div id="mySidenav" class="sidenav">
-          <a href="#" id="about" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span style="font-weight: 700;">RFQ</span> </a>
-          <a href="mailto:aog@rekaglobal.com"  id="mail"><i class="fa-regular fa-envelope ms-1" style="font-size: 25px;"></i></a>
-          <a target="_blank" href="https://wa.me/+905079009077" id="projects"><i class="fa-brands fa-whatsapp  ms-1" style="font-size: 30px;"></i></a>
+          <a href="#" id="about" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <span
+              style="font-weight: 700;">RFQ</span> </a>
+          <a href="mailto:aog@rekaglobal.com" id="mail"><i class="fa-regular fa-envelope ms-1"
+              style="font-size: 25px;"></i></a>
+          <a href="https://wa.me/+905079009077" id="projects"><i class="fa-brands fa-whatsapp  ms-1"
+              style="font-size: 30px;"></i></a>
         </div>
       
-          <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header bg-danger">
-        <h1 class="modal-title fs-5" style="color:white ;" id="staticBackdropLabel">Request For Quote</h1>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <form action="" method="POST">
-          {% csrf_token %}
-          <label for="fname">Part Number *:</label><br>
-          <input class="w-100" type="text" id="fname" name="PartNumber" required><br><br>
-          <label for="lname">Description:</label><br>
-          <input class="w-100" type="text" id="lname" name="Description" ><br><br>
-          <label for="lname">Quantity *:</label><br>
-          <input class="w-100" type="text" id="lname" name="Quantity" required><br><br>
-          <label for="lname">Condition:</label><br>
-          <input class="w-100" type="text" id="lname" name="Condition" ><br><br>
-          <label for="lname">Mail *:</label><br>
-          <input class="w-100" type="email" id="lname" name="Mail" required><br><br>
-          <label for="lname">Telephone:</label><br>
-          <input class="w-100" type="tel" id="lname" name="Telephone" ><br><br>
-          <label for="lname">Company Name:</label><br>
-          <input class="w-100" type="text" id="lname" name="CompanyName" ><br><br>
-          <label for="lname">Name Surname:</label><br>
-          <input class="w-100" type="text" id="lname" name="fullname" ><br><br>
-        
-      </div>
-      <div class="modal-footer" style="justify-content: center !important">
-        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <input type="submit" class="btn btn-danger" value="Submit">
-      </form>   
-      </div>
-    </div>
-  </div>
-</div>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-danger">
+                <h1 class="modal-title fs-5" style="color:white ;" id="staticBackdropLabel">Request For Quote</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <form action="" method="POST">
+                  {% csrf_token %}
+                  <label for="fname">Part Number *:</label><br>
+                  <input class="w-100" type="text" id="fname" name="PartNumber" required><br><br>
+                  <label for="lname">Description:</label><br>
+                  <input class="w-100" type="text" id="lname" name="Description"><br><br>
+                  <label for="lname">Quantity *:</label><br>
+                  <input class="w-100" type="text" id="lname" name="Quantity" required><br><br>
+                  <label for="lname">Condition:</label><br>
+                  <input class="w-100" type="text" id="lname" name="Condition"><br><br>
+                  <label for="lname">Mail *:</label><br>
+                  <input class="w-100" type="email" id="lname" name="Mail" required><br><br>
+                  <label for="lname">Telephone:</label><br>
+                  <input class="w-100" type="tel" id="lname" name="Telephone"><br><br>
+                  <label for="lname">Company Name:</label><br>
+                  <input class="w-100" type="text" id="lname" name="CompanyName"><br><br>
+                  <label for="lname">Name Surname:</label><br>
+                  <input class="w-100" type="text" id="lname" name="fullname"><br><br>
+      
+              </div>
+              <div class="modal-footer" style="justify-content: center !important">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <input type="submit" class="btn btn-danger" value="Submit"  onclick="myAlertTop()">
+                </form>
+                <div class="myAlert-top alert alert-info">
+                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  <strong>RFQ is submitted successfully!</strong> Our sales team will contact with you in 48 hours.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     
       {% block content %}
 

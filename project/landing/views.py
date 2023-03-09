@@ -39,7 +39,7 @@ full name= {}
         'Sipariş',
         govde,
         'rekaglobal1@gmail.com',
-        ['aog@rekaglobal.com'],
+        ['mfkrdmn@gmail.com'],
         reply_to=['rekaglobal1@gmail.com'],
         headers={'Message-ID': 'foo'},
     )
