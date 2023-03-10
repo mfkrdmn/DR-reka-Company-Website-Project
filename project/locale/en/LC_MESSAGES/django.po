@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-06 22:36+0300\n"
+"POT-Creation-Date: 2023-03-10 18:52+0300\n"
 "PO-Revision-Date: 2023-03-05 17:00+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,89 +39,105 @@ msgstr "German"
 msgid "arabic"
 msgstr "arabic"
 
-#: .\project\templates\aviation.html:189
+#: .\project\templates\aviation.html:186
 msgid "COMMERCIAL AIRCRAFTS "
 msgstr "COMMERCIAL AIRCRAFTS"
 
-#: .\project\templates\aviation.html:203
+#: .\project\templates\aviation.html:200
 msgid "HELICOPTERS"
 msgstr "HELICOPTERS"
 
-#: .\project\templates\aviation.html:217
+#: .\project\templates\aviation.html:214
 msgid "BUSINESS JETS"
 msgstr "BUSINESS JETS"
 
-#: .\project\templates\aviation.html:231
+#: .\project\templates\aviation.html:228
 msgid "PRIVATE AIRCRAFTS"
 msgstr "PRIVATE AIRCRAFTS"
 
-#: .\project\templates\aviation.html:245
+#: .\project\templates\aviation.html:242
 msgid "UAV (UNMANNED AERIAL VEHICLE) - DRONES"
 msgstr "UAV (UNMANNED AERIAL VEHICLE) - DRONES"
 
-#: .\project\templates\aviation.html:271
+#: .\project\templates\aviation.html:268
 msgid "ENGINES"
 msgstr "ENGINES"
 
-#: .\project\templates\aviation.html:285
+#: .\project\templates\aviation.html:282
 msgid "AVIONICS"
 msgstr "AVIONICS"
 
-#: .\project\templates\aviation.html:299
-msgid "TIRES & BRAKES"
-msgstr "TIRES & BRAKES"
+#: .\project\templates\aviation.html:296
+msgid "Tires, Breaks, Gears, Bearings"
+msgstr ""
 
-#: .\project\templates\aviation.html:313
+#: .\project\templates\aviation.html:310
 msgid "CONSUMABLES"
 msgstr "CONSUMABLES"
 
-#: .\project\templates\aviation.html:327
-msgid "STANDARD PARTS"
-msgstr "STANDARD PARTS"
+#: .\project\templates\aviation.html:324 .\project\templates\aviation.html:403
+msgid "Hardware & Standart Parts"
+msgstr ""
 
-#: .\project\templates\base.html:88 .\project\templates\index.html:113
+#: .\project\templates\aviation.html:347
+msgid "Structual"
+msgstr ""
+
+#: .\project\templates\aviation.html:361
+msgid "Safety & Oxygen"
+msgstr ""
+
+#: .\project\templates\aviation.html:375
+msgid "Ground Supporting Equipments"
+msgstr ""
+
+#: .\project\templates\aviation.html:389
+msgid "Sustainable Aviation Solutions"
+msgstr ""
+
+#: .\project\templates\base.html:86 .\project\templates\index.html:121
 msgid "Avıatıon"
 msgstr "Avıatıon"
 
-#: .\project\templates\base.html:91 .\project\templates\base.html:222
-#: .\project\templates\index.html:117 .\project\templates\index.html:928
+#: .\project\templates\base.html:89 .\project\templates\base.html:231
+#: .\project\templates\index.html:125 .\project\templates\index.html:936
 msgid "MRO & GSE"
 msgstr "MRO & GSE"
 
-#: .\project\templates\base.html:94 .\project\templates\index.html:120
+#: .\project\templates\base.html:92 .\project\templates\index.html:128
 msgid "Fınance"
 msgstr "Fınance"
 
-#: .\project\templates\base.html:97 .\project\templates\index.html:123
+#: .\project\templates\base.html:95 .\project\templates\index.html:131
 msgid "MM & EC"
 msgstr "MM & EC"
 
-#: .\project\templates\base.html:100 .\project\templates\base.html:233
-#: .\project\templates\index.html:126 .\project\templates\index.html:939
+#: .\project\templates\base.html:98 .\project\templates\base.html:242
+#: .\project\templates\index.html:134 .\project\templates\index.html:947
 msgid "RE & C"
 msgstr "RE & C"
 
-#: .\project\templates\base.html:103 .\project\templates\index.html:129
+#: .\project\templates\base.html:101 .\project\templates\index.html:137
 msgid "Career"
 msgstr "Career"
 
-#: .\project\templates\base.html:106 .\project\templates\index.html:132
+#: .\project\templates\base.html:104 .\project\templates\index.html:140
 msgid "Contact"
 msgstr "Contact"
 
-#: .\project\templates\base.html:113 .\project\templates\index.html:140
+#: .\project\templates\base.html:111 .\project\templates\index.html:148
 msgid "logout"
 msgstr "logout"
 
-#: .\project\templates\base.html:117 .\project\templates\index.html:145
+#: .\project\templates\base.html:115 .\project\templates\index.html:153
 msgid "LOGIN"
 msgstr "LOGIN"
 
-#: .\project\templates\base.html:200 .\project\templates\index.html:906
+#: .\project\templates\base.html:209 .\project\templates\index.html:914
 msgid "REKA Group Companies"
 msgstr "REKA Group Companies"
 
-#: .\project\templates\base.html:204 .\project\templates\index.html:910
+#: .\project\templates\base.html:213 .\project\templates\index.html:918
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
 "ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, "
@@ -131,31 +147,31 @@ msgstr ""
 "ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, "
 "COMMERCE, REAL ESTATE AND DEVELOPMENT."
 
-#: .\project\templates\base.html:216 .\project\templates\index.html:922
+#: .\project\templates\base.html:225 .\project\templates\index.html:930
 msgid "HOME"
 msgstr "HOME"
 
-#: .\project\templates\base.html:219 .\project\templates\index.html:925
+#: .\project\templates\base.html:228 .\project\templates\index.html:933
 msgid "AVIATION"
 msgstr "AVIATION"
 
-#: .\project\templates\base.html:225 .\project\templates\index.html:931
+#: .\project\templates\base.html:234 .\project\templates\index.html:939
 msgid "FINANCE"
 msgstr "FINANCE"
 
-#: .\project\templates\base.html:230 .\project\templates\index.html:936
+#: .\project\templates\base.html:239 .\project\templates\index.html:944
 msgid "EC"
 msgstr "EC"
 
-#: .\project\templates\base.html:236 .\project\templates\index.html:942
+#: .\project\templates\base.html:245 .\project\templates\index.html:950
 msgid "CAREER"
 msgstr "CAREER"
 
-#: .\project\templates\base.html:239 .\project\templates\index.html:945
+#: .\project\templates\base.html:248 .\project\templates\index.html:953
 msgid "CONTACT"
 msgstr "CONTACT"
 
-#: .\project\templates\base.html:249 .\project\templates\index.html:955
+#: .\project\templates\base.html:258 .\project\templates\index.html:963
 msgid "AOG Line"
 msgstr "AOG Line"
 
@@ -207,11 +223,11 @@ msgstr ""
 "systems with customized accounting software solutions. Accurate forecast of "
 "global economy."
 
-#: .\project\templates\index.html:193
+#: .\project\templates\index.html:201
 msgid "WE BUILD TRUST"
 msgstr "WE BUILD TRUST"
 
-#: .\project\templates\index.html:194
+#: .\project\templates\index.html:202
 msgid ""
 "HUNDREDS OF BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN "
 "VARIOUS FIELDS"
@@ -219,11 +235,11 @@ msgstr ""
 "HUNDREDS OF BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN "
 "VARIOUS FIELDS"
 
-#: .\project\templates\index.html:201
+#: .\project\templates\index.html:209
 msgid "INTERNATIONAL TRADE"
 msgstr "INTERNATIONAL TRADE"
 
-#: .\project\templates\index.html:202
+#: .\project\templates\index.html:210
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
 "ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
@@ -239,11 +255,11 @@ msgstr ""
 "AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE "
 "AND DEVELOPMENT"
 
-#: .\project\templates\index.html:209
+#: .\project\templates\index.html:217
 msgid "MRO & GROUND HANDLING"
 msgstr "MRO & GROUND HANDLING"
 
-#: .\project\templates\index.html:210
+#: .\project\templates\index.html:218
 msgid ""
 "Safety Requires Quality. Maintenance and Repair Operations, Ground Support "
 "Equipments, Low Maintenance Metrics"
@@ -251,30 +267,30 @@ msgstr ""
 "Safety Requires Quality. Maintenance and Repair Operations, Ground Support "
 "Equipments, Low Maintenance Metrics"
 
-#: .\project\templates\index.html:217
+#: .\project\templates\index.html:225
 msgid "COOPERATION CULTURE"
 msgstr "COOPERATION CULTURE"
 
-#: .\project\templates\index.html:218
+#: .\project\templates\index.html:226
 msgid "CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
 msgstr ""
 "CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
 
-#: .\project\templates\index.html:226
+#: .\project\templates\index.html:234
 msgid ""
 "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
 msgstr ""
 "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
 
-#: .\project\templates\index.html:303
+#: .\project\templates\index.html:311
 msgid " Our</span> <span>Services"
 msgstr ""
 
-#: .\project\templates\index.html:314
+#: .\project\templates\index.html:322
 msgid "MRO & Ground Handling"
 msgstr "MRO & Ground Handling"
 
-#: .\project\templates\index.html:316
+#: .\project\templates\index.html:324
 msgid ""
 "Relaible Maintenannce and Repair with OEM spare parts. Disciplined Ground "
 "Handling"
@@ -282,11 +298,11 @@ msgstr ""
 "Relaible Maintenannce and Repair with OEM spare parts. Disciplined Ground "
 "Handling"
 
-#: .\project\templates\index.html:328
+#: .\project\templates\index.html:336
 msgid "Distributorships"
 msgstr "Distributorships"
 
-#: .\project\templates\index.html:329
+#: .\project\templates\index.html:337
 msgid ""
 "Exclusive distribution of premium brands with EXW, CIP, DDP delivery "
 "logistic services"
@@ -294,11 +310,11 @@ msgstr ""
 "Exclusive distribution of premium brands with EXW, CIP, DDP delivery "
 "logistic services"
 
-#: .\project\templates\index.html:342 .\project\templates\rec.html:75
+#: .\project\templates\index.html:350 .\project\templates\rec.html:75
 msgid "Real Estate"
 msgstr "Real Estate"
 
-#: .\project\templates\index.html:343
+#: .\project\templates\index.html:351
 msgid ""
 "Trustful commercial property partner for long term localization. "
 "Professional leasing and Tenant Mix solutions"
@@ -306,11 +322,11 @@ msgstr ""
 "Trustful commercial property partner for long term localization. "
 "Professional leasing and Tenant Mix solutions"
 
-#: .\project\templates\index.html:356 .\project\templates\rec.html:75
+#: .\project\templates\index.html:364 .\project\templates\rec.html:75
 msgid "Construction"
 msgstr "Construction"
 
-#: .\project\templates\index.html:357
+#: .\project\templates\index.html:365
 msgid ""
 "Elegant design & construction project management with strick application "
 "quality principles"
@@ -318,11 +334,11 @@ msgstr ""
 "Elegant design & construction project management with strick application "
 "quality principles"
 
-#: .\project\templates\index.html:370
+#: .\project\templates\index.html:378
 msgid "Finance"
 msgstr "Fınance"
 
-#: .\project\templates\index.html:371
+#: .\project\templates\index.html:379
 msgid ""
 "Corporate Audit, financial control systems with customized accounting "
 "software solutions. Accurate forecast of global economy"
@@ -330,11 +346,11 @@ msgstr ""
 "Corporate Audit, financial control systems with customized accounting "
 "software solutions. Accurate forecast of global economy"
 
-#: .\project\templates\index.html:384
+#: .\project\templates\index.html:392
 msgid "E-Commerce"
 msgstr "E-Commerce"
 
-#: .\project\templates\index.html:385
+#: .\project\templates\index.html:393
 msgid ""
 "Modernization of trade for international markets. Corporatintegration to new "
 "generation e-commerce applications"
@@ -342,7 +358,7 @@ msgstr ""
 "Modernization of trade for international markets. Corporatintegration to new "
 "generation e-commerce applications"
 
-#: .\project\templates\index.html:699
+#: .\project\templates\index.html:707
 msgid ""
 "Reka Global offers a wide range ofinternational trade services for both "
 "import and export processes. Our main goal is to offer our customers a "
@@ -354,7 +370,7 @@ msgstr ""
 "smooth and successful trade operation, free from the possible risks and "
 "difficulties of international trade."
 
-#: .\project\templates\index.html:701
+#: .\project\templates\index.html:709
 msgid ""
 " Our wide range of services offers managing or monitoring standard and non-"
 "standard trade operations as well as tailor-made solutions for your business."
@@ -362,7 +378,7 @@ msgstr ""
 "Our wide range of services offers managing or monitoring standard and non-"
 "standard trade operations as well as tailor-made solutions for your business."
 
-#: .\project\templates\index.html:703
+#: .\project\templates\index.html:711
 msgid ""
 " By utilizing our existing sales channels among all over the world, we are "
 "serving SMEs as an outsider sales team"
@@ -370,7 +386,7 @@ msgstr ""
 "By utilizing our existing sales channels among all over the world, we are "
 "serving SMEs as an outsider sales team"
 
-#: .\project\templates\index.html:706
+#: .\project\templates\index.html:714
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
 "ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
@@ -380,7 +396,7 @@ msgstr ""
 "ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
 "COMMERCE, REAL ESTATE AND DEVELOPMENT."
 
-#: .\project\templates\index.html:709
+#: .\project\templates\index.html:717
 msgid ""
 "HUNDREDS OF OUR BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION "
 "IN VARIOUS FIELDS."
@@ -388,51 +404,51 @@ msgstr ""
 "HUNDREDS OF OUR BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION "
 "IN VARIOUS FIELDS."
 
-#: .\project\templates\index.html:740
+#: .\project\templates\index.html:748
 msgid "COUNTRIES SERVED"
 msgstr "COUNTRIES SERVED"
 
-#: .\project\templates\index.html:750
+#: .\project\templates\index.html:758
 msgid "PROJECTS COMPLETED"
 msgstr "PROJECTS COMPLETED"
 
-#: .\project\templates\index.html:760
+#: .\project\templates\index.html:768
 msgid "SUCCESSFULL DELIVERIES"
 msgstr "SUCCESSFULL DELIVERIES"
 
-#: .\project\templates\index.html:770
+#: .\project\templates\index.html:778
 msgid "SATISFIED CLIENTS"
 msgstr "SATISFIED CLIENTS"
 
-#: .\project\templates\index.html:784
+#: .\project\templates\index.html:792
 msgid "Our</span> <span>TEAM"
 msgstr ""
 
-#: .\project\templates\index.html:793
+#: .\project\templates\index.html:801
 msgid "General Manager"
 msgstr "General Manager"
 
-#: .\project\templates\index.html:806
+#: .\project\templates\index.html:814
 msgid "Trade & Logistic Coordinator"
 msgstr "Trade & Logistic Coordinator"
 
-#: .\project\templates\index.html:819
+#: .\project\templates\index.html:827
 msgid "Procurement & Logistic Specialist"
 msgstr "Procurement & Logistic Specialist"
 
-#: .\project\templates\index.html:832 .\project\templates\index.html:847
+#: .\project\templates\index.html:840 .\project\templates\index.html:855
 msgid "CRM Coordinator"
 msgstr "CRM Coordinator"
 
-#: .\project\templates\index.html:860
+#: .\project\templates\index.html:868
 msgid "Procurement Specialist"
 msgstr "Procurement Specialist"
 
-#: .\project\templates\index.html:873
+#: .\project\templates\index.html:881
 msgid "Quality Control Specialist"
 msgstr "Quality Control Specialist"
 
-#: .\project\templates\index.html:886
+#: .\project\templates\index.html:894
 msgid "Logistic Specialist"
 msgstr "Logistic Specialist"
 
@@ -541,6 +557,12 @@ msgstr "Subscribe to get notification when we start"
 #: .\project\templates\soon.html:112
 msgid "Subscribe"
 msgstr "Subscribe"
+
+#~ msgid "TIRES & BRAKES"
+#~ msgstr "TIRES & BRAKES"
+
+#~ msgid "STANDARD PARTS"
+#~ msgstr "STANDARD PARTS"
 
 #~ msgid "Commercial Real Estate"
 #~ msgstr "Commercial Real Estate"
