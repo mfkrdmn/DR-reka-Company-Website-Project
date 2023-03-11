@@ -191,7 +191,7 @@ def register(request):
 def logout(request):
     auth.logout(request)
     messages.error(request, "You are logged out")
-    return redirect("login")
+    return redirect('/')
 
 
 ############ GSE Individuals ##############

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 23:00+0300\n"
-"PO-Revision-Date: 2023-03-10 23:01+0000\n"
+"POT-Creation-Date: 2023-03-11 20:38+0300\n"
+"PO-Revision-Date: 2023-03-11 20:39+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -69,31 +69,35 @@ msgstr "AVIONICS"
 
 #: .\templates\aviation.html:296
 msgid "Tires, Breaks, Gears, Bearings"
-msgstr ""
+msgstr "Tires, Breaks, Gears, Bearings"
 
 #: .\templates\aviation.html:310
 msgid "CONSUMABLES"
 msgstr "CONSUMABLES"
 
-#: .\templates\aviation.html:324 .\templates\aviation.html:403
+#: .\templates\aviation.html:324
 msgid "Hardware & Standart Parts"
-msgstr ""
+msgstr "Hardware & Standart Parts"
 
 #: .\templates\aviation.html:347
 msgid "Structual"
-msgstr ""
+msgstr "Structual"
 
 #: .\templates\aviation.html:361
 msgid "Safety & Oxygen"
-msgstr ""
+msgstr "Safety & Oxygen"
 
 #: .\templates\aviation.html:375
 msgid "Ground Supporting Equipments"
-msgstr ""
+msgstr "Ground Supporting Equipments"
 
 #: .\templates\aviation.html:389
 msgid "Sustainable Aviation Solutions"
-msgstr ""
+msgstr "Sustainable Aviation Solutions"
+
+#: .\templates\aviation.html:403
+msgid "Interıors "
+msgstr "Interıors"
 
 #: .\templates\base.html:86 .\templates\index.html:121
 msgid "Avıatıon"
@@ -289,11 +293,11 @@ msgstr ""
 
 #: .\templates\index.html:299
 msgid "RFQ is submitted successfully!"
-msgstr ""
+msgstr "RFQ is submitted successfully!"
 
 #: .\templates\index.html:299
 msgid "Our sales team will contact with you in 48 hours."
-msgstr ""
+msgstr "Our sales team will contact with you in 48 hours."
 
 #: .\templates\index.html:311
 msgid " Our</span> <span>Services"

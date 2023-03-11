@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 23:00+0300\n"
-"PO-Revision-Date: 2023-03-10 23:02+0000\n"
+"POT-Creation-Date: 2023-03-11 20:38+0300\n"
+"PO-Revision-Date: 2023-03-11 20:41+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -69,31 +69,35 @@ msgstr "AVIONIK"
 
 #: .\templates\aviation.html:296
 msgid "Tires, Breaks, Gears, Bearings"
-msgstr ""
+msgstr "Reifen, Bremsen, Zahnräder, Lager"
 
 #: .\templates\aviation.html:310
 msgid "CONSUMABLES"
 msgstr "VERBRAUCHSMATERIAL"
 
-#: .\templates\aviation.html:324 .\templates\aviation.html:403
+#: .\templates\aviation.html:324
 msgid "Hardware & Standart Parts"
-msgstr ""
+msgstr "Hardware & Standardteile"
 
 #: .\templates\aviation.html:347
 msgid "Structual"
-msgstr ""
+msgstr "Strukturell"
 
 #: .\templates\aviation.html:361
 msgid "Safety & Oxygen"
-msgstr ""
+msgstr "Sicherheit & Sauerstoff"
 
 #: .\templates\aviation.html:375
 msgid "Ground Supporting Equipments"
-msgstr ""
+msgstr "Bodenunterstützende Ausrüstungen"
 
 #: .\templates\aviation.html:389
 msgid "Sustainable Aviation Solutions"
-msgstr ""
+msgstr "Nachhaltige Luftfahrtlösungen"
+
+#: .\templates\aviation.html:403
+msgid "Interıors "
+msgstr "Innenräume"
 
 #: .\templates\base.html:86 .\templates\index.html:121
 msgid "Avıatıon"

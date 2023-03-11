@@ -151,11 +151,11 @@
 
 
 <div id="cards_landscape_wrap-2" style="background-color: white !important; margin-top: -60px;margin-bottom: -60px;">
-  <div class="container-fluid">
+  <div class="container">
       <div class="row justify-content-center mt-5">
         {% if dil == "tr" %}
           {% for i in ur %}
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2"  >
+        <div class="col-6 col-md-2 col-lg-3"  >
               <a href="/{{dil}}/{{i.id}}/{{i.isim_tr}}/">
                   <div class="card-flyer" >
                       <div class="text-box">
@@ -173,7 +173,7 @@
         {% endfor %}
         {% elif dil == "en" %}
         {% for i in ur %}
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2"  >
+        <div class="col-6 col-md-2 col-lg-3"  >
               <a href="/{{dil}}/{{i.id}}/{{i.isim_en}}/">
                   <div class="card-flyer" >
                       <div class="text-box">
@@ -191,7 +191,7 @@
         {% endfor %}
         {% elif dil == "de" %}
         {% for i in ur %}
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2"  >
+        <div class="col-6 col-md-2 col-lg-3"  >
               <a href="/{{dil}}/{{i.id}}/{{i.isim_de}}/">
                   <div class="card-flyer" >
                       <div class="text-box">
@@ -209,7 +209,7 @@
         {% endfor %}
         {% else %}
         {% for i in ur %}
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2"  >
+        <div class="col-6 col-md-2 col-lg-3"  >
               <a href="/{{dil}}/{{i.id}}/{{i.isim_ar}}/">
                   <div class="card-flyer" >
                       <div class="text-box">
@@ -227,242 +227,6 @@
         {% endfor %}
         {% endif %}
         
-      
-
-       
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-          <a href="">
-              <div class="card-flyer">
-                  <div class="text-box">
-                      <div class="image-box">
-                        <img src="{% static 'images/gse/gse3.jpg' %}" alt=""  class="picfit"/>
-                      </div>
-                  <div class="text-container d-flex align-items-center justify-content-center ">
-                          <span>CABIN CLEANING TRUCK</span>
-                      </div>
-                  </div>
-              </div>
-          </a>
-      </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-        <a href="">
-            <div class="card-flyer">
-                <div class="text-box">
-                    <div class="image-box">
-                      <img src="{% static 'images/gse/gse4.jpg' %}" alt=""  class="picfit"/>
-                    </div>
-                <div class="text-container d-flex align-items-center justify-content-center ">
-                        <span>SEAT TRANSFER TRUCK</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse5.jpg' %}" alt=""  class="picfit"/>
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>PASSENGER STAIRS</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-  </div>
-
-
-<div class="row justify-content-center">
-
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse6.jpg' %}" alt=""  class="picfit"/>
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>AIRCRAFT PRM MEDICAL LIFT</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-  </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-    <a href="">
-        <div class="card-flyer">
-            <div class="text-box">
-                <div class="image-box">
-                  <img src="{% static 'images/gse/gse7.jpg' %}" alt=""  class="picfit"/>
-                </div>
-            <div class="text-container d-flex align-items-center justify-content-center ">
-                    <span>SCISSOR DECK M.P.L</span>
-                </div>
-            </div>
-        </div>
-    </a>
-</div>
-<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2" >
-  <a href="">
-      <div class="card-flyer">
-          <div class="text-box">
-              <div class="image-box">
-                <img src="{% static 'images/gse/gse8.jpg' %}" alt=""  class="picfit"/>
-              </div>
-          <div class="text-container d-flex align-items-center justify-content-center ">
-                  <span>SCISSOR TELESCOPIC DECK M.P.L</span>
-              </div>
-          </div>
-      </div>
-  </a>
-</div>
-              
-<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-  <a href="">
-      <div class="card-flyer">
-          <div class="text-box">
-              <div class="image-box">
-                <img src="{% static 'images/gse/gse9.jpg' %}" alt=""  class="picfit"/>
-              </div>
-          <div class="text-container d-flex align-items-center justify-content-center ">
-                  <span>LADDER MAINTENANCE LIFT</span>
-              </div>
-          </div>
-      </div>
-  </a>
-</div>
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse10.jpg' %}" alt=""  class="picfit"/>
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>AIRCRAFT TIRE TRANSFER TRUCK</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-    </div>
-</div>
-<div class="row justify-content-center">
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse11.jpg' %}" alt=""  class="picfit"/>
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>MANUAL MAINTENANCE LIFT</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-    </div>    
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse12.jpg' %}" alt="" class="picfit" />
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>TOILET SERVICE TRUCK</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-    </div>    
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse13.jpg' %}" alt=""  class="picfit"/>
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>WATER SERVICE TRUCK</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-    </div>   
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse14.jpg' %}" alt=""  class="picfit"/>
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>GARBAGE TRUCK</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-    </div>    
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse15.jpg' %}" alt=""  class="picfit"/>
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>APRON MOBILE SERVICE VEHICLE</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-    </div>  
-  </div>  
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse16.jpg' %}" alt=""  class="picfit"/>
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>BAGGAGE TRAILER</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse17.jpg' %}" alt=""  class="picfit"/>
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>CONTAINER DOLLY</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/gse/gse18.jpg' %}" alt=""  class="picfit"/>
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span>PALLET DOLLY</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-    </div>
-
   </div>
 </div>
 </div>

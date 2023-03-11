@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 23:00+0300\n"
-"PO-Revision-Date: 2023-03-10 23:01+0000\n"
+"POT-Creation-Date: 2023-03-11 20:38+0300\n"
+"PO-Revision-Date: 2023-03-11 20:40+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -69,31 +69,35 @@ msgstr "AVİYONİK"
 
 #: .\templates\aviation.html:296
 msgid "Tires, Breaks, Gears, Bearings"
-msgstr ""
+msgstr "Lastikler, Frenler, Dişliler, Rulmanlar"
 
 #: .\templates\aviation.html:310
 msgid "CONSUMABLES"
 msgstr "SARF MALZEMELERİ"
 
-#: .\templates\aviation.html:324 .\templates\aviation.html:403
+#: .\templates\aviation.html:324
 msgid "Hardware & Standart Parts"
-msgstr ""
+msgstr "Donanım ve Standart Parçalar"
 
 #: .\templates\aviation.html:347
 msgid "Structual"
-msgstr ""
+msgstr "Yapısal"
 
 #: .\templates\aviation.html:361
 msgid "Safety & Oxygen"
-msgstr ""
+msgstr "Güvenlik ve Oksijen"
 
 #: .\templates\aviation.html:375
 msgid "Ground Supporting Equipments"
-msgstr ""
+msgstr "Yer Destek Ekipmanları"
 
 #: .\templates\aviation.html:389
 msgid "Sustainable Aviation Solutions"
-msgstr ""
+msgstr "Sürdürülebilir Havacılık Çözümleri"
+
+#: .\templates\aviation.html:403
+msgid "Interıors "
+msgstr "iç mekanlar"
 
 #: .\templates\base.html:86 .\templates\index.html:121
 msgid "Avıatıon"
