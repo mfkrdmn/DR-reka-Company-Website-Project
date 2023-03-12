@@ -5,7 +5,7 @@
 html,body {
   overflow-x: hidden;
   height: 100%;
-  font-family: 'Trajan Pro', sans-serif !important;
+ 
 }
 
 .layout_padding {
@@ -354,17 +354,17 @@ a:focus {
 
 @media only screen and (min-width: 100px) {
   /* For phones: */
-  .slidertitles {font-size: 20px;}
+  .slidertitles {font-size: 30px;}
 }
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-  .slidertitles {font-size: 30px;}
+  .slidertitles {font-size: 50px;}
 }
 
 @media only screen and (min-width: 1300px) {
   /* For desktop: */
-  .slidertitles {font-size: 45px;}
+  .slidertitles {font-size: 70px;}
 }
 
 .slider_section .slider_bg_box img {

@@ -5,9 +5,12 @@
 {% block content %}
 
 <style>
-  body{
-    color: #d83744;
+
+body{
+    color: #d83744 !important;
+    font-family: 'Gill Sans' !important;
   }
+
   p{
     font-size: 21px;
   }
@@ -141,8 +144,8 @@
 <div class="container mt-5">
   <div class="row">
       <div class="col-12 text-center">
-          <p>REKA provides support for airlines, OEMs, airports, repair workshops and other facilities with spare parts of aircrafts, equipment and maintenance management services.</p>
-          <p>Global spares supply and maintenance service for virtually every major aircraft and helicopter manufacturer; Spares supply and maintenance service for Western-built aircraft and helicopters; Boeing, Airbus and Bombardier components as well as Ground Support Equipments (GSE) and their spares.</p>
+          <p>{% translate "REKA provides support for airlines, OEMs, airports, repair workshops and other facilities with spare parts of aircrafts, equipment and maintenance management services."  %}</p>
+          <p> {% translate "Global spares supply and maintenance service for virtually every major aircraft and helicopter manufacturer; Spares supply and maintenance service for Western-built aircraft and helicopters; Boeing, Airbus and Bombardier components as well as Ground Support Equipments (GSE) and their spares. "  %}</p>
       </div>
   </div>
 </div>
@@ -156,7 +159,7 @@
         {% if dil == "tr" %}
           {% for i in ur %}
         <div class="col-6 col-md-2 col-lg-3"  >
-              <a href="/{{dil}}/{{i.id}}/{{i.isim_tr}}/">
+              <a href="">
                   <div class="card-flyer" >
                       <div class="text-box">
                           <div class="image-box">
@@ -174,7 +177,7 @@
         {% elif dil == "en" %}
         {% for i in ur %}
         <div class="col-6 col-md-2 col-lg-3"  >
-              <a href="/{{dil}}/{{i.id}}/{{i.isim_en}}/">
+              <a href="">
                   <div class="card-flyer" >
                       <div class="text-box">
                           <div class="image-box">
@@ -192,7 +195,7 @@
         {% elif dil == "de" %}
         {% for i in ur %}
         <div class="col-6 col-md-2 col-lg-3"  >
-              <a href="/{{dil}}/{{i.id}}/{{i.isim_de}}/">
+              <a href="">
                   <div class="card-flyer" >
                       <div class="text-box">
                           <div class="image-box">
@@ -210,7 +213,7 @@
         {% else %}
         {% for i in ur %}
         <div class="col-6 col-md-2 col-lg-3"  >
-              <a href="/{{dil}}/{{i.id}}/{{i.isim_ar}}/">
+              <a href="">
                   <div class="card-flyer" >
                       <div class="text-box">
                           <div class="image-box">

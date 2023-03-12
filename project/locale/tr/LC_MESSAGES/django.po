@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-11 20:38+0300\n"
-"PO-Revision-Date: 2023-03-11 20:40+0000\n"
+"POT-Creation-Date: 2023-03-12 20:00+0300\n"
+"PO-Revision-Date: 2023-03-12 20:04+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -39,109 +39,109 @@ msgstr "Almanca"
 msgid "arabic"
 msgstr "Arapça"
 
-#: .\templates\aviation.html:186
+#: .\templates\aviation.html:194
 msgid "COMMERCIAL AIRCRAFTS "
 msgstr "Ticari Havaaraçları"
 
-#: .\templates\aviation.html:200
+#: .\templates\aviation.html:208
 msgid "HELICOPTERS"
 msgstr "HELİKOPTERLER"
 
-#: .\templates\aviation.html:214
+#: .\templates\aviation.html:222
 msgid "BUSINESS JETS"
 msgstr "İŞ JETLERİ"
 
-#: .\templates\aviation.html:228
+#: .\templates\aviation.html:236
 msgid "PRIVATE AIRCRAFTS"
 msgstr "Özel Havaaraçları"
 
-#: .\templates\aviation.html:242
+#: .\templates\aviation.html:250
 msgid "UAV (UNMANNED AERIAL VEHICLE) - DRONES"
 msgstr "İHA (İNSANSIZ HAVA ARACI) - DRONLAR"
 
-#: .\templates\aviation.html:268
+#: .\templates\aviation.html:276
 msgid "ENGINES"
 msgstr "MOTORLAR"
 
-#: .\templates\aviation.html:282
+#: .\templates\aviation.html:290
 msgid "AVIONICS"
 msgstr "AVİYONİK"
 
-#: .\templates\aviation.html:296
+#: .\templates\aviation.html:304
 msgid "Tires, Breaks, Gears, Bearings"
 msgstr "Lastikler, Frenler, Dişliler, Rulmanlar"
 
-#: .\templates\aviation.html:310
+#: .\templates\aviation.html:318
 msgid "CONSUMABLES"
 msgstr "SARF MALZEMELERİ"
 
-#: .\templates\aviation.html:324
+#: .\templates\aviation.html:332
 msgid "Hardware & Standart Parts"
 msgstr "Donanım ve Standart Parçalar"
 
-#: .\templates\aviation.html:347
-msgid "Structual"
-msgstr "Yapısal"
-
-#: .\templates\aviation.html:361
-msgid "Safety & Oxygen"
-msgstr "Güvenlik ve Oksijen"
-
-#: .\templates\aviation.html:375
-msgid "Ground Supporting Equipments"
-msgstr "Yer Destek Ekipmanları"
-
-#: .\templates\aviation.html:389
-msgid "Sustainable Aviation Solutions"
-msgstr "Sürdürülebilir Havacılık Çözümleri"
-
-#: .\templates\aviation.html:403
+#: .\templates\aviation.html:348
 msgid "Interıors "
 msgstr "iç mekanlar"
 
-#: .\templates\base.html:86 .\templates\index.html:121
+#: .\templates\aviation.html:362
+msgid "Structual"
+msgstr "Yapısal"
+
+#: .\templates\aviation.html:376
+msgid "Safety & Oxygen"
+msgstr "Güvenlik ve Oksijen"
+
+#: .\templates\aviation.html:390
+msgid "Ground Supporting Equipments"
+msgstr "Yer Destek Ekipmanları"
+
+#: .\templates\aviation.html:404
+msgid "Sustainable Aviation Solutions"
+msgstr "Sürdürülebilir Havacılık Çözümleri"
+
+#: .\templates\base.html:87 .\templates\index.html:123
 msgid "Avıatıon"
 msgstr "Havacılık"
 
-#: .\templates\base.html:89 .\templates\base.html:231
-#: .\templates\index.html:125 .\templates\index.html:935
+#: .\templates\base.html:90 .\templates\base.html:232
+#: .\templates\index.html:127 .\templates\index.html:937
 msgid "MRO & GSE"
 msgstr "MRO & GSE"
 
-#: .\templates\base.html:92 .\templates\index.html:128
+#: .\templates\base.html:93 .\templates\index.html:130
 msgid "Fınance"
 msgstr "Finans"
 
-#: .\templates\base.html:95 .\templates\index.html:131
+#: .\templates\base.html:96 .\templates\index.html:133
 msgid "MM & EC"
 msgstr "MRO & GSE"
 
-#: .\templates\base.html:98 .\templates\base.html:242
-#: .\templates\index.html:134 .\templates\index.html:946
+#: .\templates\base.html:99 .\templates\base.html:243
+#: .\templates\index.html:136 .\templates\index.html:948
 msgid "RE & C"
 msgstr "RE & C"
 
-#: .\templates\base.html:101 .\templates\index.html:137
+#: .\templates\base.html:102 .\templates\index.html:139
 msgid "Career"
 msgstr "Kariyer"
 
-#: .\templates\base.html:104 .\templates\index.html:140
+#: .\templates\base.html:105 .\templates\index.html:142
 msgid "Contact"
 msgstr "İletişim"
 
-#: .\templates\base.html:111 .\templates\index.html:148
+#: .\templates\base.html:112 .\templates\index.html:150
 msgid "logout"
 msgstr "Çıkış Yap"
 
-#: .\templates\base.html:115 .\templates\index.html:153
+#: .\templates\base.html:116 .\templates\index.html:155
 msgid "LOGIN"
 msgstr "Giriş Yap"
 
-#: .\templates\base.html:209 .\templates\index.html:913
+#: .\templates\base.html:210 .\templates\index.html:915
 msgid "REKA Group Companies"
 msgstr "REKA Grup Şirketleri"
 
-#: .\templates\base.html:213 .\templates\index.html:917
+#: .\templates\base.html:214 .\templates\index.html:919
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
 " ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
@@ -151,47 +151,47 @@ msgstr ""
 "HİZMETLERİ, FİNANS, TİCARET, GAYRİMENKUL VE GELİŞTİRME KONUSUNDA GÜVEN "
 "OLUŞTURMAK AMACIYLA UZMANLARLA HAVACILIK OPERASYONLARINA HİZMET VERMEKTEDİR."
 
-#: .\templates\base.html:225 .\templates\index.html:929
+#: .\templates\base.html:226 .\templates\index.html:931
 msgid "HOME"
 msgstr "ANA SAYFA"
 
-#: .\templates\base.html:228 .\templates\index.html:932
+#: .\templates\base.html:229 .\templates\index.html:934
 msgid "AVIATION"
 msgstr "HAVACILIK"
 
-#: .\templates\base.html:234 .\templates\index.html:938
+#: .\templates\base.html:235 .\templates\index.html:940
 msgid "FINANCE"
 msgstr "FİNANS"
 
-#: .\templates\base.html:239 .\templates\index.html:943
+#: .\templates\base.html:240 .\templates\index.html:945
 msgid "EC"
 msgstr "EC"
 
-#: .\templates\base.html:245 .\templates\index.html:949
+#: .\templates\base.html:246 .\templates\index.html:951
 msgid "CAREER"
 msgstr "KARİYER"
 
-#: .\templates\base.html:248 .\templates\index.html:952
+#: .\templates\base.html:249 .\templates\index.html:954
 msgid "CONTACT"
 msgstr "İLETİŞİM"
 
-#: .\templates\base.html:258 .\templates\index.html:962
+#: .\templates\base.html:259 .\templates\index.html:964
 msgid "AOG Line"
 msgstr "AOG Hattı"
 
-#: .\templates\career.html:63
+#: .\templates\career.html:68
 msgid "Join Our Global Team"
 msgstr "Ekibimize Katıl"
 
-#: .\templates\contact.html:49
+#: .\templates\contact.html:52
 msgid "Contact Us"
 msgstr "İletişim"
 
-#: .\templates\ec.html:92
+#: .\templates\ec.html:94
 msgid " Modern Marketing &</span> <span>Ecommerce"
 msgstr "Modern Pazarlama ve & E-ticaret"
 
-#: .\templates\ec.html:96
+#: .\templates\ec.html:98
 msgid ""
 "Modernization of trade requires differentiation of approaches for "
 "international markets. We serve corporate integration to new generation "
@@ -204,7 +204,7 @@ msgstr ""
 "ihracat süreçlerinde geniş bir yelpazede yeni nesil dış ticaret hizmetleri "
 "sunmaktadır."
 
-#: .\templates\ec.html:98
+#: .\templates\ec.html:100
 msgid ""
 "Our main goal is to offer our customers a smooth and successful trade "
 "operation, free from the possible risks and difficulties of international "
@@ -220,7 +220,7 @@ msgstr ""
 "çözümler sunar. Dünyanın her yerindeki mevcut satış kanallarımızı kullanarak"
 " KOBİ'lere dışarıdan satış ekibi olarak hizmet veriyoruz."
 
-#: .\templates\finance.html:58
+#: .\templates\finance.html:61
 msgid ""
 "Investment solutions against dynamic economical volatilty. Asset management "
 "and private financial consultancy. Corporate audit, financial control "
@@ -232,11 +232,33 @@ msgstr ""
 "özelleştirilmiş muhasebe yazılım çözümleri. Küresel ekonominin doğru "
 "tahmini."
 
-#: .\templates\index.html:201
+#: .\templates\gse.html:147
+msgid ""
+"REKA provides support for airlines, OEMs, airports, repair workshops and "
+"other facilities with spare parts of aircrafts, equipment and maintenance "
+"management services."
+msgstr ""
+"REKA, havayolları, OEM'ler, havalimanları, tamir atölyeleri ve diğer "
+"tesislere uçak yedek parça, ekipman ve bakım yönetimi hizmetleri ile destek "
+"vermektedir."
+
+#: .\templates\gse.html:148
+msgid ""
+"Global spares supply and maintenance service for virtually every major "
+"aircraft and helicopter manufacturer; Spares supply and maintenance service "
+"for Western-built aircraft and helicopters; Boeing, Airbus and Bombardier "
+"components as well as Ground Support Equipments (GSE) and their spares. "
+msgstr ""
+"Hemen hemen her büyük uçak ve helikopter üreticisi için küresel yedek parça "
+"tedarik ve bakım hizmeti; Batı yapımı uçak ve helikopterler için yedek parça"
+" temini ve bakım hizmeti; Boeing, Airbus ve Bombardier bileşenleri ile Yer "
+"Destek Ekipmanları (GSE) ve bunların yedek parçaları."
+
+#: .\templates\index.html:203
 msgid "WE BUILD TRUST"
 msgstr "GÜVEN OLUŞTURUYORUZ"
 
-#: .\templates\index.html:202
+#: .\templates\index.html:204
 msgid ""
 "HUNDREDS OF BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN "
 "VARIOUS FIELDS"
@@ -244,11 +266,11 @@ msgstr ""
 "YURT DIŞINDA ÇEŞİTLİ ALANLARDA GÜVENİLİR İŞ BİRLİĞİ İLE ÇALIŞAN YÜZLERCE İŞ "
 "ORTAĞI"
 
-#: .\templates\index.html:209
+#: .\templates\index.html:211
 msgid "INTERNATIONAL TRADE"
 msgstr "ULUSLARARASI TİCARET"
 
-#: .\templates\index.html:210
+#: .\templates\index.html:212
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
 " ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
@@ -261,11 +283,11 @@ msgstr ""
 "HİZMETLERİ, FİNANS, TİCARET, GAYRİMENKUL VE GELİŞİM HİZMETLERİNDE GÜVEN "
 "OLUŞTURMAK İÇİN UZMANLARLA HAVACILIK OPERASYONLARI HİZMETi VERİYOR "
 
-#: .\templates\index.html:217
+#: .\templates\index.html:219
 msgid "MRO & GROUND HANDLING"
 msgstr "MRO & YER HİZMETLERİ"
 
-#: .\templates\index.html:218
+#: .\templates\index.html:220
 msgid ""
 "Safety Requires Quality. Maintenance and Repair Operations, Ground Support "
 "Equipments, Low Maintenance Metrics"
@@ -273,49 +295,49 @@ msgstr ""
 "Güvenlik Kalite Gerektirir. Bakım ve Onarım İşlemleri, Yer Destek "
 "Ekipmanları, Düşük Bakım Metrikleri"
 
-#: .\templates\index.html:225
+#: .\templates\index.html:227
 msgid "COOPERATION CULTURE"
 msgstr "İŞBİRLİĞİ KÜLTÜRÜ"
 
-#: .\templates\index.html:226
+#: .\templates\index.html:228
 msgid ""
 "CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
 msgstr ""
 "KURUMSAL EKİP ÇALIŞMASI, İŞBİRLİĞİ İLKELERİ İLE KÜRESEL BAŞARIYA YOL AÇAR"
 
-#: .\templates\index.html:234
+#: .\templates\index.html:236
 msgid ""
 "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
 msgstr "YARATICILIK VE İLHAM İLE SINIR ÖTESİNDE HİZMET "
 
-#: .\templates\index.html:299
+#: .\templates\index.html:301
 msgid "RFQ is submitted successfully!"
 msgstr ""
 
-#: .\templates\index.html:299
+#: .\templates\index.html:301
 msgid "Our sales team will contact with you in 48 hours."
 msgstr ""
 
-#: .\templates\index.html:311
+#: .\templates\index.html:313
 msgid " Our</span> <span>Services"
 msgstr "SERVİSLERİMİZ"
 
-#: .\templates\index.html:322
+#: .\templates\index.html:324
 msgid "MRO & Ground Handling"
 msgstr "MRO ve Yer Hizmetleri"
 
-#: .\templates\index.html:324
+#: .\templates\index.html:326
 msgid ""
 "Relaible Maintenannce and Repair with OEM spare parts. Disciplined Ground "
 "Handling"
 msgstr ""
 "OEM yedek parçalar ile Güvenilir Bakım ve Onarım. Disiplinli Yer Hizmetleri"
 
-#: .\templates\index.html:336
+#: .\templates\index.html:338
 msgid "Distributorships"
 msgstr "Distribütörlükler"
 
-#: .\templates\index.html:337
+#: .\templates\index.html:339
 msgid ""
 "Exclusive distribution of premium brands with EXW, CIP, DDP delivery "
 "logistic services"
@@ -323,11 +345,11 @@ msgstr ""
 "EXW, CIP, DDP teslimat lojistik hizmetleri ile premium markaların özel "
 "dağıtımı"
 
-#: .\templates\index.html:350 .\templates\rec.html:75
+#: .\templates\index.html:352 .\templates\rec.html:77
 msgid "Real Estate"
 msgstr "GAYRİMENKUL "
 
-#: .\templates\index.html:351
+#: .\templates\index.html:353
 msgid ""
 "Trustful commercial property partner for long term localization. "
 "Professional leasing and Tenant Mix solutions"
@@ -335,22 +357,22 @@ msgstr ""
 "Uzun vadeli yerelleştirme için güvenilir ticari emlak ortağı. Profesyonel "
 "kiralama ve Kiracı çözümler"
 
-#: .\templates\index.html:364 .\templates\rec.html:75
+#: .\templates\index.html:366 .\templates\rec.html:77
 msgid "Construction"
 msgstr "Yapı"
 
-#: .\templates\index.html:365
+#: .\templates\index.html:367
 msgid ""
 "Elegant design & construction project management with strick application "
 "quality principles"
 msgstr ""
 "Üstün uygulama kalitesi ilkeleri ile zarif tasarım ve inşaat proje yönetimi"
 
-#: .\templates\index.html:378
+#: .\templates\index.html:380
 msgid "Finance"
 msgstr "Finans"
 
-#: .\templates\index.html:379
+#: .\templates\index.html:381
 msgid ""
 "Corporate Audit, financial control systems with customized accounting "
 "software solutions. Accurate forecast of global economy"
@@ -358,11 +380,11 @@ msgstr ""
 "Kurumsal Denetim, finansal kontrol sistemleri ile özelleştirilmiş muhasebe "
 "yazılım çözümleri. Küresel ekonominin doğru tahmini"
 
-#: .\templates\index.html:392
+#: .\templates\index.html:394
 msgid "E-Commerce"
 msgstr "E-ticaret"
 
-#: .\templates\index.html:393
+#: .\templates\index.html:395
 msgid ""
 "Modernization of trade for international markets. Corporatintegration to new"
 " generation e-commerce applications"
@@ -370,15 +392,15 @@ msgstr ""
 "Uluslararası pazarlar için ticaretin modernizasyonu. Yeni nesil e-ticaret "
 "uygulamalarına kurumsal entegrasyon"
 
-#: .\templates\index.html:412
+#: .\templates\index.html:414
 msgid " Trusted</span> <span>By"
 msgstr "REFERANSLARIMIZ"
 
-#: .\templates\index.html:703
+#: .\templates\index.html:705
 msgid " About</span> <span>Us"
 msgstr "HAKKIMIZDA"
 
-#: .\templates\index.html:706
+#: .\templates\index.html:708
 msgid ""
 "Reka Global offers a wide range ofinternational trade services for both "
 "import and export processes. Our main goal is to offer our customers a "
@@ -390,7 +412,7 @@ msgstr ""
 "uluslararası ticaretin olası risk ve zorluklarından arınmış, sorunsuz ve "
 "başarılı bir ticaret operasyonu sunmaktır."
 
-#: .\templates\index.html:708
+#: .\templates\index.html:710
 msgid ""
 " Our wide range of services offers managing or monitoring standard and non-"
 "standard trade operations as well as tailor-made solutions for your "
@@ -399,7 +421,7 @@ msgstr ""
 "Geniş hizmet yelpazemiz, standart ve standart dışı ticaret operasyonlarının "
 "yönetimi veya izlenmesinin yanı sıra işletmenize özel çözümler sunar."
 
-#: .\templates\index.html:710
+#: .\templates\index.html:712
 msgid ""
 " By utilizing our existing sales channels among all over the world, we are "
 "serving SMEs as an outsider sales team"
@@ -407,7 +429,7 @@ msgstr ""
 "Dünya genelindeki mevcut satış kanallarımızı kullanarak KOBİ'lere dışarıdan "
 "satış ekibi olarak hizmet vermekteyiz."
 
-#: .\templates\index.html:713
+#: .\templates\index.html:715
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
 " ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
@@ -418,7 +440,7 @@ msgstr ""
 "OLUŞTURMAK İÇİN UZMANLARLA MÜKEMMEL HAVACILIK OPERASYONLARINA HİZMET "
 "VERİYOR."
 
-#: .\templates\index.html:716
+#: .\templates\index.html:718
 msgid ""
 "HUNDREDS OF OUR BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION "
 "IN VARIOUS FIELDS."
@@ -426,51 +448,51 @@ msgstr ""
 "YÜZLERCE İŞ ORTAĞIMIZ YURT DIŞINDA ÇEŞİTLİ ALANLARDA GÜVENİLİR BİR İŞBİRLİĞİ"
 " İLE ÇALIŞMAKTADIR."
 
-#: .\templates\index.html:747
+#: .\templates\index.html:749
 msgid "COUNTRIES SERVED"
 msgstr "HİZMET VERİLEN ÜLKELER"
 
-#: .\templates\index.html:757
+#: .\templates\index.html:759
 msgid "PROJECTS COMPLETED"
 msgstr "TAMAMLANAN PROJELER"
 
-#: .\templates\index.html:767
+#: .\templates\index.html:769
 msgid "SUCCESSFULL DELIVERIES"
 msgstr "BAŞARILI TESLİMATLAR"
 
-#: .\templates\index.html:777
+#: .\templates\index.html:779
 msgid "SATISFIED CLIENTS"
 msgstr "MEMNUN MÜŞTERİLER"
 
-#: .\templates\index.html:791
+#: .\templates\index.html:793
 msgid " Our</span> <span>Team"
 msgstr "EKİBİMİZ"
 
-#: .\templates\index.html:800
+#: .\templates\index.html:802
 msgid "General Manager"
 msgstr "Genel Müdür"
 
-#: .\templates\index.html:813
+#: .\templates\index.html:815
 msgid "Trade & Logistic Coordinator"
 msgstr "Ticaret & Lojistik Koordinatörü"
 
-#: .\templates\index.html:826
+#: .\templates\index.html:828
 msgid "Procurement & Logistic Specialist"
 msgstr "Tedarik ve Lojistik Uzmanı"
 
-#: .\templates\index.html:839 .\templates\index.html:854
+#: .\templates\index.html:841 .\templates\index.html:856
 msgid "CRM Coordinator"
 msgstr "CRM Koordinatörü"
 
-#: .\templates\index.html:867
+#: .\templates\index.html:869
 msgid "Procurement Specialist"
 msgstr "Satınalma Sorumlusu"
 
-#: .\templates\index.html:880
+#: .\templates\index.html:882
 msgid "Quality Control Specialist"
 msgstr "Kalite Kontrol Uzmanı"
 
-#: .\templates\index.html:893
+#: .\templates\index.html:895
 msgid "Logistic Specialist"
 msgstr "Lojistik Uzmanı"
 
@@ -506,7 +528,7 @@ msgstr "Hesabınız Yok mu?"
 msgid "Return to home page"
 msgstr "Ana sayfaya dön"
 
-#: .\templates\rec.html:77
+#: .\templates\rec.html:79
 msgid ""
 "As a part of group companies, Reka RE & C  serves comprehensive commercial "
 "development consultancy, real estate management, leasing solutions & tenant-"
@@ -518,7 +540,7 @@ msgstr ""
 " geliştirme danışmanlığı, gayrimenkul yönetimi, kiralama çözümleri ve kiracı"
 " karması optimizasyonu hizmetleri sunmaktadır."
 
-#: .\templates\rec.html:78
+#: .\templates\rec.html:80
 msgid ""
 "Trustful commercial property partner for long term localization. Project "
 "management specialized in industrial, mall, office and mixed use "
