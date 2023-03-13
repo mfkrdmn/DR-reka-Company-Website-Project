@@ -205,8 +205,3 @@ def milesvolta(request,id,slug):
     content["urun"] = urunler
     return render(request,"milesvolta.html",content)
 
-############ Coming Soon ##############
-
-def Soon(request):
-    return render(request,"soon.html")
-

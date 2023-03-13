@@ -112,7 +112,7 @@ body {
                     </li>
                     {% else %}
                     <li class="nav-item">
-                      <a class="nav-link" href="/{{dil}}{% url 'landing:comingsoon' %}"><i class="fa fa-user" aria-hidden="true"></i> {% translate "LOGIN" %} </a>
+                      <a class="nav-link" href="/{{dil}}{% url 'landing:login' %}"><i class="fa fa-user" aria-hidden="true"></i> {% translate "LOGIN" %} </a>
                     </li>
                     {% endif %}
                     <select onchange="window.location.href=this.value;" class="selectpicker" data-width="fit"
@@ -120,7 +120,7 @@ body {
                   {% get_current_language as LANGUAGE_CODE %}
                   {% get_available_languages as LANGUAGES %}
                   {% get_language_info_list for LANGUAGES as languages %}
-                    <option value="/{{ lang.code }}/">language</option>
+                    <option value="/{{ lang.code }}/">{{dil}}</option>
                   {% for lang in languages %}
                   <option value="/{{ lang.code }}/{{link}}" style="color: white;">
                     <a class="dropdown-item" href="/{{ lang.code }}/{{link}}">
