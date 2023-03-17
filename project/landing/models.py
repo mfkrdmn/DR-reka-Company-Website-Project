@@ -14,6 +14,7 @@ class Profile(models.Model):
     web_site = models.CharField(max_length=200, blank=True)
     note = models.TextField(blank=True,null=True)
     image  = models.ImageField(upload_to='profil_foto/',blank = True,null = True)
+
     def __str__(self) :
         return self.user.username
 
