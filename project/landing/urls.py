@@ -19,4 +19,6 @@ urlpatterns = [
     #product
     path('product',views.product_list, name="product_list"),
     #product
+    path('companyprofile',views.companyprofile, name="companyprofile"),
+
 ]

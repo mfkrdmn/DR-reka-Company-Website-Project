@@ -118,6 +118,11 @@ def rec(request):
     dil = dil_bilgisi()
     return render(request,"rec.html",{"trans":trans,"dil":dil,"link":link})
 
+def companyprofile(request):
+    trans = translate(language='en')
+    dil = dil_bilgisi()
+    return render(request,"companyprofile.html",{"trans":trans,"dil":dil})
+
 
 #############
 
