@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect,get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
@@ -117,11 +117,28 @@ def rec(request):
     link = "rec"
     dil = dil_bilgisi()
     return render(request,"rec.html",{"trans":trans,"dil":dil,"link":link})
-
+from .forms import * 
 def companyprofile(request):
     trans = translate(language='en')
     dil = dil_bilgisi()
-    return render(request,"companyprofile.html",{"trans":trans,"dil":dil})
+    content = {"trans":trans,"dil":dil}
+    prr = get_object_or_404(Profile,user_id = request.user.id)
+    if dil_bilgisi() == "tr":
+        form = profile_edit_tr(request.POST or None,request.FILES or None,instance = prr)
+    elif dil_bilgisi() == "en":
+        form = profile_edit_en(request.POST or None,request.FILES or None,instance = prr)
+    elif dil_bilgisi() == "ar":
+        form = profile_edit_ar(request.POST or None,request.FILES or None,instance = prr)
+    else:
+        form = profile_edit_de(request.POST or None,request.FILES or None,instance = prr)
+    content['form']=  form
+    content["profile"] = prr
+    if form.is_valid():
+        profile = form.save(commit=False)
+        profile.save()
+        y = "/"+dil_bilgisi()+"/companyprofile"
+        return redirect(y)
+    return render(request,"companyprofile.html",content)
 
 
 #############

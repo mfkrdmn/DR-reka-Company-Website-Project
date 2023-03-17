@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="style.css">
     <link href="{% static 'css/companyprofile.css' %}" rel="stylesheet" />
 
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- FontAwesome 5 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
@@ -49,23 +53,20 @@
     <!-- Sidenav -->
     <div class="sidenav">
         <div class="profile">
-            <img src="https://imdezcode.files.wordpress.com/2020/02/imdezcode-logo.png" alt="" width="100" height="100">
+            {% if profile.image %}
+                <img src="{{profile.image.url}}" alt="" width="100" height="100">
 
+            {% else %}
+            {% endif %}
+            
             <div class="name">
-                ImDezCode
-            </div>
-            <div class="job">
-                Web Developer
+                {{profile.companyName}}
             </div>
         </div>
 
         <div class="sidenav-url">
             <div class="url">
                 <a href="#profile" class="active">Profile</a>
-                <hr align="center">
-            </div>
-            <div class="url">
-                <a href="#settings">Settings</a>
                 <hr align="center">
             </div>
         </div>
@@ -77,81 +78,82 @@
         <h2>IDENTITY</h2>
         <div class="card">
             <div class="card-body">
-                <i class="fa fa-pen fa-xs edit"></i>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Open modal
+                  </button>
                 <table>
                     <tbody>
                         <tr>
-                            <td>Name</td>
+                            <td>{% translate "Name Surname" %}</td>
                             <td>:</td>
-                            <td>ImDezCode</td>
+                            <td>{{profile.namesurname}}</td>
                         </tr>
                         <tr>
-                            <td>Email</td>
+                            <td>{% translate "Company Name" %}</td>
                             <td>:</td>
-                            <td>imdezcode@gmail.com</td>
+                            <td>{{profile.companyName}}</td>
                         </tr>
                         <tr>
-                            <td>Address</td>
+                            <td>{% translate "Phone" %}</td>
                             <td>:</td>
-                            <td>Bali, Indonesia</td>
+                            <td>{{profile.phone}}</td>
                         </tr>
                         <tr>
-                            <td>Hobbies</td>
+                            <td>{% translate "Mobile Phone" %}</td>
                             <td>:</td>
-                            <td>Diving, Reading Book</td>
+                            <td>{{profile.mobile_phone}}</td>
                         </tr>
                         <tr>
-                            <td>Job</td>
+                            <td>{% translate "E-Mail" %}</td>
                             <td>:</td>
-                            <td>Web Developer</td>
+                            <td>{{profile.email}}</td>
                         </tr>
                         <tr>
-                            <td>Skill</td>
+                            <td>{% translate "Company Website" %}</td>
                             <td>:</td>
-                            <td>PHP, HTML, CSS, Java</td>
+                            <td>{{profile.web_site}}</td>
+                        </tr>
+                        <tr>
+                            <td>{% translate "Member Notes" %}</td>
+                            <td>:</td>
+                            <td>{{profile.note}}</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <h2>SOCIAL MEDIA</h2>
-        <div class="card">
-            <div class="card-body">
-                <i class="fa fa-pen fa-xs edit"></i>
-                <div class="social-media">
-                    <span class="fa-stack fa-sm">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-sm">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-sm">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-sm">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-invision fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-sm">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-sm">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-sm">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-snapchat fa-stack-1x fa-inverse"></i>
-                    </span>
-                </div>
-            </div>
-        </div>
     </div>
+
+    <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">{% translate "profile Update" %}</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form method = "post" enctype="multipart/form-data">
+                {% csrf_token %}
+                  {{form}}
+    
+              
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">{% translate "Close" %}</button>
+              <button type = "submit" class = "btn btn-success">{% translate "Update" %}</button>
+              </div>
+            </form>
+      </div>
+    </div>
+  </div>
     <!-- End -->
 </body>
 </html>

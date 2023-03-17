@@ -8,7 +8,12 @@ class Profile(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     companyName = models.CharField(max_length=50, blank=True)
     email = models.CharField(max_length=50, blank=True)
-
+    namesurname = models.CharField(max_length=200, blank=True)
+    phone = models.CharField(max_length=15, blank=True)
+    mobile_phone = models.CharField(max_length=15, blank=True)
+    web_site = models.CharField(max_length=200, blank=True)
+    note = models.TextField(blank=True,null=True)
+    image  = models.ImageField(upload_to='profil_foto/',blank = True,null = True)
     def __str__(self) :
         return self.user.username
 
