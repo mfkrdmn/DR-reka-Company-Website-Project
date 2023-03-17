@@ -16,4 +16,7 @@ urlpatterns = [
     path('rec',views.rec, name="rec"),
     path('profile',views.profile, name="profile"),
     path('<int:id>/<str:slug>/',views.milesvolta, name="milesvolta"),
+    #product
+    path('product',views.product_list, name="product_list"),
+    #product
 ]

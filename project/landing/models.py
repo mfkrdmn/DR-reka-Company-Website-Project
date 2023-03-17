@@ -36,3 +36,11 @@ class urun(models.Model):
     def __str__(self) :
         return self.isim_en
 
+class all_product(models.Model):
+    pn = models.CharField(max_length=200)
+    size = models.CharField(max_length=200)
+    condition = models.CharField(max_length=200)
+    ac_type = models.CharField(max_length=200)
+    qty = models.BigIntegerField()
+    def __str__(self):
+        return self.ac_type

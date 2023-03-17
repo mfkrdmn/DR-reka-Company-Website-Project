@@ -205,3 +205,16 @@ def milesvolta(request,id,slug):
     content["urun"] = urunler
     return render(request,"milesvolta.html",content)
 
+def product_list(request):
+    dil = dil_bilgisi()
+    content ={}
+    content["dil"] = dil
+    products = all_product.objects.filter(qty__gt=0)
+    
+    #__contains =
+    if request.GET:
+        key = request.GET.get("key")
+        if key:
+            products = all_product.objects.filter(qty__gt=0,ac_type__contains = key)
+    content["product"] = products
+    return render(request,"product.html",content)
