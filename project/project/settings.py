@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-uupr@1hwk(vazj^j#ke8ds&^g@9ueu2lv=bcv(q@2u(7qdf%y2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["127.0.0.1","rekaglobal.com","www.rekaglobal.com"]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -129,6 +129,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
 LANGUAGE_CODE = 'en'
 from django.utils.translation import gettext_lazy as _
 LANGUAGES = (

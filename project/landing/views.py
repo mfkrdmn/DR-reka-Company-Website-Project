@@ -10,6 +10,9 @@ from django.shortcuts import render
 from django.shortcuts import render
 from django.utils.translation  import gettext as _
 from django.utils.translation import get_language, activate, gettext
+
+def page_not_found_view(request, exception):
+    return render(request, '404.html')
 def dil_bilgisi():
     return get_language()
 #translate
@@ -24,26 +27,32 @@ def translate(language):
     return text
 #translate
 from django.core.mail import EmailMessage
-
+from django.template.loader import get_template
+from django.core.mail import EmailMultiAlternatives
+from django.contrib.sites.shortcuts import get_current_site
 def send_email(request,PartNumber,Description,Quantity,Condition,Mail,Telephone,CompanyName,fullname):
-    govde= """PartNumber = {}
-Description = {}
-Quantity = {}
-Condition = {}
-Mail = {}
-Telephone = {}
-Company Name = {}
-full name= {}
-    """.format(PartNumber,Description,Quantity,Condition,Mail,Telephone,CompanyName,fullname)
-    email = EmailMessage(
-        'Sipariş',
-        govde,
-        'rekaglobal1@gmail.com',
-        ['mfkrdmn@gmail.com'],
-        reply_to=['rekaglobal1@gmail.com'],
-        headers={'Message-ID': 'foo'},
-    )
-    email.send()
+    plaintext = get_template('email_temp.txt')
+    htmly= get_template('email_temp.html')
+    
+    d = {"PartNumber":PartNumber,
+         "Description":Description,
+         "Quantity":Quantity,
+         "Condition":Condition,
+         "Mail":Mail,
+         "Telephone":Telephone,
+        "CompanyName":CompanyName,
+        "fullname":fullname
+      }
+    subject, from_email, to = "Order", 'from@example.com', 'to@example.com'
+    text_content = plaintext.render(d)
+    html_content = htmly.render(d)
+    msg = EmailMultiAlternatives(subject, text_content, from_email, ["habipelis65@gmail.com"])
+    msg.attach_alternative(html_content, "text/html")
+    msg.send()
+    
+    
+   
+
 def index(request):
     dil = dil_bilgisi()
     trans = translate(language='English')
@@ -186,12 +195,12 @@ def register(request):
         password_again = request.POST['password_again']
 
         if password == password_again:
-            if User.objects.filter(email=email).exists():
+            if User.objects.filter(email=email):
                 messages.info(request, "Email is already taken :(")
-                return redirect("register")
-            elif User.objects.filter(username=companyName).exists():
+                return redirect("/register")
+            elif User.objects.filter(username=companyName):
                 messages.info(request, "Username is already taken :(")
-                return redirect("register")
+                return redirect("/register")
             else:
                 user = User.objects.create_user(username=companyName, email=email, password=password)
                 user.save()
