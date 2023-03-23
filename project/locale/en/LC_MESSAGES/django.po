@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-12 20:00+0300\n"
-"PO-Revision-Date: 2023-03-12 20:04+0000\n"
+"PO-Revision-Date: 2023-03-23 21:29+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -37,7 +37,7 @@ msgstr "German"
 
 #: .\project\settings.py:138
 msgid "arabic"
-msgstr "arabic"
+msgstr "Arabic"
 
 #: .\templates\aviation.html:194
 msgid "COMMERCIAL AIRCRAFTS "
