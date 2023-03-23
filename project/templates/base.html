@@ -122,7 +122,7 @@ body {
                   {% get_current_language as LANGUAGE_CODE %}
                   {% get_available_languages as LANGUAGES %}
                   {% get_language_info_list for LANGUAGES as languages %}
-                    <option value="/{{ lang.code }}/">{{dil}}</option>
+                    <!-- <option value="/{{ lang.code }}/">{{dil}}</option> -->
                   {% for lang in languages %}
                   <option value="/{{ lang.code }}/{{link}}" style="color: white;">
                     <a class="dropdown-item" href="/{{ lang.code }}/{{link}}">

@@ -5,25 +5,20 @@
 {% block content %}
 
 <div class="container">
-    <div class="row">
-        <div class="col-12 text-center">
-         {{request.user}}'s user profile
-        </div>
-    </div>
     <div class="row mt-5">
         <div class="col-lg-6 text-center">
-            <button type="button" class="btn btn-danger">
-                <a href="{% url 'landing:product_list' %}" style="text-decoration: none; color: white;">
-                    Search
-                </a>
-            </button>
+            <a href="{% url 'landing:product_list' %}" style="text-decoration: none; color: white;">
+                <button type="button" class="btn btn-danger" style="width: 420px;">
+                        SEARCH PART NUMBER FOR STOCK AVAILABILITY
+                </button>
+            </a>
         </div>
         <div class="col-lg-6 text-center">
-            <button type="button" class="btn btn-primary">
-                <a href="{% url 'landing:companyprofile' %}" style="text-decoration: none; color: white;">
-                    Profile
-                </a>
-            </button>
+            <a href="{% url 'landing:companyprofile' %}" style="text-decoration: none; color: white;">
+                <button type="button" class="btn btn-primary" style="width: 420px;">
+                        Profile
+                </button>
+            </a>
         </div>
      
     </div>

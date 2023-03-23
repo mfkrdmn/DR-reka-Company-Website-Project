@@ -46,7 +46,7 @@ full name= {}
     email.send()
 def index(request):
     dil = dil_bilgisi()
-    trans = translate(language='en')
+    trans = translate(language='English')
     link = ""
     if request.method == "POST":
         PartNumber = request.POST['PartNumber']
@@ -72,29 +72,29 @@ def index(request):
 
 def contact(request):
     dil = dil_bilgisi()
-    trans = translate(language='en')
+    trans = translate(language='English')
     link = "contactus"
     return render(request,"contact.html",{"trans":trans,"dil":dil,"link":link})
 
 def career(request):
     dil = dil_bilgisi()
-    trans = translate(language='en')
+    trans = translate(language='English')
     link = "career"
     return render(request,"career.html",{"trans":trans,"dil":dil,"link":link})
 
 def test(request):
     dil = dil_bilgisi()
-    trans = translate(language='en')
+    trans = translate(language='English')
     return render(request,"test.html",{"trans":trans,"dil":dil})
 
 def aviation(request):
     dil = dil_bilgisi()
     link = "aviation"
-    trans = translate(language='en')
+    trans = translate(language='English')
     return render(request,"aviation.html",{"trans":trans,"dil":dil,"link":link})
     
 def gse(request):
-    trans = translate(language='en')
+    trans = translate(language='English')
     ur = urun.objects.all()
     link = "gse"
     dil = dil_bilgisi()
@@ -103,32 +103,34 @@ def gse(request):
 def finance(request):
     dil = dil_bilgisi()
     link = "finance"
-    trans = translate(language='en')
+    trans = translate(language='English')
     return render(request,"finance.html",{"trans":trans,"dil":dil,"link":link})
 
 def ec(request):
     dil = dil_bilgisi()
     link = "ec"
-    trans = translate(language='en')
+    trans = translate(language='English')
     return render(request,"ec.html",{"trans":trans,"dil":dil,"link":link})
 
 def rec(request):
-    trans = translate(language='en')
+    trans = translate(language='English')
     link = "rec"
     dil = dil_bilgisi()
     return render(request,"rec.html",{"trans":trans,"dil":dil,"link":link})
+
+
 from .forms import * 
 def companyprofile(request):
-    trans = translate(language='en')
+    trans = translate(language='English')
     dil = dil_bilgisi()
     link = "companyprofile"
     content = {"trans":trans,"dil":dil, "link":link}
     prr = get_object_or_404(Profile,user_id = request.user.id)
-    if dil_bilgisi() == "tr":
+    if dil_bilgisi() == "Turkish":
         form = profile_edit_tr(request.POST or None,request.FILES or None,instance = prr)
-    elif dil_bilgisi() == "en":
+    elif dil_bilgisi() == "English":
         form = profile_edit_en(request.POST or None,request.FILES or None,instance = prr)
-    elif dil_bilgisi() == "ar":
+    elif dil_bilgisi() == "Arabic":
         form = profile_edit_ar(request.POST or None,request.FILES or None,instance = prr)
     else:
         form = profile_edit_de(request.POST or None,request.FILES or None,instance = prr)

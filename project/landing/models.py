@@ -29,6 +29,7 @@ class rfq(models.Model):
     CompanyName = models.CharField(max_length=50, blank=True)
     fullname = models.CharField(max_length=50, blank=True)
 
+
     def __str__(self) :
         return self.Description
 
@@ -48,5 +49,6 @@ class all_product(models.Model):
     condition = models.CharField(max_length=200)
     ac_type = models.CharField(max_length=200)
     qty = models.BigIntegerField()
+    price = models.CharField(max_length=50, blank=True)
     def __str__(self):
         return self.ac_type

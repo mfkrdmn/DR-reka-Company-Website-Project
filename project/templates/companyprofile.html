@@ -23,25 +23,25 @@
     <!-- Navbar top -->
     <div class="navbar-top">
         <div class="title">
-            <h1>Profile</h1>
+            <h1>{{profile.companyName}}'s Profile</h1>
         </div>
 
         <!-- Navbar -->
         <ul>
             <li>
                 <a href="#message">
-                    <span class="icon-count">29</span>
+                    <span class="icon-count">0</span>
                     <i class="fa fa-envelope fa-2x"></i>
                 </a>
             </li>
             <li>
                 <a href="#notification">
-                    <span class="icon-count">59</span>
+                    <span class="icon-count">0</span>
                     <i class="fa fa-bell fa-2x"></i>
                 </a>
             </li>
             <li>
-                <a href="#sign-out">
+                <a href="{% url 'landing:index' %}">
                     <i class="fa fa-sign-out-alt fa-2x"></i>
                 </a>
             </li>
@@ -58,10 +58,7 @@
 
             {% else %}
             {% endif %}
-            
-            <div class="name">
-                {{profile.companyName}}
-            </div>
+
         </div>
 
         <div class="sidenav-url">
@@ -75,11 +72,10 @@
 
     <!-- Main -->
     <div class="main">
-        <h2>IDENTITY</h2>
         <div class="card">
             <div class="card-body">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                    Open modal
+                    {% translate "Edit Profile" %}
                   </button>
                 <table>
                     <tbody>
