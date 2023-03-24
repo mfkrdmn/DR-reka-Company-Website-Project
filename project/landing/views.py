@@ -172,9 +172,11 @@ def login(request):
     if request.method == 'POST':
         companyName = request.POST['companyName']
         password = request.POST['password']
-
-        user = auth.authenticate(username=companyName, password=password)
-
+        a = get_object_or_404(User, email = companyName)
+        print(a,"asdda")
+        print(a.get_username())
+        user = auth.authenticate(username=a.get_username(), password=password)
+        print(user)
         if user is not None:
             auth.login(request, user)
             return redirect('/')
