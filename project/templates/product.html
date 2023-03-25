@@ -21,6 +21,7 @@
         <th>{% translate "Condition" %}</th>
         <th>{% translate "AC Type" %}</th>
         <th>{% translate "Qty" %}</th>
+        <th>{% translate "Price" %}</th>
       </tr>
     </thead>
     <tbody>
@@ -31,6 +32,7 @@
             <td>{{i.condition}}</td>
             <td>{{i.ac_type}}</td>
             <td>{{i.qty}}</td>
+            <td>${{i.price}}</td>
         </tr>
     {% endfor %}
       

@@ -3,10 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from .models import *
-# Create your views here.
-# Create your views here.
 from django.shortcuts import render
-
 from django.shortcuts import render
 from django.utils.translation  import gettext as _
 from django.utils.translation import get_language, activate, gettext
