@@ -5,14 +5,7 @@
 {% block content %}
 
 <div class="container">
-    <div class="row mt-5">
-        <div class="col-lg-6 text-center">
-            <a href="{% url 'landing:product_list' %}" style="text-decoration: none; color: white;">
-                <button type="button" class="btn btn-danger" style="width: 420px;">
-                        SEARCH PART NUMBER FOR STOCK AVAILABILITY
-                </button>
-            </a>
-        </div>
+    <div class="row justify-content-center mt-4">
         <div class="col-lg-6 text-center">
             <a href="{% url 'landing:companyprofile' %}" style="text-decoration: none; color: white;">
                 <button type="button" class="btn btn-primary" style="width: 420px;">
@@ -20,8 +13,29 @@
                 </button>
             </a>
         </div>
-     
     </div>
+    <div class="row mt-5 justify-content-center">
+        <div class="col-9 text-center">
+            <form method="get" action="{% url 'landing:product_list' %}">
+                <input style="width: 100%;" name="key" type="text" placeholder="{% translate 'Part Number' %}" required> <br> <br>
+                <button class="btn btn-danger mt-4" type="submit">{% translate 'SEARCH PART NUMBER FOR STOCK AVAILABILITY' %}</button>
+            </form>
+        </div>
+    </div>
+
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-6 text-center">
+                <a href="{% url 'landing:product_list' %}" style="text-decoration: none; color: white;">
+                    <button type="button" class="btn btn-primary" style="width: 420px;">
+                            Inventory List
+                    </button>
+                </a>
+            </div>
+        </div>
+
+     
+   
 </div>
 
 
@@ -34,6 +48,5 @@
 <br><br>
 
 
-s
 
 {% endblock content %}

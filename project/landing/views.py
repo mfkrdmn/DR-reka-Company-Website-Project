@@ -10,6 +10,8 @@ from django.utils.translation import get_language, activate, gettext
 
 def page_not_found_view(request, exception):
     return render(request, '404.html')
+
+
 def dil_bilgisi():
     return get_language()
 #translate
@@ -152,18 +154,6 @@ def companyprofile(request):
 
 #############
 
-
-@login_required(login_url='/login')
-def profile(request):
-        dil = dil_bilgisi()
-        trans = translate(language='en')
-        dil = dil_bilgisi()
-        link = "profile"
-        content = {"trans":trans,"dil":dil, "link":link}
-        return render(request,"profile.html",content)
-
-#############
-
 def login(request):
     dil = dil_bilgisi()
     if request.method == 'POST':
@@ -242,6 +232,25 @@ def milesvolta(request,id,slug):
     content["urun"] = urunler
     return render(request,"milesvolta.html",content)
 
+
+@login_required(login_url='/login')
+def profile(request):
+    dil = dil_bilgisi()
+    trans = translate(language='en')
+    dil = dil_bilgisi()
+    link = "profile"
+    content = {"trans":trans,"dil":dil, "link":link}
+    products = all_product.objects.filter(qty__gt=0)
+
+    #__contains =
+    if request.GET:
+        key = request.GET.get("key")
+        if key:
+            products = all_product.objects.filter(qty__gt=0,ac_type__contains = key)
+    content["product"] = products
+
+    return render(request,"profile.html",content)
+
 def product_list(request):
     dil = dil_bilgisi()
     content ={}
@@ -252,6 +261,6 @@ def product_list(request):
     if request.GET:
         key = request.GET.get("key")
         if key:
-            products = all_product.objects.filter(qty__gt=0,ac_type__contains = key)
+            products = all_product.objects.filter(qty__gt=0,pn__contains = key)
     content["product"] = products
     return render(request,"product.html",content)

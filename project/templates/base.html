@@ -123,12 +123,38 @@ body {
                   {% get_available_languages as LANGUAGES %}
                   {% get_language_info_list for LANGUAGES as languages %}
                     <!-- <option value="/{{ lang.code }}/">{{dil}}</option> -->
-                  {% for lang in languages %}
+                    {% if  dil == "tr" %}
                   <option value="/{{ lang.code }}/{{link}}" style="color: white;">
-                    <a class="dropdown-item" href="/{{ lang.code }}/{{link}}">
-                      {{ lang.name_local }}
-                    </a>
+                    Türkçe
                   </option>
+
+                  {% elif dil == "en" %}
+                  <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+                  English
+              </option>
+                  {% elif dil == "ar" %}
+                  <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+                    عربي
+              </option>
+                  {% else %}
+                  <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+                  Deutsch
+              </option>
+                  {% endif %}
+                  {% for lang in languages %}
+                  {% if lang.code == dil %}
+                      
+                  {% else %}
+                <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+
+                  <a class="dropdown-item" href="/{{ lang.code }}/{{link}}">
+                    
+                    {{ lang.name_local }}
+                    
+                    
+                  </a>
+                </option>
+              {% endif %}
 
                   {% endfor %}
 
