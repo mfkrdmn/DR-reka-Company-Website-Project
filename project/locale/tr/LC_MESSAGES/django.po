@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-12 20:00+0300\n"
-"PO-Revision-Date: 2023-03-25 10:58+0000\n"
+"POT-Creation-Date: 2023-03-26 17:56+0300\n"
+"PO-Revision-Date: 2023-03-26 17:57+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,25 +19,30 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\landing\views.py:20
+#: .\landing\views.py:22
 msgid "Hello"
 msgstr "Merhaba"
 
-#: .\project\settings.py:135
+#: .\project\settings.py:136
 msgid "English"
 msgstr "İngilizce"
 
-#: .\project\settings.py:136
+#: .\project\settings.py:137
 msgid "Turkish"
 msgstr "Türkçe"
 
-#: .\project\settings.py:137
+#: .\project\settings.py:138
 msgid "German"
 msgstr "Almanca"
 
-#: .\project\settings.py:138
+#: .\project\settings.py:139
 msgid "arabic"
 msgstr "Arapça"
+
+#: .\templates\aviation.html:184
+#| msgid "AVIATION</b></span> <span><b>SEGMENTS"
+msgid " AVIATION</span><span> SEGMENTS"
+msgstr "HAVACILIK SEGMENTLERİ"
 
 #: .\templates\aviation.html:194
 msgid "COMMERCIAL AIRCRAFTS "
@@ -59,89 +64,94 @@ msgstr "Özel Havaaraçları"
 msgid "UAV (UNMANNED AERIAL VEHICLE) - DRONES"
 msgstr "İHA (İNSANSIZ HAVA ARACI) - DRONLAR"
 
-#: .\templates\aviation.html:276
+#: .\templates\aviation.html:262
+#| msgid "OEM & PMA</b></span> <span><b>SEGMENTS"
+msgid " OEM/PMA</span><span> SEGMENTS"
+msgstr "OEM & PMA SEGMENTLERİ"
+
+#: .\templates\aviation.html:278
 msgid "ENGINES"
 msgstr "MOTORLAR"
 
-#: .\templates\aviation.html:290
+#: .\templates\aviation.html:292
 msgid "AVIONICS"
 msgstr "AVİYONİK"
 
-#: .\templates\aviation.html:304
+#: .\templates\aviation.html:306
 msgid "Tires, Breaks, Gears, Bearings"
 msgstr "Lastikler, Frenler, Dişliler, Rulmanlar"
 
-#: .\templates\aviation.html:318
+#: .\templates\aviation.html:320
 msgid "CONSUMABLES"
 msgstr "SARF MALZEMELERİ"
 
-#: .\templates\aviation.html:332
+#: .\templates\aviation.html:334
 msgid "Hardware & Standart Parts"
 msgstr "Donanım ve Standart Parçalar"
 
-#: .\templates\aviation.html:348
+#: .\templates\aviation.html:350
 msgid "Interıors "
 msgstr "iç mekanlar"
 
-#: .\templates\aviation.html:362
+#: .\templates\aviation.html:364
 msgid "Structual"
 msgstr "Yapısal"
 
-#: .\templates\aviation.html:376
+#: .\templates\aviation.html:378
 msgid "Safety & Oxygen"
 msgstr "Güvenlik ve Oksijen"
 
-#: .\templates\aviation.html:390
+#: .\templates\aviation.html:392
 msgid "Ground Supporting Equipments"
 msgstr "Yer Destek Ekipmanları"
 
-#: .\templates\aviation.html:404
+#: .\templates\aviation.html:406
 msgid "Sustainable Aviation Solutions"
 msgstr "Sürdürülebilir Havacılık Çözümleri"
 
-#: .\templates\base.html:87 .\templates\index.html:123
+#: .\templates\base.html:89 .\templates\index.html:124
 msgid "Avıatıon"
 msgstr "Havacılık"
 
-#: .\templates\base.html:90 .\templates\base.html:232
-#: .\templates\index.html:127 .\templates\index.html:937
+#: .\templates\base.html:92 .\templates\base.html:260
+#: .\templates\index.html:128 .\templates\index.html:974
 msgid "MRO & GSE"
 msgstr "MRO & GSE"
 
-#: .\templates\base.html:93 .\templates\index.html:130
+#: .\templates\base.html:95 .\templates\index.html:131
 msgid "Fınance"
 msgstr "Finans"
 
-#: .\templates\base.html:96 .\templates\index.html:133
+#: .\templates\base.html:98 .\templates\index.html:134
 msgid "MM & EC"
 msgstr "MRO & GSE"
 
-#: .\templates\base.html:99 .\templates\base.html:243
-#: .\templates\index.html:136 .\templates\index.html:948
+#: .\templates\base.html:101 .\templates\base.html:271
+#: .\templates\index.html:137 .\templates\index.html:985
 msgid "RE & C"
 msgstr "RE & C"
 
-#: .\templates\base.html:102 .\templates\index.html:139
+#: .\templates\base.html:104 .\templates\index.html:140
 msgid "Career"
 msgstr "Kariyer"
 
-#: .\templates\base.html:105 .\templates\index.html:142
+#: .\templates\base.html:107 .\templates\index.html:143
 msgid "Contact"
 msgstr "İletişim"
 
-#: .\templates\base.html:112 .\templates\index.html:150
+#: .\templates\base.html:114 .\templates\index.html:151
 msgid "logout"
 msgstr "Çıkış Yap"
 
-#: .\templates\base.html:116 .\templates\index.html:155
+#: .\templates\base.html:118 .\templates\index.html:156
 msgid "LOGIN"
 msgstr "Giriş Yap"
 
-#: .\templates\base.html:210 .\templates\index.html:915
+#: .\templates\base.html:238 .\templates\index.html:952
 msgid "REKA Group Companies"
 msgstr "REKA Grup Şirketleri"
 
-#: .\templates\base.html:214 .\templates\index.html:919
+#: .\templates\base.html:242 .\templates\index.html:956
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
 " ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
@@ -151,31 +161,31 @@ msgstr ""
 "HİZMETLERİ, FİNANS, TİCARET, GAYRİMENKUL VE GELİŞTİRME KONUSUNDA GÜVEN "
 "OLUŞTURMAK AMACIYLA UZMANLARLA HAVACILIK OPERASYONLARINA HİZMET VERMEKTEDİR."
 
-#: .\templates\base.html:226 .\templates\index.html:931
+#: .\templates\base.html:254 .\templates\index.html:968
 msgid "HOME"
 msgstr "ANA SAYFA"
 
-#: .\templates\base.html:229 .\templates\index.html:934
+#: .\templates\base.html:257 .\templates\index.html:971
 msgid "AVIATION"
 msgstr "HAVACILIK"
 
-#: .\templates\base.html:235 .\templates\index.html:940
+#: .\templates\base.html:263 .\templates\index.html:977
 msgid "FINANCE"
 msgstr "FİNANS"
 
-#: .\templates\base.html:240 .\templates\index.html:945
+#: .\templates\base.html:268 .\templates\index.html:982
 msgid "EC"
 msgstr "EC"
 
-#: .\templates\base.html:246 .\templates\index.html:951
+#: .\templates\base.html:274 .\templates\index.html:988
 msgid "CAREER"
 msgstr "KARİYER"
 
-#: .\templates\base.html:249 .\templates\index.html:954
+#: .\templates\base.html:277 .\templates\index.html:991
 msgid "CONTACT"
 msgstr "İLETİŞİM"
 
-#: .\templates\base.html:259 .\templates\index.html:964
+#: .\templates\base.html:287 .\templates\index.html:1001
 msgid "AOG Line"
 msgstr "AOG Hattı"
 
@@ -183,12 +193,62 @@ msgstr "AOG Hattı"
 msgid "Join Our Global Team"
 msgstr "Ekibimize Katıl"
 
-#: .\templates\contact.html:52
+#: .\templates\companyprofile.html:78
+msgid "Edit Profile"
+msgstr "Profili Düzenle"
+
+#: .\templates\companyprofile.html:83
+msgid "Name Surname"
+msgstr "Ad Soyad"
+
+#: .\templates\companyprofile.html:88 .\templates\register.html:321
+msgid "Company Name"
+msgstr "Firma Adı"
+
+#: .\templates\companyprofile.html:93
+msgid "Phone"
+msgstr "Telefon"
+
+#: .\templates\companyprofile.html:98
+msgid "Mobile Phone"
+msgstr "Cep telefonu"
+
+#: .\templates\companyprofile.html:103
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: .\templates\companyprofile.html:108
+msgid "Company Website"
+msgstr "Firma Adı"
+
+#: .\templates\companyprofile.html:113
+msgid "Member Notes"
+msgstr "Beni Hatırla"
+
+#: .\templates\companyprofile.html:131
+msgid "profile Update"
+msgstr "Profil güncelleme"
+
+#: .\templates\companyprofile.html:146
+msgid "Close"
+msgstr "Kapat"
+
+#: .\templates\companyprofile.html:147
+msgid "Update"
+msgstr "Güncelle"
+
+#: .\templates\contact.html:20
+#| msgid " Our</span> <span>Services"
+msgid " Offices &</span><span> Warehouses"
+msgstr "SERVİSLERİMİZ"
+
+#: .\templates\contact.html:58
 msgid "Contact Us"
 msgstr "İletişim"
 
 #: .\templates\ec.html:94
-msgid " Modern Marketing &</span> <span>Ecommerce"
+#| msgid "Modern Marketing &</span> <span>Ecommerce"
+msgid " Modern Marketing &</span><span> Ecommerce"
 msgstr "Modern Pazarlama ve & E-ticaret"
 
 #: .\templates\ec.html:98
@@ -254,11 +314,11 @@ msgstr ""
 " temini ve bakım hizmeti; Boeing, Airbus ve Bombardier bileşenleri ile Yer "
 "Destek Ekipmanları (GSE) ve bunların yedek parçaları."
 
-#: .\templates\index.html:203
+#: .\templates\index.html:229
 msgid "WE BUILD TRUST"
 msgstr "GÜVEN İNŞAA EDİYORUZ"
 
-#: .\templates\index.html:204
+#: .\templates\index.html:230
 msgid ""
 "HUNDREDS OF BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN "
 "VARIOUS FIELDS"
@@ -266,11 +326,11 @@ msgstr ""
 "YURT DIŞINDA ÇEŞİTLİ ALANLARDA GÜVENİLİR İŞ BİRLİĞİ İLE ÇALIŞAN YÜZLERCE İŞ "
 "ORTAĞI"
 
-#: .\templates\index.html:211
+#: .\templates\index.html:237
 msgid "INTERNATIONAL TRADE"
 msgstr "ULUSLARARASI TİCARET"
 
-#: .\templates\index.html:212
+#: .\templates\index.html:238
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
 " ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
@@ -283,11 +343,11 @@ msgstr ""
 "HİZMETLERİ, FİNANS, TİCARET, GAYRİMENKUL VE GELİŞİM HİZMETLERİNDE GÜVEN "
 "OLUŞTURMAK İÇİN UZMANLARLA HAVACILIK OPERASYONLARI HİZMETi VERİYOR "
 
-#: .\templates\index.html:219
+#: .\templates\index.html:245
 msgid "MRO & GROUND HANDLING"
 msgstr "MRO & YER HİZMETLERİ"
 
-#: .\templates\index.html:220
+#: .\templates\index.html:246
 msgid ""
 "Safety Requires Quality. Maintenance and Repair Operations, Ground Support "
 "Equipments, Low Maintenance Metrics"
@@ -295,49 +355,49 @@ msgstr ""
 "Güvenlik Kalite Gerektirir. Bakım ve Onarım İşlemleri, Yer Destek "
 "Ekipmanları, Düşük Bakım Metrikleri"
 
-#: .\templates\index.html:227
+#: .\templates\index.html:253
 msgid "COOPERATION CULTURE"
 msgstr "İŞBİRLİĞİ KÜLTÜRÜ"
 
-#: .\templates\index.html:228
+#: .\templates\index.html:254
 msgid ""
 "CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
 msgstr ""
 "KURUMSAL EKİP ÇALIŞMASI, İŞBİRLİĞİ İLKELERİ İLE KÜRESEL BAŞARIYA YOL AÇAR"
 
-#: .\templates\index.html:236
+#: .\templates\index.html:262
 msgid ""
 "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
 msgstr "YARATICILIK VE İLHAM İLE SINIR ÖTESİNDE HİZMET "
 
-#: .\templates\index.html:301
+#: .\templates\index.html:327
 msgid "RFQ is submitted successfully!"
-msgstr ""
+msgstr "RFQ başarıyla gönderildi!"
 
-#: .\templates\index.html:301
+#: .\templates\index.html:327
 msgid "Our sales team will contact with you in 48 hours."
-msgstr ""
+msgstr "Satış ekibimiz 48 saat içinde sizinle iletişime geçecektir."
 
-#: .\templates\index.html:313
+#: .\templates\index.html:339
 msgid " Our</span> <span>Services"
 msgstr "SERVİSLERİMİZ"
 
-#: .\templates\index.html:324
+#: .\templates\index.html:350
 msgid "MRO & Ground Handling"
 msgstr "MRO ve Yer Hizmetleri"
 
-#: .\templates\index.html:326
+#: .\templates\index.html:352
 msgid ""
 "Relaible Maintenannce and Repair with OEM spare parts. Disciplined Ground "
 "Handling"
 msgstr ""
 "OEM yedek parçalar ile Güvenilir Bakım ve Onarım. Disiplinli Yer Hizmetleri"
 
-#: .\templates\index.html:338
+#: .\templates\index.html:364
 msgid "Distributorships"
 msgstr "Distribütörlükler"
 
-#: .\templates\index.html:339
+#: .\templates\index.html:365
 msgid ""
 "Exclusive distribution of premium brands with EXW, CIP, DDP delivery "
 "logistic services"
@@ -345,11 +405,11 @@ msgstr ""
 "EXW, CIP, DDP teslimat lojistik hizmetleri ile premium markaların özel "
 "dağıtımı"
 
-#: .\templates\index.html:352 .\templates\rec.html:77
+#: .\templates\index.html:378 .\templates\rec.html:77
 msgid "Real Estate"
 msgstr "GAYRİMENKUL "
 
-#: .\templates\index.html:353
+#: .\templates\index.html:379
 msgid ""
 "Trustful commercial property partner for long term localization. "
 "Professional leasing and Tenant Mix solutions"
@@ -357,22 +417,22 @@ msgstr ""
 "Uzun vadeli yerelleştirme için güvenilir ticari emlak ortağı. Profesyonel "
 "kiralama ve Kiracı çözümler"
 
-#: .\templates\index.html:366 .\templates\rec.html:77
+#: .\templates\index.html:392 .\templates\rec.html:77
 msgid "Construction"
 msgstr "Yapı"
 
-#: .\templates\index.html:367
+#: .\templates\index.html:393
 msgid ""
 "Elegant design & construction project management with strick application "
 "quality principles"
 msgstr ""
 "Üstün uygulama kalitesi ilkeleri ile zarif tasarım ve inşaat proje yönetimi"
 
-#: .\templates\index.html:380
+#: .\templates\index.html:406
 msgid "Finance"
 msgstr "Finans"
 
-#: .\templates\index.html:381
+#: .\templates\index.html:407
 msgid ""
 "Corporate Audit, financial control systems with customized accounting "
 "software solutions. Accurate forecast of global economy"
@@ -380,11 +440,11 @@ msgstr ""
 "Kurumsal Denetim, finansal kontrol sistemleri ile özelleştirilmiş muhasebe "
 "yazılım çözümleri. Küresel ekonominin doğru tahmini"
 
-#: .\templates\index.html:394
+#: .\templates\index.html:420
 msgid "E-Commerce"
 msgstr "E-ticaret"
 
-#: .\templates\index.html:395
+#: .\templates\index.html:421
 msgid ""
 "Modernization of trade for international markets. Corporatintegration to new"
 " generation e-commerce applications"
@@ -392,15 +452,17 @@ msgstr ""
 "Uluslararası pazarlar için ticaretin modernizasyonu. Yeni nesil e-ticaret "
 "uygulamalarına kurumsal entegrasyon"
 
-#: .\templates\index.html:414
-msgid " Trusted</span> <span>By"
+#: .\templates\index.html:440
+#| msgid " Trusted</span> <span>By"
+msgid "Trusted</span> <span>By"
 msgstr "REFERANSLARIMIZ"
 
-#: .\templates\index.html:705
-msgid " About</span> <span>Us"
+#: .\templates\index.html:731
+#| msgid " About</span> <span>Us"
+msgid "About</span> <span>Us"
 msgstr "HAKKIMIZDA"
 
-#: .\templates\index.html:708
+#: .\templates\index.html:734
 msgid ""
 "Reka Global offers a wide range ofinternational trade services for both "
 "import and export processes. Our main goal is to offer our customers a "
@@ -412,7 +474,7 @@ msgstr ""
 "uluslararası ticaretin olası risk ve zorluklarından arınmış, sorunsuz ve "
 "başarılı bir ticaret operasyonu sunmaktır."
 
-#: .\templates\index.html:710
+#: .\templates\index.html:736
 msgid ""
 " Our wide range of services offers managing or monitoring standard and non-"
 "standard trade operations as well as tailor-made solutions for your "
@@ -421,7 +483,7 @@ msgstr ""
 "Geniş hizmet yelpazemiz, standart ve standart dışı ticaret operasyonlarının "
 "yönetimi veya izlenmesinin yanı sıra işletmenize özel çözümler sunar."
 
-#: .\templates\index.html:712
+#: .\templates\index.html:738
 msgid ""
 " By utilizing our existing sales channels among all over the world, we are "
 "serving SMEs as an outsider sales team"
@@ -429,7 +491,7 @@ msgstr ""
 "Dünya genelindeki mevcut satış kanallarımızı kullanarak KOBİ'lere dışarıdan "
 "satış ekibi olarak hizmet vermekteyiz."
 
-#: .\templates\index.html:715
+#: .\templates\index.html:741
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
 " ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
@@ -440,7 +502,7 @@ msgstr ""
 "OLUŞTURMAK İÇİN UZMANLARLA MÜKEMMEL HAVACILIK OPERASYONLARINA HİZMET "
 "VERİYOR."
 
-#: .\templates\index.html:718
+#: .\templates\index.html:744
 msgid ""
 "HUNDREDS OF OUR BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION "
 "IN VARIOUS FIELDS."
@@ -448,51 +510,52 @@ msgstr ""
 "YÜZLERCE İŞ ORTAĞIMIZ YURT DIŞINDA ÇEŞİTLİ ALANLARDA GÜVENİLİR BİR İŞBİRLİĞİ"
 " İLE ÇALIŞMAKTADIR."
 
-#: .\templates\index.html:749
+#: .\templates\index.html:775
 msgid "COUNTRIES SERVED"
 msgstr "HİZMET VERİLEN ÜLKELER"
 
-#: .\templates\index.html:759
+#: .\templates\index.html:785
 msgid "PROJECTS COMPLETED"
 msgstr "TAMAMLANAN PROJELER"
 
-#: .\templates\index.html:769
+#: .\templates\index.html:795
 msgid "SUCCESSFULL DELIVERIES"
 msgstr "BAŞARILI TESLİMATLAR"
 
-#: .\templates\index.html:779
+#: .\templates\index.html:805
 msgid "SATISFIED CLIENTS"
 msgstr "MEMNUN MÜŞTERİLER"
 
-#: .\templates\index.html:793
-msgid " Our</span> <span>Team"
+#: .\templates\index.html:820
+#| msgid " Our</span> <span>Team"
+msgid "Our</span> <span>Team"
 msgstr "EKİBİMİZ"
 
-#: .\templates\index.html:802
+#: .\templates\index.html:830
 msgid "General Manager"
 msgstr "Genel Müdür"
 
-#: .\templates\index.html:815
+#: .\templates\index.html:843
 msgid "Trade & Logistic Coordinator"
 msgstr "Ticaret & Lojistik Koordinatörü"
 
-#: .\templates\index.html:828
+#: .\templates\index.html:856
 msgid "Procurement & Logistic Specialist"
 msgstr "Tedarik ve Lojistik Uzmanı"
 
-#: .\templates\index.html:841 .\templates\index.html:856
+#: .\templates\index.html:869 .\templates\index.html:884
 msgid "CRM Coordinator"
 msgstr "CRM Koordinatörü"
 
-#: .\templates\index.html:869
+#: .\templates\index.html:897
 msgid "Procurement Specialist"
 msgstr "Satınalma Sorumlusu"
 
-#: .\templates\index.html:882
+#: .\templates\index.html:910
 msgid "Quality Control Specialist"
 msgstr "Kalite Kontrol Uzmanı"
 
-#: .\templates\index.html:895
+#: .\templates\index.html:923
 msgid "Logistic Specialist"
 msgstr "Lojistik Uzmanı"
 
@@ -504,29 +567,65 @@ msgstr "Hoş geldiniz"
 msgid "Back!"
 msgstr "Geri Dön"
 
-#: .\templates\login.html:322 .\templates\register.html:321
-msgid "Company Name"
-msgstr "Firma Adı"
+#: .\templates\login.html:322
+msgid "E-mail"
+msgstr "Email"
 
 #: .\templates\login.html:327 .\templates\register.html:330
 msgid "Password"
 msgstr "Şifre"
 
-#: .\templates\login.html:337
-msgid "Remember me"
-msgstr "Beni Hatırla"
-
-#: .\templates\login.html:343
+#: .\templates\login.html:340
 msgid "Log In"
 msgstr "Giriş Yap"
 
-#: .\templates\login.html:345
+#: .\templates\login.html:342
 msgid "Dont Have an Account?"
 msgstr "Hesabınız Yok mu?"
 
-#: .\templates\login.html:346 .\templates\register.html:351
+#: .\templates\login.html:343 .\templates\register.html:351
 msgid "Return to home page"
 msgstr "Ana sayfaya dön"
+
+#: .\templates\product.html:16
+msgid "PN"
+msgstr "PN"
+
+#: .\templates\product.html:17
+msgid "Size"
+msgstr "Boyut"
+
+#: .\templates\product.html:18
+msgid "Condition"
+msgstr "Yapı"
+
+#: .\templates\product.html:19
+msgid "AC Type"
+msgstr "AC Tipi"
+
+#: .\templates\product.html:20
+msgid "Qty"
+msgstr "Miktar"
+
+#: .\templates\product.html:21
+msgid "Price"
+msgstr "Fiyat"
+
+#: .\templates\profile.html:12
+msgid "Profile"
+msgstr "Profil"
+
+#: .\templates\profile.html:20
+msgid "Part Number"
+msgstr "Parça Numarası"
+
+#: .\templates\profile.html:21
+msgid "SEARCH PART NUMBER FOR STOCK AVAILABILITY"
+msgstr "STOK DURUMU İÇİN PARÇA NUMARASI ARAYIN"
+
+#: .\templates\profile.html:31
+msgid " Inventory List"
+msgstr "Envanter listesi"
 
 #: .\templates\rec.html:79
 msgid ""
@@ -568,33 +667,26 @@ msgstr "Şifrenizi Tekrar Giriniz"
 msgid "Already Have an Account?"
 msgstr "Hesabınız var mı?"
 
-#: .\templates\soon.html:99
-msgid "Days"
-msgstr "Gün"
+#~ msgid "Days"
+#~ msgstr "Gün"
 
-#: .\templates\soon.html:100
-msgid "Hours"
-msgstr "Saat"
+#~ msgid "Hours"
+#~ msgstr "Saat"
 
-#: .\templates\soon.html:101
-msgid "Minutes"
-msgstr "Dakika"
+#~ msgid "Minutes"
+#~ msgstr "Dakika"
 
-#: .\templates\soon.html:102
-msgid " Seconds"
-msgstr "Saniye"
+#~ msgid " Seconds"
+#~ msgstr "Saniye"
 
-#: .\templates\soon.html:108
-msgid "Coming Soon"
-msgstr "Yakında"
+#~ msgid "Coming Soon"
+#~ msgstr "Yakında"
 
-#: .\templates\soon.html:109
-msgid "Subscribe to get notification when we start"
-msgstr "Başladığımızda bildirim almak için abone olun"
+#~ msgid "Subscribe to get notification when we start"
+#~ msgstr "Başladığımızda bildirim almak için abone olun"
 
-#: .\templates\soon.html:112
-msgid "Subscribe"
-msgstr "Abone olun"
+#~ msgid "Subscribe"
+#~ msgstr "Abone olun"
 
 #~ msgid "Trusted"
 #~ msgstr "Referanslarımız"

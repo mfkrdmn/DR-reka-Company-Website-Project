@@ -1,6 +1,11 @@
 from django.urls import path
 from . import views
 app_name = "landing"
+
+#forgot password
+from django.contrib.auth import views as auth_views
+#
+
 urlpatterns = [
     
     path('',views.index, name="index"),
@@ -21,5 +26,6 @@ urlpatterns = [
     path('product',views.product_list, name="product_list"),
     #product
     path('companyprofile',views.companyprofile, name="companyprofile"),
+
 
 ]

@@ -8,6 +8,8 @@ from django.shortcuts import render
 from django.utils.translation  import gettext as _
 from django.utils.translation import get_language, activate, gettext
 
+
+
 def page_not_found_view(request, exception):
     return render(request, '404.html')
 
@@ -45,7 +47,7 @@ def send_email(request,PartNumber,Description,Quantity,Condition,Mail,Telephone,
     subject, from_email, to = "Order", 'from@example.com', 'to@example.com'
     text_content = plaintext.render(d)
     html_content = htmly.render(d)
-    msg = EmailMultiAlternatives(subject, text_content, from_email, ["habipelis65@gmail.com"])
+    msg = EmailMultiAlternatives(subject, text_content, from_email, ["rfq@rekaglobal.com"])
     msg.attach_alternative(html_content, "text/html")
     msg.send()
     
