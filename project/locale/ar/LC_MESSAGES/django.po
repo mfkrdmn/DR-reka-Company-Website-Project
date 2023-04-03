@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-26 17:56+0300\n"
+"POT-Creation-Date: 2023-04-03 23:31+0300\n"
 "PO-Revision-Date: 2023-03-26 17:59+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,10 +16,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\landing\views.py:22
+#: .\landing\views.py:119
 msgid "Hello"
 msgstr "مرحبًا"
 
@@ -40,7 +41,6 @@ msgid "arabic"
 msgstr "عربي"
 
 #: .\templates\aviation.html:184
-#| msgid "AVIATION</b></span> <span><b>SEGMENTS"
 msgid " AVIATION</span><span> SEGMENTS"
 msgstr "قطاعات الطيران"
 
@@ -65,7 +65,6 @@ msgid "UAV (UNMANNED AERIAL VEHICLE) - DRONES"
 msgstr "الطائرات بدون طيار (الطائرات بدون طيار) - الطائرات بدون طيار"
 
 #: .\templates\aviation.html:262
-#| msgid "OEM & PMA</b></span> <span><b>SEGMENTS"
 msgid " OEM/PMA</span><span> SEGMENTS"
 msgstr "قطاعات OEM و PMA"
 
@@ -153,9 +152,9 @@ msgstr "مجموعة شركات REKA"
 
 #: .\templates\base.html:242 .\templates\index.html:956
 msgid ""
-"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
-" ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
-"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT."
+"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
+"ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, "
+"COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgstr ""
 "REKA Global Services عمليات طيران ممتازة مع خبراء لبناء الثقة في التجارة "
 "الدولية وسلسلة توريد الطيران وخدمات دعم GSE والتمويل والتجارة والعقارات "
@@ -238,7 +237,6 @@ msgid "Update"
 msgstr "تحديث"
 
 #: .\templates\contact.html:20
-#| msgid " Our</span> <span>Services"
 msgid " Offices &</span><span> Warehouses"
 msgstr "خدماتنا"
 
@@ -247,15 +245,14 @@ msgid "Contact Us"
 msgstr "اتصال"
 
 #: .\templates\ec.html:94
-#| msgid "Modern Marketing &</span> <span>Ecommerce"
 msgid " Modern Marketing &</span><span> Ecommerce"
 msgstr "التسويق الحديث والتجارة الإلكترونية"
 
 #: .\templates\ec.html:98
 msgid ""
 "Modernization of trade requires differentiation of approaches for "
-"international markets. We serve corporate integration to new generation "
-"e-commerce applications.Reka Global offers a wide range of new generarion "
+"international markets. We serve corporate integration to new generation e-"
+"commerce applications.Reka Global offers a wide range of new generarion "
 "international trade services for both import and export processes."
 msgstr ""
 "يتطلب تحديث التجارة تمايز الأساليب المتبعة في الأسواق الدولية. نحن نخدم "
@@ -267,16 +264,16 @@ msgstr ""
 msgid ""
 "Our main goal is to offer our customers a smooth and successful trade "
 "operation, free from the possible risks and difficulties of international "
-"trade. Our wide range of services offers managing or monitoring standard and"
-" non-standard trade operations as well as tailor-made solutions for your "
+"trade. Our wide range of services offers managing or monitoring standard and "
+"non-standard trade operations as well as tailor-made solutions for your "
 "business.By utilizing our existing sales channels among all over the world, "
 "we are serving SMEs as an outsider sales team."
 msgstr ""
 "هدفنا الرئيسي هو أن نقدم لعملائنا عملية تجارية سلسة وناجحة ، خالية من "
 "المخاطر والصعوبات المحتملة للتجارة الدولية. تقدم مجموعة خدماتنا الواسعة "
 "إدارة أو مراقبة العمليات التجارية القياسية وغير القياسية بالإضافة إلى حلول "
-"مصممة خصيصًا لعملك. من خلال الاستفادة من قنوات المبيعات الحالية لدينا في "
-"جميع أنحاء العالم ، نحن نخدم الشركات الصغيرة والمتوسطة كفريق مبيعات خارجي."
+"مصممة خصيصًا لعملك. من خلال الاستفادة من قنوات المبيعات الحالية لدينا في جميع "
+"أنحاء العالم ، نحن نخدم الشركات الصغيرة والمتوسطة كفريق مبيعات خارجي."
 
 #: .\templates\finance.html:61
 msgid ""
@@ -306,10 +303,10 @@ msgid ""
 "for Western-built aircraft and helicopters; Boeing, Airbus and Bombardier "
 "components as well as Ground Support Equipments (GSE) and their spares. "
 msgstr ""
-"خدمة توريد وصيانة قطع الغيار العالمية تقريبًا لكل شركة تصنيع طائرات "
-"وهليكوبتر كبرى ؛ خدمة توريد وصيانة قطع الغيار للطائرات والمروحيات الغربية "
-"الصنع ؛ مكونات بوينج وإيرباص وبومباردييه بالإضافة إلى معدات الدعم الأرضي "
-"(GSE) وقطع غيارها."
+"خدمة توريد وصيانة قطع الغيار العالمية تقريبًا لكل شركة تصنيع طائرات وهليكوبتر "
+"كبرى ؛ خدمة توريد وصيانة قطع الغيار للطائرات والمروحيات الغربية الصنع ؛ "
+"مكونات بوينج وإيرباص وبومباردييه بالإضافة إلى معدات الدعم الأرضي (GSE) وقطع "
+"غيارها."
 
 #: .\templates\index.html:229
 msgid "WE BUILD TRUST"
@@ -328,8 +325,8 @@ msgstr "التجارة العالمية"
 
 #: .\templates\index.html:238
 msgid ""
-"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
-" ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
+"ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
 "FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL SERVES EXCELLENT "
 "AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, "
 "AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE "
@@ -356,8 +353,7 @@ msgid "COOPERATION CULTURE"
 msgstr "ثقافة التعاون"
 
 #: .\templates\index.html:254
-msgid ""
-"CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
+msgid "CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
 msgstr "يقود العمل الجماعي المؤسسي إلى النجاح العالمي بمبادئ التعاون"
 
 #: .\templates\index.html:262
@@ -396,8 +392,8 @@ msgid ""
 "Exclusive distribution of premium brands with EXW, CIP, DDP delivery "
 "logistic services"
 msgstr ""
-"توزيع حصري للعلامات التجارية المتميزة مع الخدمات اللوجستية للتسليم EXW و CIP"
-" و DDP"
+"توزيع حصري للعلامات التجارية المتميزة مع الخدمات اللوجستية للتسليم EXW و CIP "
+"و DDP"
 
 #: .\templates\index.html:378 .\templates\rec.html:77
 msgid "Real Estate"
@@ -408,8 +404,8 @@ msgid ""
 "Trustful commercial property partner for long term localization. "
 "Professional leasing and Tenant Mix solutions"
 msgstr ""
-"شريك ملكية تجارية موثوق به للتوطين على المدى الطويل. التأجير الاحترافي وحلول"
-" Tenant Mix"
+"شريك ملكية تجارية موثوق به للتوطين على المدى الطويل. التأجير الاحترافي وحلول "
+"Tenant Mix"
 
 #: .\templates\index.html:392 .\templates\rec.html:77
 msgid "Construction"
@@ -439,11 +435,11 @@ msgstr "التجارة الإلكترونية"
 
 #: .\templates\index.html:421
 msgid ""
-"Modernization of trade for international markets. Corporatintegration to new"
-" generation e-commerce applications"
+"Modernization of trade for international markets. Corporatintegration to new "
+"generation e-commerce applications"
 msgstr ""
-"تحديث التجارة للأسواق الدولية. دمج الشركات مع تطبيقات التجارة الإلكترونية من"
-" الجيل الجديد"
+"تحديث التجارة للأسواق الدولية. دمج الشركات مع تطبيقات التجارة الإلكترونية من "
+"الجيل الجديد"
 
 #: .\templates\index.html:440
 msgid "Trusted</span> <span>By"
@@ -467,8 +463,7 @@ msgstr ""
 #: .\templates\index.html:736
 msgid ""
 " Our wide range of services offers managing or monitoring standard and non-"
-"standard trade operations as well as tailor-made solutions for your "
-"business."
+"standard trade operations as well as tailor-made solutions for your business."
 msgstr ""
 "تقدم مجموعة خدماتنا الواسعة إدارة أو مراقبة العمليات التجارية القياسية وغير "
 "القياسية بالإضافة إلى الحلول المصممة خصيصًا لأعمالك."
@@ -483,8 +478,8 @@ msgstr ""
 
 #: .\templates\index.html:741
 msgid ""
-"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
-" ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
+"REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
+"ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
 "COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgstr ""
 "تقدم شركة REKA العالمية عمليات طيران ممتازة مع خبراء لبناء الثقة في التجارة "
@@ -570,7 +565,13 @@ msgstr "تسجيل الدخول"
 msgid "Dont Have an Account?"
 msgstr "ليس لديك حساب؟"
 
-#: .\templates\login.html:343 .\templates\register.html:351
+#: .\templates\login.html:343
+#, fuzzy
+#| msgid "Password"
+msgid "Forgot Password?"
+msgstr "كلمة المرور"
+
+#: .\templates\login.html:344 .\templates\register.html:351
 msgid "Return to home page"
 msgstr "العوده للصفحة الرئيسية"
 
@@ -618,12 +619,12 @@ msgstr "قائمة الجرد"
 msgid ""
 "As a part of group companies, Reka RE & C  serves comprehensive commercial "
 "development consultancy, real estate management, leasing solutions & tenant-"
-"mix optimization to localized projects with a wide aspect of globalized "
-"know-how."
+"mix optimization to localized projects with a wide aspect of globalized know-"
+"how."
 msgstr ""
-"كجزء من شركات المجموعة ، تقدم Reka RE & C استشارات التنمية التجارية الشاملة "
-"، وإدارة العقارات ، وحلول التأجير ، وتحسين مزيج المستأجرين للمشاريع المحلية "
-"مع جانب واسع من المعرفة المعولمة من أجل توسيع الحدود."
+"كجزء من شركات المجموعة ، تقدم Reka RE & C استشارات التنمية التجارية "
+"الشاملة ، وإدارة العقارات ، وحلول التأجير ، وتحسين مزيج المستأجرين للمشاريع "
+"المحلية مع جانب واسع من المعرفة المعولمة من أجل توسيع الحدود."
 
 #: .\templates\rec.html:80
 msgid ""
@@ -632,8 +633,8 @@ msgid ""
 "developments. Licenced real estate agents for professional leasing and "
 "Tenant Mix solutions."
 msgstr ""
-"شريك ملكية تجارية موثوق به للتوطين على المدى الطويل. إدارة المشاريع المتخصصة"
-" في التطوير الصناعي والمول والمكتبي والمتعدد الاستخدامات. وكلاء عقاريون "
+"شريك ملكية تجارية موثوق به للتوطين على المدى الطويل. إدارة المشاريع المتخصصة "
+"في التطوير الصناعي والمول والمكتبي والمتعدد الاستخدامات. وكلاء عقاريون "
 "مرخصون للتأجير الاحترافي وحلول Tenant Mix."
 
 #: .\templates\register.html:311

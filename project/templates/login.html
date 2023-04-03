@@ -340,6 +340,7 @@ img {
 					<button class="login__button">{% translate "Log In" %}</button>
 				</div>
 				<a href="{% url 'landing:register' %}" class="login__forgot" style="color: white;">{% translate "Dont Have an Account?" %}</a><br>
+				<a href="{% url 'landing:password_reset' %}" class="login__forgot" style="color: white;">{% translate "Forgot Password?" %}</a><br>
 				<a href="{% url 'landing:index' %}" class="login__forgot" style="color: white;">{% translate "Return to home page" %}</a>
 			</div>
 		</form>

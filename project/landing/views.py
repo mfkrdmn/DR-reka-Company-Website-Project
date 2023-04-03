@@ -23,11 +23,9 @@ def password_change(request):
         form = SetPasswordForm(user, request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, "Your password has been changed")
+   
             return redirect('login')
-        else:
-            for error in list(form.errors.values()):
-                messages.error(request, error)
+
 
     form = SetPasswordForm(user)
     return render(request, 'password_reset_confirm.html', {'form': form})
@@ -66,24 +64,14 @@ def password_reset_request(request):
                 email.attach_alternative(html_content, "text/html")
                 #email = EmailMessage(subject, message, to=[associated_user.email])
                 if email.send():
-                    messages.success(request,
-                        """
-                        <h2>Password reset sent</h2><hr>
-                        <p>
-                            We've emailed you instructions for setting your password, if an account exists with the email you entered. 
-                            You should receive them shortly.<br>If you don't receive an email, please make sure you've entered the address 
-                            you registered with, and check your spam folder.
-                        </p>
-                        """
-                    )
-                else:
-                    messages.error(request, "Problem sending reset password email, <b>SERVER PROBLEM</b>")
+                   pass
+             
+                 
 
             return redirect('/')
 
         for key, error in list(form.errors.items()):
             if key == 'captcha' and error[0] == 'This field is required.':
-                messages.error(request, "You must pass the reCAPTCHA test")
                 continue
 
     form = PasswordResetForm()
@@ -105,18 +93,17 @@ def passwordResetConfirm(request, uidb64, token):
             form = SetPasswordForm(user, request.POST)
             if form.is_valid():
                 form.save()
-                messages.success(request, "Your password has been set. You may go ahead and <b>log in </b> now.")
                 return redirect('/')
             else:
                 for error in list(form.errors.values()):
-                    messages.error(request, error)
+                    pass
 
         form = SetPasswordForm(user)
         return render(request, 'password_reset_confirm.html', {'form': form})
-    else:
-        messages.error(request, "Link is expired")
 
-    messages.error(request, 'Something went wrong, redirecting back to Homepage')
+
+
+
     return redirect("/")
 def page_not_found_view(request, exception):
     return render(request, '404.html')
