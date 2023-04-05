@@ -131,6 +131,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
 LANGUAGE_CODE = 'en'
+LANGUAGE_COOKIE_NAME = 'None'
+
 from django.utils.translation import gettext_lazy as _
 LANGUAGES = (
     ('en', _('English')),

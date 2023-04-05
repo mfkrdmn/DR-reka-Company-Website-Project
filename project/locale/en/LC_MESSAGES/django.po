@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 23:31+0300\n"
-"PO-Revision-Date: 2023-03-26 17:58+0000\n"
+"POT-Creation-Date: 2023-04-04 19:22+0300\n"
+"PO-Revision-Date: 2023-04-04 18:56+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,23 +19,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\landing\views.py:119
+#: .\landing\views.py:122
 msgid "Hello"
 msgstr "Hello"
 
-#: .\project\settings.py:136
+#: .\project\settings.py:138
 msgid "English"
 msgstr "English"
 
-#: .\project\settings.py:137
+#: .\project\settings.py:139
 msgid "Turkish"
 msgstr "Turkish"
 
-#: .\project\settings.py:138
+#: .\project\settings.py:140
 msgid "German"
 msgstr "German"
 
-#: .\project\settings.py:139
+#: .\project\settings.py:141
 msgid "arabic"
 msgstr "Arabic"
 
@@ -326,20 +326,19 @@ msgid "INTERNATIONAL TRADE"
 msgstr "INTERNATIONAL TRADE"
 
 #: .\templates\index.html:238
+#, fuzzy
+#| msgid ""
+#| "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD "
+#| "TRUST ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+#| "FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
 "ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
-"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL SERVES EXCELLENT "
-"AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, "
-"AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE "
-"AND DEVELOPMENT"
+"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT "
 msgstr ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
-"ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
-"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL SERVES EXCELLENT "
-"AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, "
-"AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE "
-"AND DEVELOPMENT"
+"ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, "
+"COMMERCE, REAL ESTATE AND DEVELOPMENT."
 
 #: .\templates\index.html:245
 msgid "MRO & GROUND HANDLING"
@@ -377,7 +376,9 @@ msgid "Our sales team will contact with you in 48 hours."
 msgstr "Our sales team will contact with you in 48 hours."
 
 #: .\templates\index.html:339
-msgid " Our</span> <span>Services"
+#, fuzzy
+#| msgid " Our</span> <span>Services"
+msgid " Our</span> <span>Services!"
 msgstr "Our Services"
 
 #: .\templates\index.html:350
@@ -554,39 +555,53 @@ msgstr "Quality Control Specialist"
 msgid "Logistic Specialist"
 msgstr "Logistic Specialist"
 
-#: .\templates\login.html:312
+#: .\templates\login.html:313
 msgid "Welcome"
 msgstr "Welcome"
 
-#: .\templates\login.html:312
+#: .\templates\login.html:313
 msgid "Back!"
 msgstr "Back!"
 
-#: .\templates\login.html:322
+#: .\templates\login.html:324
 msgid "E-mail"
 msgstr "Email"
 
-#: .\templates\login.html:327 .\templates\register.html:330
+#: .\templates\login.html:329 .\templates\register.html:330
 msgid "Password"
 msgstr "Password"
 
-#: .\templates\login.html:340
+#: .\templates\login.html:342
 msgid "Log In"
 msgstr "Log In"
 
-#: .\templates\login.html:342
+#: .\templates\login.html:344
 msgid "Dont Have an Account?"
 msgstr "Dont Have an Account?"
 
-#: .\templates\login.html:343
-#, fuzzy
-#| msgid "Password"
+#: .\templates\login.html:345
 msgid "Forgot Password?"
-msgstr "Password"
+msgstr "Forgot Password?"
 
-#: .\templates\login.html:344 .\templates\register.html:351
+#: .\templates\login.html:346 .\templates\register.html:351
 msgid "Return to home page"
 msgstr "Return to home page"
+
+#: .\templates\password_reset.html:10
+msgid "Reset Password"
+msgstr "Reset Password"
+
+#: .\templates\password_reset.html:11
+msgid ""
+"Forgot your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+"Forgot your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+
+#: .\templates\password_reset.html:15
+msgid "Send email"
+msgstr "Send email"
 
 #: .\templates\product.html:16
 msgid "PN"
@@ -667,6 +682,21 @@ msgstr "Password again"
 #: .\templates\register.html:350
 msgid "Already Have an Account?"
 msgstr "Already Have an Account?"
+
+#~ msgid ""
+#~ "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD "
+#~ "TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT "
+#~ "SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL "
+#~ "SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON "
+#~ "INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+#~ "FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT"
+#~ msgstr ""
+#~ "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD "
+#~ "TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT "
+#~ "SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL "
+#~ "SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON "
+#~ "INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+#~ "FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT"
 
 #~ msgid "Days"
 #~ msgstr "Days"

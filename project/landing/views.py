@@ -75,10 +75,13 @@ def password_reset_request(request):
                 continue
 
     form = PasswordResetForm()
+    dil = dil_bilgisi()
+    trans = translate(language='English')
+    link = "password_reset"
     return render(
         request=request, 
         template_name="password_reset.html", 
-        context={"form": form}
+        context={"form": form,"trans":trans,"dil":dil,"link":link}
         )
 def passwordResetConfirm(request, uidb64, token):
     User = get_user_model()

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-03 23:31+0300\n"
-"PO-Revision-Date: 2023-03-26 17:59+0000\n"
+"POT-Creation-Date: 2023-04-04 19:22+0300\n"
+"PO-Revision-Date: 2023-04-04 18:58+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -20,23 +20,23 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\landing\views.py:119
+#: .\landing\views.py:122
 msgid "Hello"
 msgstr "مرحبًا"
 
-#: .\project\settings.py:136
+#: .\project\settings.py:138
 msgid "English"
 msgstr "إنجليزي"
 
-#: .\project\settings.py:137
+#: .\project\settings.py:139
 msgid "Turkish"
 msgstr "اللغة التركية"
 
-#: .\project\settings.py:138
+#: .\project\settings.py:140
 msgid "German"
 msgstr "ألمانية"
 
-#: .\project\settings.py:139
+#: .\project\settings.py:141
 msgid "arabic"
 msgstr "عربي"
 
@@ -324,17 +324,19 @@ msgid "INTERNATIONAL TRADE"
 msgstr "التجارة العالمية"
 
 #: .\templates\index.html:238
+#, fuzzy
+#| msgid ""
+#| "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD "
+#| "TRUST ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+#| "FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
 "ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
-"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL SERVES EXCELLENT "
-"AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, "
-"AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE "
-"AND DEVELOPMENT"
+"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT "
 msgstr ""
-"REKA GLOBAL SERVICES عمليات طيران ممتازة مع خبراء لبناء الثقة في التجارة "
+"REKA Global Services عمليات طيران ممتازة مع خبراء لبناء الثقة في التجارة "
 "الدولية وسلسلة توريد الطيران وخدمات دعم GSE والتمويل والتجارة والعقارات "
-"والتنمية"
+"والتنمية."
 
 #: .\templates\index.html:245
 msgid "MRO & GROUND HANDLING"
@@ -370,7 +372,9 @@ msgid "Our sales team will contact with you in 48 hours."
 msgstr "سيتواصل معك فريق المبيعات لدينا في غضون 48 ساعة."
 
 #: .\templates\index.html:339
-msgid " Our</span> <span>Services"
+#, fuzzy
+#| msgid " Our</span> <span>Services"
+msgid " Our</span> <span>Services!"
 msgstr "خدماتنا"
 
 #: .\templates\index.html:350
@@ -541,39 +545,55 @@ msgstr "أخصائي ضبط الجودة"
 msgid "Logistic Specialist"
 msgstr "أخصائي لوجستي"
 
-#: .\templates\login.html:312
+#: .\templates\login.html:313
 msgid "Welcome"
 msgstr "مرحباً"
 
-#: .\templates\login.html:312
+#: .\templates\login.html:313
 msgid "Back!"
 msgstr "خلف!"
 
-#: .\templates\login.html:322
+#: .\templates\login.html:324
 msgid "E-mail"
 msgstr "بريد إلكتروني"
 
-#: .\templates\login.html:327 .\templates\register.html:330
+#: .\templates\login.html:329 .\templates\register.html:330
 msgid "Password"
 msgstr "كلمة المرور"
 
-#: .\templates\login.html:340
+#: .\templates\login.html:342
 msgid "Log In"
 msgstr "تسجيل الدخول"
 
-#: .\templates\login.html:342
+#: .\templates\login.html:344
 msgid "Dont Have an Account?"
 msgstr "ليس لديك حساب؟"
 
-#: .\templates\login.html:343
+#: .\templates\login.html:345
 #, fuzzy
 #| msgid "Password"
 msgid "Forgot Password?"
 msgstr "كلمة المرور"
 
-#: .\templates\login.html:344 .\templates\register.html:351
+#: .\templates\login.html:346 .\templates\register.html:351
 msgid "Return to home page"
 msgstr "العوده للصفحة الرئيسية"
+
+#: .\templates\password_reset.html:10
+msgid "Reset Password"
+msgstr "إعادة تعيين كلمة المرور"
+
+#: .\templates\password_reset.html:11
+msgid ""
+"Forgot your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+"نسيت كلمة السر؟ أدخل عنوان بريدك الإلكتروني أدناه ، وسنرسل إليك تعليمات عبر "
+"البريد الإلكتروني لإعداد عنوان جديد."
+
+#: .\templates\password_reset.html:15
+msgid "Send email"
+msgstr "ارسل بريد الكتروني"
 
 #: .\templates\product.html:16
 msgid "PN"
@@ -652,6 +672,18 @@ msgstr "أدخل كلمة السر مرة أخرى"
 #: .\templates\register.html:350
 msgid "Already Have an Account?"
 msgstr "هل لديك حساب؟"
+
+#~ msgid ""
+#~ "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD "
+#~ "TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT "
+#~ "SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL "
+#~ "SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON "
+#~ "INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+#~ "FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT"
+#~ msgstr ""
+#~ "REKA GLOBAL SERVICES عمليات طيران ممتازة مع خبراء لبناء الثقة في التجارة "
+#~ "الدولية وسلسلة توريد الطيران وخدمات دعم GSE والتمويل والتجارة والعقارات "
+#~ "والتنمية"
 
 #~ msgid "Days"
 #~ msgstr "أيام"

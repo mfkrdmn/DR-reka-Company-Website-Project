@@ -306,11 +306,13 @@ img {
 
 
         <form action="" method="POST" class="login__form">
+			<img width="150ox"  src="{% static 'images/logo.png' %}" alt="" style="margin-left: 110px;">
             {% csrf_token %}
 			<div>
-				<h1 class="login__title">
+				<h1 class="login__title" style="display: inline;">
 					<span>{% translate "Welcome" %} </span> {% translate "Back!" %}
 				</h1>
+		
 				{% for field in messages %}
 					<li style="color: rgb(255, 255, 255); list-style: none;">{{field}}</li>
 				{% endfor %}
