@@ -16,6 +16,9 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_str
 from django.core.mail import EmailMessage
 from django.db.models.query_utils import Q
+
+def kayitli(request):
+    pass
 @login_required
 def password_change(request):
     user = request.user

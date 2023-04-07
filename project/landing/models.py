@@ -52,3 +52,7 @@ class all_product(models.Model):
     price = models.CharField(max_length=50, blank=True)
     def __str__(self):
         return self.ac_type
+    
+
+class dil_kayit(models.Model):
+    ip_bilgisi = models.GenericIPAddressField(verbose_name="Şahıs İp Adresi")
