@@ -17,8 +17,17 @@ from django.utils.encoding import force_bytes, force_str
 from django.core.mail import EmailMessage
 from django.db.models.query_utils import Q
 
-def kayitli(request):
-    pass
+def yonlendirme(request):
+    return redirect ("/en/home")
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+from .models import dil_kayit
+
 @login_required
 def password_change(request):
     user = request.user
@@ -79,7 +88,7 @@ def password_reset_request(request):
 
     form = PasswordResetForm()
     dil = dil_bilgisi()
-    trans = translate(language='English')
+    trans = translate(language='en')
     link = "password_reset"
     return render(
         request=request, 
@@ -157,8 +166,8 @@ def send_email(request,PartNumber,Description,Quantity,Condition,Mail,Telephone,
 
 def index(request):
     dil = dil_bilgisi()
-    trans = translate(language='English')
-    link = ""
+    trans = translate(language='en')
+    link = "home"
     if request.method == "POST":
         PartNumber = request.POST['PartNumber']
         Description = request.POST['Description']
@@ -175,37 +184,36 @@ def index(request):
             Quantity=Quantity,Condition=Condition,Mail=Mail,Telephone=Telephone,CompanyName=CompanyName,fullname=fullname)
             newRFQ.save()
             return redirect('/')
-    
-    
+
     return render(request, 'index.html',{"trans":trans,"dil":dil,"link":link})
 
 #############
 
 def contact(request):
     dil = dil_bilgisi()
-    trans = translate(language='English')
+    trans = translate(language='en')
     link = "contactus"
     return render(request,"contact.html",{"trans":trans,"dil":dil,"link":link})
 
 def career(request):
     dil = dil_bilgisi()
-    trans = translate(language='English')
+    trans = translate(language='en')
     link = "career"
     return render(request,"career.html",{"trans":trans,"dil":dil,"link":link})
 
 def test(request):
     dil = dil_bilgisi()
-    trans = translate(language='English')
+    trans = translate(language='en')
     return render(request,"test.html",{"trans":trans,"dil":dil})
 
 def aviation(request):
     dil = dil_bilgisi()
     link = "aviation"
-    trans = translate(language='English')
+    trans = translate(language='en')
     return render(request,"aviation.html",{"trans":trans,"dil":dil,"link":link})
     
 def gse(request):
-    trans = translate(language='English')
+    trans = translate(language='en')
     ur = urun.objects.all()
     link = "gse"
     dil = dil_bilgisi()
@@ -214,17 +222,17 @@ def gse(request):
 def finance(request):
     dil = dil_bilgisi()
     link = "finance"
-    trans = translate(language='English')
+    trans = translate(language='en')
     return render(request,"finance.html",{"trans":trans,"dil":dil,"link":link})
 
 def ec(request):
     dil = dil_bilgisi()
     link = "ec"
-    trans = translate(language='English')
+    trans = translate(language='en')
     return render(request,"ec.html",{"trans":trans,"dil":dil,"link":link})
 
 def rec(request):
-    trans = translate(language='English')
+    trans = translate(language='en')
     link = "rec"
     dil = dil_bilgisi()
     return render(request,"rec.html",{"trans":trans,"dil":dil,"link":link})
@@ -232,14 +240,14 @@ def rec(request):
 
 from .forms import * 
 def companyprofile(request):
-    trans = translate(language='English')
+    trans = translate(language='en')
     dil = dil_bilgisi()
     link = "companyprofile"
     content = {"trans":trans,"dil":dil, "link":link}
     prr = get_object_or_404(Profile,user_id = request.user.id)
     if dil_bilgisi() == "Turkish":
         form = profile_edit_tr(request.POST or None,request.FILES or None,instance = prr)
-    elif dil_bilgisi() == "English":
+    elif dil_bilgisi() == "en":
         form = profile_edit_en(request.POST or None,request.FILES or None,instance = prr)
     elif dil_bilgisi() == "Arabic":
         form = profile_edit_ar(request.POST or None,request.FILES or None,instance = prr)
