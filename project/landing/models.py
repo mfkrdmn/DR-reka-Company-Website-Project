@@ -54,5 +54,3 @@ class all_product(models.Model):
         return self.ac_type
     
 
-class dil_kayit(models.Model):
-    ip_bilgisi = models.GenericIPAddressField(verbose_name="Şahıs İp Adresi")
