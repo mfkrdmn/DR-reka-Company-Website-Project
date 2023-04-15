@@ -106,10 +106,11 @@
       <div class="header_bottom">
         <div class="container-fluid">
 
-          <nav class="navbar navbar-expand-xl custom_nav-container ">
+          <nav class="navbar navbar-expand-xxl custom_nav-container" >
             <a class="navbar-brand" href="/{{dil}}{% url 'landing:index' %}">
 
-              <img width="150ox" src="{% static 'images/logo.png' %}" alt="">
+              <img width="150px" src="{% static 'images/logo.png' %}" alt="">
+
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -257,7 +258,7 @@
           <img src="{% static 'images/slider/slider5.jpg' %}" class="d-block w-100 sliderpic "
             style="object-fit: cover;" alt="...">
           <div class="carousel-caption  d-md-block">
-            <h1 class="slidertitles"> <b> SKY IS THE LIMIT</b></h5>
+            <h1 class="slidertitles"> <b> {% translate "SKY IS THE LIMIT" %}</b></h5>
               <p class="slidertexts">{% translate "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION" %}</p>
           </div>
         </div>
@@ -335,7 +336,8 @@
       <div class="container ">
         <div class="heading_container heading_center">
           <h2>
-            <span style="color: rgb(139, 139, 139);">{% translate " Our</span> <span>Services" %}</span>
+            <span style="color: rgb(139, 139, 139);"><b>{% translate " Our</span> <span>Services" %}</b></span>
+            <!-- <span style="color: rgb(165, 165, 165);"><b>{% translate "Our" %} & </b></span> <span><b>  {% translate "Services" %} </b></span> -->
           </h2>
         </div>
         <div class="row">
@@ -706,6 +708,27 @@
 
                 </div>
               </div>
+              <div class="item animate" data-animate="fadeInUp">
+                <div class="service-box">
+
+                  <img src="{% static 'images/brands/43.png'%}" alt="" class="brands-img">
+
+                </div>
+              </div>
+              <div class="item animate" data-animate="fadeInUp">
+                <div class="service-box">
+
+                  <img src="{% static 'images/brands/44.png'%}" alt="" class="brands-img">
+
+                </div>
+              </div>
+              <div class="item animate" data-animate="fadeInUp">
+                <div class="service-box">
+
+                  <img src="{% static 'images/brands/45.png'%}" alt="" class="brands-img">
+
+                </div>
+              </div>
 
             </div>
           </div>
@@ -980,7 +1003,7 @@
                   <a class="" href="{% url 'landing:ec' %}" style="text-decoration: none ; ">
                     {% translate "EC" %}
                   </a>
-                  <a class="" href="contact.html" style="text-decoration: none ; ">
+                  <a class="" href="{% url 'landing:rec' %}" style="text-decoration: none ; ">
                     {% translate "RE & C" %}
                   </a>
                   <a class="" href="{% url 'landing:career' %}" style="text-decoration: none ; ">
