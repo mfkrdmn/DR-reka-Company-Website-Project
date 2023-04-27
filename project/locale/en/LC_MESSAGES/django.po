@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 18:43+0300\n"
-"PO-Revision-Date: 2023-04-24 20:15+0000\n"
+"POT-Creation-Date: 2023-04-27 23:16+0300\n"
+"PO-Revision-Date: 2023-04-27 23:17+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -195,7 +195,7 @@ msgstr "Join Our Global Team"
 msgid "Edit Profile"
 msgstr "Edit Profile"
 
-#: .\templates\companyprofile.html:83
+#: .\templates\companyprofile.html:83 .\templates\index.html:318
 msgid "Name Surname"
 msgstr "Name Surname"
 
@@ -227,7 +227,7 @@ msgstr "Member Notes"
 msgid "profile Update"
 msgstr "profile Update"
 
-#: .\templates\companyprofile.html:146
+#: .\templates\companyprofile.html:146 .\templates\index.html:323
 msgid "Close"
 msgstr "Close"
 
@@ -326,11 +326,6 @@ msgid "INTERNATIONAL TRADE"
 msgstr "INTERNATIONAL TRADE"
 
 #: .\templates\index.html:239
-#, fuzzy
-#| msgid ""
-#| "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
-#| " ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
-#| "FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT."
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST"
 " ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
@@ -372,6 +367,38 @@ msgid ""
 msgstr ""
 "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
 
+#: .\templates\index.html:298
+msgid "Request For Quote "
+msgstr "Request For Quote"
+
+#: .\templates\index.html:304
+msgid "Part Number "
+msgstr "Part Number"
+
+#: .\templates\index.html:306
+msgid "Description "
+msgstr "Description"
+
+#: .\templates\index.html:308
+msgid "Quantity *:"
+msgstr "Quantity "
+
+#: .\templates\index.html:310 .\templates\product.html:18
+msgid "Condition"
+msgstr "Construction"
+
+#: .\templates\index.html:312
+msgid "Mail"
+msgstr "E-Mail"
+
+#: .\templates\index.html:314
+msgid "Telephone"
+msgstr "Telephone"
+
+#: .\templates\index.html:316
+msgid "Company name"
+msgstr "Company Name"
+
 #: .\templates\index.html:328
 msgid "RFQ is submitted successfully!"
 msgstr "RFQ is submitted successfully!"
@@ -381,7 +408,6 @@ msgid "Our sales team will contact with you in 48 hours."
 msgstr "Our sales team will contact with you in 48 hours."
 
 #: .\templates\index.html:340
-#| msgid " Our</span> <span>Services"
 msgid "Our</span> <span>Services"
 msgstr "Our Services"
 
@@ -616,10 +642,6 @@ msgstr "PN"
 #: .\templates\product.html:17
 msgid "Size"
 msgstr "Size"
-
-#: .\templates\product.html:18
-msgid "Condition"
-msgstr "Construction"
 
 #: .\templates\product.html:19
 msgid "AC Type"

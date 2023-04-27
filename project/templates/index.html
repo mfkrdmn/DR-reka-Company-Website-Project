@@ -294,32 +294,32 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header bg-danger">
-          <h1 class="modal-title fs-5" style="color:white ;" id="staticBackdropLabel">Request For Quote</h1>
+          <h1 class="modal-title fs-5" style="color:white ;" id="staticBackdropLabel">{% translate "Request For Quote " %}</h1>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
           <form action="" method="POST">
             {% csrf_token %}
-            <label for="fname">Part Number *:</label><br>
+            <label for="fname">{% translate "Part Number " %}*:</label><br>
             <input class="w-100" type="text" id="fname" name="PartNumber" required><br><br>
-            <label for="lname">Description:</label><br>
+            <label for="lname">{% translate "Description " %}*:</label><br>
             <input class="w-100" type="text" id="lname" name="Description"><br><br>
-            <label for="lname">Quantity *:</label><br>
+            <label for="lname">{% translate "Quantity *:" %} *:</label><br>
             <input class="w-100" type="text" id="lname" name="Quantity" required><br><br>
-            <label for="lname">Condition:</label><br>
+            <label for="lname">{% translate "Condition" %}:</label><br>
             <input class="w-100" type="text" id="lname" name="Condition"><br><br>
-            <label for="lname">Mail *:</label><br>
+            <label for="lname">{% translate "Mail" %} *:</label><br>
             <input class="w-100" type="email" id="lname" name="Mail" required><br><br>
-            <label for="lname">Telephone:</label><br>
+            <label for="lname">{% translate "Telephone" %}:</label><br>
             <input class="w-100" type="tel" id="lname" name="Telephone"><br><br>
-            <label for="lname">Company Name:</label><br>
+            <label for="lname">{% translate "Company name" %}:</label><br>
             <input class="w-100" type="text" id="lname" name="CompanyName"><br><br>
-            <label for="lname">Name Surname:</label><br>
+            <label for="lname">{% translate "Name Surname" %}:</label><br>
             <input class="w-100" type="text" id="lname" name="fullname"><br><br>
 
         </div>
         <div class="modal-footer" style="justify-content: center !important">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% translate "Close" %}</button>
           <input type="submit" class="btn btn-danger" value="Submit"  onclick="myAlertTop()">
           </form>
           <div class="myAlert-top alert alert-info">
@@ -836,7 +836,7 @@
 
   <!-- end why us section -->
 
-  <div class="container mt-5 mb-5">
+  <!-- <div class="container mt-5 mb-5">
     <div class="text-center heading_container heading_center">
       <h2>
 
@@ -952,7 +952,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- end client section -->
 

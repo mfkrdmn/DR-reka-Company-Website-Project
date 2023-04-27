@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 18:43+0300\n"
-"PO-Revision-Date: 2023-04-21 19:27+0000\n"
+"POT-Creation-Date: 2023-04-27 23:16+0300\n"
+"PO-Revision-Date: 2023-04-27 23:17+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -196,7 +196,7 @@ msgstr "Treten Sie unserem globalen Team bei"
 msgid "Edit Profile"
 msgstr "Profil bearbeiten"
 
-#: .\templates\companyprofile.html:83
+#: .\templates\companyprofile.html:83 .\templates\index.html:318
 msgid "Name Surname"
 msgstr "Vorname Familienname"
 
@@ -228,7 +228,7 @@ msgstr "Mich erinnern"
 msgid "profile Update"
 msgstr "Profilaktualisierung"
 
-#: .\templates\companyprofile.html:146
+#: .\templates\companyprofile.html:146 .\templates\index.html:323
 msgid "Close"
 msgstr "Schließen"
 
@@ -377,6 +377,38 @@ msgid ""
 "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
 msgstr "ERWARTUNG VON LEISTUNGEN ÜBER GRENZEN MIT KREATIVITÄT UND INSPIRATION"
 
+#: .\templates\index.html:298
+msgid "Request For Quote "
+msgstr "Anfrage für ein Angebot"
+
+#: .\templates\index.html:304
+msgid "Part Number "
+msgstr "Artikelnummer"
+
+#: .\templates\index.html:306
+msgid "Description "
+msgstr "Beschreibung"
+
+#: .\templates\index.html:308
+msgid "Quantity *:"
+msgstr "Menge"
+
+#: .\templates\index.html:310 .\templates\product.html:18
+msgid "Condition"
+msgstr "Konstruktion"
+
+#: .\templates\index.html:312
+msgid "Mail"
+msgstr "E-Mail"
+
+#: .\templates\index.html:314
+msgid "Telephone"
+msgstr "Telefon"
+
+#: .\templates\index.html:316
+msgid "Company name"
+msgstr "Name der Firma"
+
 #: .\templates\index.html:328
 msgid "RFQ is submitted successfully!"
 msgstr "Anfrage wurde erfolgreich übermittelt!"
@@ -388,7 +420,6 @@ msgstr ""
 "Verbindung setzen."
 
 #: .\templates\index.html:340
-#| msgid " Our</span> <span>Services"
 msgid "Our</span> <span>Services"
 msgstr "Unsere Dienstleistungen"
 
@@ -628,10 +659,6 @@ msgstr "PN"
 #: .\templates\product.html:17
 msgid "Size"
 msgstr "Größe"
-
-#: .\templates\product.html:18
-msgid "Condition"
-msgstr "Konstruktion"
 
 #: .\templates\product.html:19
 msgid "AC Type"

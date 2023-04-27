@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 18:43+0300\n"
-"PO-Revision-Date: 2023-04-21 19:23+0000\n"
+"POT-Creation-Date: 2023-04-27 23:16+0300\n"
+"PO-Revision-Date: 2023-04-27 23:17+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -195,7 +195,7 @@ msgstr "Ekibimize Katıl"
 msgid "Edit Profile"
 msgstr "Profili Düzenle"
 
-#: .\templates\companyprofile.html:83
+#: .\templates\companyprofile.html:83 .\templates\index.html:318
 msgid "Name Surname"
 msgstr "Ad Soyad"
 
@@ -227,7 +227,7 @@ msgstr "Beni Hatırla"
 msgid "profile Update"
 msgstr "Profil güncelleme"
 
-#: .\templates\companyprofile.html:146
+#: .\templates\companyprofile.html:146 .\templates\index.html:323
 msgid "Close"
 msgstr "Kapat"
 
@@ -367,6 +367,38 @@ msgid ""
 "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
 msgstr "YARATICILIK VE İLHAM İLE SINIR ÖTESİNDE HİZMET "
 
+#: .\templates\index.html:298
+msgid "Request For Quote "
+msgstr "Teklif Talebi"
+
+#: .\templates\index.html:304
+msgid "Part Number "
+msgstr "Parça Numarası"
+
+#: .\templates\index.html:306
+msgid "Description "
+msgstr "Açıklama"
+
+#: .\templates\index.html:308
+msgid "Quantity *:"
+msgstr "Miktar"
+
+#: .\templates\index.html:310 .\templates\product.html:18
+msgid "Condition"
+msgstr "Yapı"
+
+#: .\templates\index.html:312
+msgid "Mail"
+msgstr "E-Mail"
+
+#: .\templates\index.html:314
+msgid "Telephone"
+msgstr "Telefon"
+
+#: .\templates\index.html:316
+msgid "Company name"
+msgstr "Firma Adı"
+
 #: .\templates\index.html:328
 msgid "RFQ is submitted successfully!"
 msgstr "RFQ başarıyla gönderildi!"
@@ -376,7 +408,6 @@ msgid "Our sales team will contact with you in 48 hours."
 msgstr "Satış ekibimiz 48 saat içinde sizinle iletişime geçecektir."
 
 #: .\templates\index.html:340
-#| msgid " Our</span> <span>Services"
 msgid "Our</span> <span>Services"
 msgstr "SERVİSLERİMİZ"
 
@@ -578,7 +609,6 @@ msgid "Dont Have an Account?"
 msgstr "Hesabınız Yok mu?"
 
 #: .\templates\login.html:345
-#| msgid "Password"
 msgid "Forgot Password?"
 msgstr "Şifre"
 
@@ -609,10 +639,6 @@ msgstr "PN"
 #: .\templates\product.html:17
 msgid "Size"
 msgstr "Boyut"
-
-#: .\templates\product.html:18
-msgid "Condition"
-msgstr "Yapı"
 
 #: .\templates\product.html:19
 msgid "AC Type"

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 18:43+0300\n"
-"PO-Revision-Date: 2023-04-21 19:27+0000\n"
+"POT-Creation-Date: 2023-04-27 23:16+0300\n"
+"PO-Revision-Date: 2023-04-27 23:17+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -195,7 +195,7 @@ msgstr "انضم إلى فريقنا العالمي"
 msgid "Edit Profile"
 msgstr "تعديل الملف الشخصي"
 
-#: .\templates\companyprofile.html:83
+#: .\templates\companyprofile.html:83 .\templates\index.html:318
 msgid "Name Surname"
 msgstr "اسم اللقب"
 
@@ -227,7 +227,7 @@ msgstr "تذكرنى"
 msgid "profile Update"
 msgstr "تحديث الملف الشخصي"
 
-#: .\templates\companyprofile.html:146
+#: .\templates\companyprofile.html:146 .\templates\index.html:323
 msgid "Close"
 msgstr "يغلق"
 
@@ -367,6 +367,38 @@ msgid ""
 "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
 msgstr "توقع خدمات تتجاوز الحدود بالإبداع والإلهام"
 
+#: .\templates\index.html:298
+msgid "Request For Quote "
+msgstr "طلب للحصول على الاقتباس"
+
+#: .\templates\index.html:304
+msgid "Part Number "
+msgstr "رقم القطعة"
+
+#: .\templates\index.html:306
+msgid "Description "
+msgstr "وصف"
+
+#: .\templates\index.html:308
+msgid "Quantity *:"
+msgstr "كمية"
+
+#: .\templates\index.html:310 .\templates\product.html:18
+msgid "Condition"
+msgstr "بناء"
+
+#: .\templates\index.html:312
+msgid "Mail"
+msgstr "بريد إلكتروني"
+
+#: .\templates\index.html:314
+msgid "Telephone"
+msgstr "هاتف"
+
+#: .\templates\index.html:316
+msgid "Company name"
+msgstr "اسم الشركة"
+
 #: .\templates\index.html:328
 msgid "RFQ is submitted successfully!"
 msgstr ""
@@ -376,7 +408,6 @@ msgid "Our sales team will contact with you in 48 hours."
 msgstr "سيتواصل معك فريق المبيعات لدينا في غضون 48 ساعة."
 
 #: .\templates\index.html:340
-#| msgid " Our</span> <span>Services"
 msgid "Our</span> <span>Services"
 msgstr "خدماتنا"
 
@@ -606,10 +637,6 @@ msgstr "PN"
 #: .\templates\product.html:17
 msgid "Size"
 msgstr "مقاس"
-
-#: .\templates\product.html:18
-msgid "Condition"
-msgstr "بناء"
 
 #: .\templates\product.html:19
 msgid "AC Type"
