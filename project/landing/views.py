@@ -362,16 +362,29 @@ def profile(request):
 
     return render(request,"profile.html",content)
 
+import pymongo
+from pymongo import MongoClient
+import pprint 
 def product_list(request):
     dil = dil_bilgisi()
     content ={}
     content["dil"] = dil
     products = all_product.objects.filter(qty__gt=0)
-    
+    pp = pprint.PrettyPrinter(indent=4)
+    try:
+        cluster = MongoClient("mongodb+srv://REKA:3AbmBSHN411S97Pn@cluster0.43pzfgv.mongodb.net/?retryWrites=true&w=majority")
+        db = cluster["rekaDB_v014"]
+        collection = db["PRODUCTS"]
+        print("bağlantıo kuruldu")
+    except:
+        pass
+    a = collection.find()
     #__contains =
     if request.GET:
         key = request.GET.get("key")
         if key:
-            products = all_product.objects.filter(qty__gt=0,pn__contains = key)
-    content["product"] = products
+            z = { "$regex": "^"+key }
+            a = collection.find({'PartNumber': z })
+            
+    content["product"] = a
     return render(request,"product.html",content)

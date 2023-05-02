@@ -24,12 +24,12 @@
     <tbody>
     {% for i in product %}
         <tr>
-            <td>{{i.pn}}</td>
+            <td>{{i.PartNumber}}</td>
             <td>{{i.size}}</td>
-            <td>{{i.condition}}</td>
-            <td>{{i.ac_type}}</td>
-            <td>{{i.qty}}</td>
-            <td>${{i.price}}</td>
+            <td>{{i.Condition}}</td>
+            <td>{{i.PartName}}</td>
+            <td>{{i.Quantity}}</td>
+            <td>${{i.UnitPrice.Price}}</td>
         </tr>
     {% endfor %}
       
