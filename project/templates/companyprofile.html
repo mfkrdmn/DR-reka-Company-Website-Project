@@ -1,6 +1,7 @@
-{% load static %}
 {% load i18n %}
+{% load static %}
 
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +21,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <body>
+    <select onchange="window.location.href=this.value;" class="selectpicker" data-width="fit"
+    style="background-color: #d83744; border: 0px; color: white;">
+    {% get_current_language as lang.name_local %}
+    {% get_available_languages as LANGUAGES %}
+    {% get_language_info_list for LANGUAGES as languages %}
+    <!-- <option value="/{{ lang.code }}/">{{dil}}</option>  -->
+    {% if  dil == "tr" %}
+          <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+          Türkçe
+    </option>
+
+        {% elif dil == "en" %}
+        <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+        English
+    </option>
+        {% elif dil == "ar" %}
+        <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+          عربي
+    </option>
+        {% else %}
+        <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+        Deutsch
+    </option>
+        {% endif %}
+    {% for lang in languages %}
+    {% if lang.code == dil %}
+        
+        {% else %}
+      <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+
+        <a class="dropdown-item" href="/{{ lang.code }}/{{link}}">
+          
+          {{ lang.name_local }}
+          
+          
+        </a>
+      </option>
+    {% endif %}
+    {% endfor %}
+
+  </select>
     <!-- Navbar top -->
     <div class="navbar-top">
         <div class="title">
@@ -28,18 +70,6 @@
 
         <!-- Navbar -->
         <ul>
-            <li>
-                <a href="#message">
-                    <span class="icon-count">0</span>
-                    <i class="fa fa-envelope fa-2x"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#notification">
-                    <span class="icon-count">0</span>
-                    <i class="fa fa-bell fa-2x"></i>
-                </a>
-            </li>
             <li>
                 <a href="{% url 'landing:index' %}">
                     <i class="fa fa-sign-out-alt fa-2x"></i>
@@ -63,7 +93,7 @@
 
         <div class="sidenav-url">
             <div class="url">
-                <a href="#profile" class="active">Profile</a>
+                <a href="#profile" class="active">{% translate "Profile" %}</a>
                 <hr align="center">
             </div>
         </div>
@@ -153,3 +183,5 @@
     <!-- End -->
 </body>
 </html>
+
+{% endblock content %}

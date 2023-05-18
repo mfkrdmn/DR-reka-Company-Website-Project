@@ -32,7 +32,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'rekaglobal1@gmail.com'
-EMAIL_HOST_PASSWORD = 'uweepshyscywprux'
+EMAIL_HOST_PASSWORD = 'zlfftqedbvdhmymb'
 # Application definition
 
 INSTALLED_APPS = [

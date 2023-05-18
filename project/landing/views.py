@@ -367,8 +367,9 @@ from pymongo import MongoClient
 import pprint 
 def product_list(request):
     dil = dil_bilgisi()
-    content ={}
-    content["dil"] = dil
+    trans = translate(language='en')
+    link = "product"
+    content = {"trans":trans,"dil":dil, "link":link}
     products = all_product.objects.filter(qty__gt=0)
     pp = pprint.PrettyPrinter(indent=4)
     try:
@@ -385,6 +386,10 @@ def product_list(request):
         if key:
             z = { "$regex": "^"+key }
             a = collection.find({'PartNumber': z })
-            
-    content["product"] = a
+    result_list = list(a)
+    for i in result_list:
+        m = (i["UnitPrice"]["Price"]*1.3)
+        i["UnitPrice"]["Price"] = round(m,2)
+    # print(result_list)
+    content["product"] = result_list
     return render(request,"product.html",content)
