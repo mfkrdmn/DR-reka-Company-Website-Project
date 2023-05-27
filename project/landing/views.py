@@ -374,7 +374,7 @@ def product_list(request):
     pp = pprint.PrettyPrinter(indent=4)
     try:
         cluster = MongoClient("mongodb+srv://REKA:3AbmBSHN411S97Pn@cluster0.43pzfgv.mongodb.net/?retryWrites=true&w=majority")
-        db = cluster["rekaDB_v014"]
+        db = cluster["rekaDB"]
         collection = db["PRODUCTS"]
         print("bağlantıo kuruldu")
     except:
@@ -383,13 +383,46 @@ def product_list(request):
     #__contains =
     if request.GET:
         key = request.GET.get("key")
+        liste = key.split(",")
         if key:
-            z = { "$regex": "^"+key }
-            a = collection.find({'PartNumber': z })
-    result_list = list(a)
+            listedb =[]
+            for i in liste:
+                z = { "$regex": "^"+i }
+                a = collection.find({'PartNumber': z })
+                listedb.append(list(a))
+        result_list = listedb
+        for j in result_list:
+            for i in j:
+                m = (i["UnitPrice"]["Price"]*1.3)
+                i["UnitPrice"]["Price"] = round(m,2)
+        content["var"] = key
+    else:
+        result_list = list(a)
+        for i in result_list:
+            m = (i["UnitPrice"]["Price"]*1.3)
+            i["UnitPrice"]["Price"] = round(m,2)
+    # print("bitti")
+    content["product"] = result_list
+    return render(request,"product.html",content)
+
+"""
+if request.GET:
+        key = request.GET.get("key")
+        liste = key.split(",")
+        if key:
+            listedb =[]
+            for i in liste:
+                z = { "$regex": "^"+i }
+                a = collection.find({'PartNumber': z })
+                listedb.append(list(a))
+        result_list = listedb
+        for j in result_list:
+            for i in j:
+                m = (i["UnitPrice"]["Price"]*1.3)
+                i["UnitPrice"]["Price"] = round(m,2)
+
+result_list = list(a)
     for i in result_list:
         m = (i["UnitPrice"]["Price"]*1.3)
         i["UnitPrice"]["Price"] = round(m,2)
-    # print(result_list)
-    content["product"] = result_list
-    return render(request,"product.html",content)
+"""

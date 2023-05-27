@@ -15,19 +15,38 @@
       <tr>
         <th>{% translate "PN" %}</th>
         <th>{% translate "AC Type" %}</th>
+        <th>{% translate "Stock" %}</th>
         <!-- <th>{% translate "Qty" %}</th> -->
         <th>{% translate "Price" %}</th>
       </tr>
     </thead>
     <tbody>
+      {% if var %}
+      {% for j in  product %}
+      {% for i in j %}
+          <tr>
+           
+              <td>{{i.PartNumber}}</td>
+              <td>{{i.PartName}}</td>
+              <td>{{i.Stock}}</td>
+              <!-- <td>{{i.Quantity}}</td> -->
+              <td>${{ i.UnitPrice.Price|floatformat:2}}</td>
+          </tr>
+      {% endfor %}
+      {% endfor %}
+      {% else %}
     {% for i in product %}
         <tr>
+         
             <td>{{i.PartNumber}}</td>
             <td>{{i.PartName}}</td>
+            <td>{{i.Stock}}</td>
             <!-- <td>{{i.Quantity}}</td> -->
             <td>${{ i.UnitPrice.Price|floatformat:2}}</td>
         </tr>
     {% endfor %}
+
+      {% endif %}
       
 
     </tbody>
