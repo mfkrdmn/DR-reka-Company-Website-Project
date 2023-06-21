@@ -1,7 +1,7 @@
 {% load static %}
 {% load i18n %}
 <!DOCTYPE html>
-<html>
+<html lang="English" class="notranslate" translate="no">
 
 <head>
   <!-- Basic -->
@@ -14,6 +14,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <link rel="shortcut icon" href="{% static 'images/2.png' %}" type="">
+
 
   <title> Reka Global </title>
   <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
@@ -65,7 +66,9 @@
     outline: 0;
     box-shadow: 0 0 5px 5px white;
   }
-
+  body {
+  font-family: 'Gill Sans' !important;
+}
   #pageMessages {
   position: fixed;
   bottom: 15px;
@@ -103,10 +106,11 @@
       <div class="header_bottom">
         <div class="container-fluid">
 
-          <nav class="navbar navbar-expand-xl custom_nav-container ">
-            <a class="navbar-brand" href="{% url 'landing:index' %}">
+          <nav class="navbar navbar-expand-xxl custom_nav-container" >
+            <a class="navbar-brand" href="/{{dil}}{% url 'landing:index' %}">
 
-              <img width="150ox" src="{% static 'images/logo.png' %}" alt="">
+              <img width="150px" src="{% static 'images/logo.png' %}" alt="">
+
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -148,23 +152,48 @@
                 </li>
                 {% else %}
                 <li class="nav-item">
-                  <a class="nav-link" href="/{{dil}}{% url 'landing:comingsoon' %}"><i class="fa fa-user"
+                  <a class="nav-link" href="/{{dil}}{% url 'landing:login' %}"><i class="fa fa-user"
                       aria-hidden="true"></i>{% translate "LOGIN" %} </a>
                 </li>
                 {% endif %}
                 <select onchange="window.location.href=this.value;" class="selectpicker" data-width="fit"
                   style="background-color: #d83744; border: 0px; color: white;">
-                  {% get_current_language as LANGUAGE_CODE %}
+                  {% get_current_language as lang.name_local %}
                   {% get_available_languages as LANGUAGES %}
                   {% get_language_info_list for LANGUAGES as languages %}
-                  <option value="/{{ lang.code }}/">language</option>
-                  {% for lang in languages %}
-                  <option value="/{{ lang.code }}/" style="color: white;">
-                    <a class="dropdown-item" href="/{{ lang.code }}/">
-                      {{ lang.name_local }}
-                    </a>
+                  <!-- <option value="/{{ lang.code }}/">{{dil}}</option>  -->
+                  {% if  dil == "tr" %}
+                        <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+                        Türkçe
                   </option>
 
+                      {% elif dil == "en" %}
+                      <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+                      English
+                  </option>
+                      {% elif dil == "ar" %}
+                      <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+                        عربي
+                  </option>
+                      {% else %}
+                      <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+                      Deutsch
+                  </option>
+                      {% endif %}
+                  {% for lang in languages %}
+                  {% if lang.code == dil %}
+                      
+                      {% else %}
+                    <option value="/{{ lang.code }}/{{link}}" style="color: white;">
+
+                      <a class="dropdown-item" href="/{{ lang.code }}/{{link}}">
+                        
+                        {{ lang.name_local }}
+                        
+                        
+                      </a>
+                    </option>
+                  {% endif %}
                   {% endfor %}
 
                 </select>
@@ -206,7 +235,7 @@
             style="object-fit: cover;" alt="...">
           <div class="carousel-caption  d-md-block">
             <h1 class="slidertitles"> <b>{% translate "INTERNATIONAL TRADE" %}</b></h5>
-              <p class="slidertexts">{% translate "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT" %}</p>
+              <p class="slidertexts">{% translate "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT" %}</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -229,7 +258,7 @@
           <img src="{% static 'images/slider/slider5.jpg' %}" class="d-block w-100 sliderpic "
             style="object-fit: cover;" alt="...">
           <div class="carousel-caption  d-md-block">
-            <h1 class="slidertitles"> <b> SKY IS THE LIMIT</b></h5>
+            <h1 class="slidertitles"> <b> {% translate "SKY IS THE LIMIT" %}</b></h5>
               <p class="slidertexts">{% translate "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION" %}</p>
           </div>
         </div>
@@ -265,32 +294,32 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header bg-danger">
-          <h1 class="modal-title fs-5" style="color:white ;" id="staticBackdropLabel">Request For Quote</h1>
+          <h1 class="modal-title fs-5" style="color:white ;" id="staticBackdropLabel">{% translate "Request For Quote " %}</h1>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
           <form action="" method="POST">
             {% csrf_token %}
-            <label for="fname">Part Number *:</label><br>
+            <label for="fname">{% translate "Part Number " %}*:</label><br>
             <input class="w-100" type="text" id="fname" name="PartNumber" required><br><br>
-            <label for="lname">Description:</label><br>
+            <label for="lname">{% translate "Description " %}*:</label><br>
             <input class="w-100" type="text" id="lname" name="Description"><br><br>
-            <label for="lname">Quantity *:</label><br>
-            <input class="w-100" type="text" id="lname" name="Quantity" required><br><br>
-            <label for="lname">Condition:</label><br>
+            <label for="lname">{% translate "Quantity *:" %} *:</label><br>
+            <input class="w-100" type="number" id="lname" name="Quantity" required><br><br>
+            <label for="lname">{% translate "Condition" %}:</label><br>
             <input class="w-100" type="text" id="lname" name="Condition"><br><br>
-            <label for="lname">Mail *:</label><br>
+            <label for="lname">{% translate "Mail" %} *:</label><br>
             <input class="w-100" type="email" id="lname" name="Mail" required><br><br>
-            <label for="lname">Telephone:</label><br>
-            <input class="w-100" type="tel" id="lname" name="Telephone"><br><br>
-            <label for="lname">Company Name:</label><br>
+            <label for="lname">{% translate "Telephone" %}:</label><br>
+            <input class="w-100" type="number" id="lname" name="Telephone"><br><br>
+            <label for="lname">{% translate "Company name" %}:</label><br>
             <input class="w-100" type="text" id="lname" name="CompanyName"><br><br>
-            <label for="lname">Name Surname:</label><br>
+            <label for="lname">{% translate "Name Surname" %}:</label><br>
             <input class="w-100" type="text" id="lname" name="fullname"><br><br>
 
         </div>
         <div class="modal-footer" style="justify-content: center !important">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% translate "Close" %}</button>
           <input type="submit" class="btn btn-danger" value="Submit"  onclick="myAlertTop()">
           </form>
           <div class="myAlert-top alert alert-info">
@@ -307,12 +336,14 @@
       <div class="container ">
         <div class="heading_container heading_center">
           <h2>
-            <span style="color: rgb(139, 139, 139);">{% translate " Our</span> <span>Services" %}</span>
+            <span style="color: rgb(139, 139, 139);">{% translate "Our</span> <span>Services" %}</span>
+
+
           </h2>
         </div>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 ">
-            <a href="{% url 'landing:aviation' %}" style="text-decoration: none;">
+            <a  href="/{{dil}}{% url 'landing:aviation' %}" style="text-decoration: none;">
               <div class="box ">
                 <div class="img-box">
                   <img src="{% static 'images/plane.png' %}" alt="">
@@ -326,7 +357,7 @@
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4 ">
-            <a href="{% url 'landing:gse' %}" style="text-decoration: none;">
+            <a href="/{{dil}}{% url 'landing:gse' %}" style="text-decoration: none;">
               <div class="box ">
                 <div class="img-box">
                   <img src="{% static 'images/timeline.png' %}" alt="">
@@ -340,7 +371,7 @@
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4 ">
-            <a href="{% url 'landing:rec' %}" style="text-decoration: none;">
+            <a href="/{{dil}}{% url 'landing:rec' %}" style="text-decoration: none;">
               <div class="box ">
                 <div class="img-box">
                   <img src="{% static 'images/building.png'%}" alt="">
@@ -354,7 +385,7 @@
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4 ">
-            <a href="{% url 'landing:rec' %}" style="text-decoration: none;">
+            <a href="/{{dil}}{% url 'landing:rec' %}" style="text-decoration: none;">
               <div class="box ">
                 <div class="img-box">
                   <img src="{% static 'images/worker.png'%}" alt="">
@@ -368,7 +399,7 @@
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4 ">
-            <a href="{% url 'landing:finance' %}" style="text-decoration: none;">
+            <a href="/{{dil}}{% url 'landing:finance' %}" style="text-decoration: none;">
               <div class="box ">
                 <div class="img-box">
                   <img src="{% static 'images/chart.png'%}" alt="">
@@ -382,7 +413,7 @@
             </a>
           </div>
           <div class="col-12 col-md-6 col-lg-4 ">
-            <a href="{% url 'landing:ec' %}" style="text-decoration: none;">
+            <a href="/{{dil}}{% url 'landing:ec' %}" style="text-decoration: none;">
               <div class="box ">
                 <div class="img-box">
                   <img src="{% static 'images/cart.png'%}" alt="">
@@ -406,10 +437,9 @@
     <div class="section-inner">
       <div class="row justify-content-center">
         <div class="col-md-8 wide-col-laptop">
-          <div class="text-center ">
+          <div class="text-center heading_container heading_center">
             <h2>
-              <span style="color: rgb(165, 165, 165); font-weight: 700;"> Trusted</span> <span
-                style="color: #d83744; font-weight: 700;">By</span>
+              <span style="color: rgb(139, 139, 139);">{% translate "Trusted</span> <span>By" %}</span>
             </h2>
           </div>
           <div class="services-section">
@@ -679,6 +709,27 @@
 
                 </div>
               </div>
+              <div class="item animate" data-animate="fadeInUp">
+                <div class="service-box">
+
+                  <img src="{% static 'images/brands/43.png'%}" alt="" class="brands-img">
+
+                </div>
+              </div>
+              <div class="item animate" data-animate="fadeInUp">
+                <div class="service-box">
+
+                  <img src="{% static 'images/brands/44.png'%}" alt="" class="brands-img">
+
+                </div>
+              </div>
+              <div class="item animate" data-animate="fadeInUp">
+                <div class="service-box">
+
+                  <img src="{% static 'images/brands/45.png'%}" alt="" class="brands-img">
+
+                </div>
+              </div>
 
             </div>
           </div>
@@ -698,9 +749,9 @@
         </div>
         <div class="col-md-7">
           <div class="detail-box">
-            <div class="heading_container">
+            <div class="text-center heading_container heading_center">
               <h2>
-                <span style="color: rgb(165, 165, 165);"> About</span> <span>Us</span>
+                <span style="color: rgb(139, 139, 139);">{% translate "About</span> <span>Us" %}</span>
               </h2>
             </div>
             <p class="text-uppercase" style=" color: #d83744 ">{% translate "Reka Global offers a wide range ofinternational trade services for both import and export processes. Our main goal is to offer our customers a smooth and successful trade operation, free from the possible risks and difficulties of international trade." %}
@@ -785,10 +836,12 @@
 
   <!-- end why us section -->
 
-  <div class="container mt-5 mb-5">
-    <div class="heading_container">
+  <!-- <div class="container mt-5 mb-5">
+    <div class="text-center heading_container heading_center">
       <h2>
-        <span style="color: rgb(165, 165, 165);">{% translate "Our</span> <span>TEAM" %}</span>
+
+        <span style="color: rgb(139, 139, 139);">{% translate "Our</span> <span>Team" %}</span>
+
       </h2>
     </div>
     <div class="row">
@@ -899,9 +952,18 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- end client section -->
+
+  <div class="container mb-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-4" style="height: 500px; overflow: scroll;">
+        <a class="twitter-timeline" href="https://twitter.com/RekaGroup?ref_src=twsrc%5Etfw">Tweets by RekaGroup</a> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
 
   <!-- info section -->
 
@@ -942,7 +1004,7 @@
                   <a class="" href="{% url 'landing:ec' %}" style="text-decoration: none ; ">
                     {% translate "EC" %}
                   </a>
-                  <a class="" href="contact.html" style="text-decoration: none ; ">
+                  <a class="" href="{% url 'landing:rec' %}" style="text-decoration: none ; ">
                     {% translate "RE & C" %}
                   </a>
                   <a class="" href="{% url 'landing:career' %}" style="text-decoration: none ; ">

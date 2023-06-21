@@ -8,8 +8,10 @@
   /*----  Main Style  ----*/
 
   body{
-    color: #d83744 !important
+    color: #d83744 !important;
+    font-family: 'Gill Sans' !important;
   }
+  
 #cards_landscape_wrap-2{
   text-align: center;
   background: #F7F7F7;
@@ -101,6 +103,12 @@
 
 @media only screen and (min-width: 1550px) {
   /* For desktop: */
+  .card-flyer {height: 320px;};
+
+}
+
+@media only screen and (min-width: 1680px) {
+  /* For desktop: */
   .card-flyer {height: 300px;};
 
 }
@@ -173,24 +181,24 @@
             <div class="row justify-content-center mt-5">
      
               <h2>
-                <span style="color: rgb(165, 165, 165); text-transform: uppercase;"><b>AVIATION</b></span> <span style="text-transform: uppercase;"><b>Segments</b></span>
-               </h2>
-              <div class="col-6 col-md-3 col-lg-2 test"  >
-                      <a href="">
+                <span style="color: rgb(139, 139, 139);"><b>{% translate " AVIATION</span><span> SEGMENTS" %}</b></span>
+              </h2>
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2 "  >
+                    
                           <div class="card-flyer">
                               <div class="text-box">
                                   <div class="image-box">
-                                      <img src="{% static 'images/aviation/aviation9.jpg' %}" alt="" class="picfit" style="  aspect-ratio: 1;" />
+                                      <img src="{% static 'images/aviation/aviation9.jpg' %}" alt="" class="picfit">
                                   </div>
                                   <div class="text-container d-flex align-items-center justify-content-center ">
                                       <span class="hsixtitles">{% translate "COMMERCIAL AIRCRAFTS " %}</span>
                                   </div>
                               </div>
                           </div>
-                      </a>
+                     
               </div>
-                  <div class="col-6  col-md-3 col-lg-2" >
-                    <a href="">
+                  <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+                  
                         <div class="card-flyer">
                             <div class="text-box">
                                 <div class="image-box">
@@ -201,10 +209,10 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+              
                 </div>
-              <div class="col-6 col-md-3 col-lg-2" >
-                  <a href="">
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+                
                       <div class="card-flyer">
                           <div class="text-box">
                               <div class="image-box">
@@ -215,10 +223,10 @@
                               </div>
                           </div>
                       </div>
-                  </a>
+               
               </div>
-              <div class="col-6 col-md-3 col-lg-2" >
-                <a href="">
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+              
                     <div class="card-flyer">
                         <div class="text-box">
                             <div class="image-box">
@@ -229,10 +237,10 @@
                             </div>
                         </div>
                     </div>
-                </a>
+              
             </div>
-          <div class="col-6 col-md-3 col-lg-2" >
-              <a href="">
+          <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+            
                   <div class="card-flyer">
                       <div class="text-box">
                           <div class="image-box">
@@ -243,22 +251,24 @@
                           </div>
                       </div>
                   </div>
-              </a>
+            
           </div>
         </div>
 
         <div class="row justify-content-center mt-5">
           <div class="col-12">
               <h2>
-                <span style="color: rgb(165, 165, 165);"> <b>OEM & PMA</b></span> <span><b>SEGMENTS</b></span>
+       
+                <span style="color: rgb(139, 139, 139);"><b>{% translate " OEM/PMA</span><span> SEGMENTS" %}</b></span>
+
               </h2>
           </div>
         </div>
 
 
         <div class="row justify-content-center">
-              <div class="col-6  col-md-3 col-lg-2" >
-                  <a href="">
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+                
                       <div class="card-flyer">
                           <div class="text-box">
                               <div class="image-box">
@@ -269,10 +279,10 @@
                               </div>
                           </div>
                       </div>
-                  </a>
+               
               </div>
-              <div class="col-6 col-md-3 col-lg-2" >
-                <a href="">
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+              
                     <div class="card-flyer">
                         <div class="text-box">
                             <div class="image-box">
@@ -283,10 +293,10 @@
                             </div>
                         </div>
                     </div>
-                </a>
+               
             </div>
-            <div class="col-6 col-md-2 col-lg-2" >
-              <a href="">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+            
                   <div class="card-flyer">
                       <div class="text-box">
                           <div class="image-box">
@@ -297,10 +307,10 @@
                           </div>
                       </div>
                   </div>
-              </a>
+             
           </div>
-          <div class="col-6 col-md-3 col-lg-2" >
-              <a href="">
+          <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+            
                   <div class="card-flyer">
                       <div class="text-box">
                           <div class="image-box">
@@ -311,10 +321,10 @@
                           </div>
                       </div>
                   </div>
-              </a>
+           
           </div>
-          <div class="col-6  col-md-3 col-lg-2" >
-            <a href="">
+          <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+          
                 <div class="card-flyer">
                     <div class="text-box">
                         <div class="image-box">
@@ -325,33 +335,40 @@
                         </div>
                     </div>
                 </div>
-            </a>
-        </div>
-      </div>
-      <div class="row justify-content-center mt-5">
-        <div class="col-12">
-            <h2>
-             <span><b>INTERIORS</b></span>
-            </h2>
+         
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-6  col-md-3 col-lg-2" >
-            <a href="">
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+        
+              <div class="card-flyer">
+                  <div class="text-box">
+                      <div class="image-box">
+                        <img src="{% static 'images/aviation/aviation3 (2).jpg' %}" alt="" class="picfit" />
+                      </div>
+                  <div class="text-container d-flex align-items-center justify-content-center ">
+                          <span class="hsixtitles">{% translate "Interıors " %}</span>
+                      </div>
+                  </div>
+              </div>
+        
+      </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+          
                 <div class="card-flyer">
                     <div class="text-box">
                         <div class="image-box">
-                          <img src="{% static 'images/aviation/aviation12.jpg' %}" alt=""  class="picfit"/>
+                          <img src="{% static 'images/aviation/aviation12.jpg' %}"  class="picfit"/>
                         </div>
                     <div class="text-container d-flex align-items-center justify-content-center ">
                             <span class="hsixtitles">{% translate "Structual" %}</span>
                         </div>
                     </div>
                 </div>
-            </a>
+           
         </div>
-        <div class="col-6 col-md-3 col-lg-2" >
-          <a href="">
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+        
               <div class="card-flyer">
                   <div class="text-box">
                       <div class="image-box">
@@ -362,10 +379,10 @@
                       </div>
                   </div>
               </div>
-          </a>
+      
       </div>
-      <div class="col-6 col-md-2 col-lg-2" >
-        <a href="">
+      <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+      
             <div class="card-flyer">
                 <div class="text-box">
                     <div class="image-box">
@@ -376,10 +393,10 @@
                     </div>
                 </div>
             </div>
-        </a>
+      
     </div>
-    <div class="col-6 col-md-3 col-lg-2" >
-        <a href="">
+    <div class="col-6 col-md-4 col-lg-3 col-xl-2" >
+      
             <div class="card-flyer">
                 <div class="text-box">
                     <div class="image-box">
@@ -390,22 +407,9 @@
                     </div>
                 </div>
             </div>
-        </a>
+       
     </div>
-    <div class="col-6  col-md-3 col-lg-2" >
-      <a href="">
-          <div class="card-flyer">
-              <div class="text-box">
-                  <div class="image-box">
-                    <img src="{% static 'images/aviation/aviation3.jpg' %}" alt="" class="picfit" />
-                  </div>
-              <div class="text-container d-flex align-items-center justify-content-center ">
-                      <span class="hsixtitles">{% translate "Hardware & Standart Parts" %}</span>
-                  </div>
-              </div>
-          </div>
-      </a>
-  </div>
+
 </div>
         </div>
     </div>

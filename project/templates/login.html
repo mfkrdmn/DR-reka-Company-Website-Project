@@ -306,11 +306,13 @@ img {
 
 
         <form action="" method="POST" class="login__form">
+			<img width="150ox"  src="{% static 'images/logo.png' %}" alt="" style="margin-left: 110px;">
             {% csrf_token %}
 			<div>
-				<h1 class="login__title">
+				<h1 class="login__title" style="display: inline;">
 					<span>{% translate "Welcome" %} </span> {% translate "Back!" %}
 				</h1>
+		
 				{% for field in messages %}
 					<li style="color: rgb(255, 255, 255); list-style: none;">{{field}}</li>
 				{% endfor %}
@@ -319,8 +321,8 @@ img {
 			<div>
 				<div class="login__inputs">
 					<div>
-						<label for="" class="login__label">{% translate "Company Name" %}</label>
-						<input type="text" name="companyName" placeholder="Enter your Company Name" required class="login__input">
+						<label for="" class="login__label">{% translate "E-mail" %}</label>
+						<input type="email" name="companyName" placeholder="Enter your Email" required class="login__input">
 					</div>
 
 					<div>
@@ -332,10 +334,7 @@ img {
 					</div>
 				</div>
 
-				<div class="login__check">
-					<input type="checkbox" class="login__check-input">
-					<label for="" class="login__check-label">{% translate "Remember me" %}</label>
-				</div>
+			
 			</div>
 
 			<div>
@@ -343,6 +342,7 @@ img {
 					<button class="login__button">{% translate "Log In" %}</button>
 				</div>
 				<a href="{% url 'landing:register' %}" class="login__forgot" style="color: white;">{% translate "Dont Have an Account?" %}</a><br>
+				<a href="{% url 'landing:password_reset' %}" class="login__forgot" style="color: white;">{% translate "Forgot Password?" %}</a><br>
 				<a href="{% url 'landing:index' %}" class="login__forgot" style="color: white;">{% translate "Return to home page" %}</a>
 			</div>
 		</form>

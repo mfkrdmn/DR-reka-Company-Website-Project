@@ -26,7 +26,7 @@ from django.conf import settings
 from django.urls import path, include, re_path
 from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
-
+from django.conf.urls import handler404
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("landing.urls",namespace='landing')),
@@ -39,3 +39,5 @@ if 'rosetta' in settings.INSTALLED_APPS:
         re_path(r'^rosetta/', include('rosetta.urls'))
     ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = "landing.views.page_not_found_view"

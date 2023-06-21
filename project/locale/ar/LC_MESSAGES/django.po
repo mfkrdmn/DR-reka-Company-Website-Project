@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 18:52+0300\n"
-"PO-Revision-Date: 2023-03-05 17:13+0000\n"
+"POT-Creation-Date: 2023-05-14 09:16+0300\n"
+"PO-Revision-Date: 2023-05-14 09:16+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -20,125 +20,137 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\project\landing\views.py:20
+#: .\landing\views.py:134
 msgid "Hello"
 msgstr "مرحبًا"
 
-#: .\project\project\settings.py:135
+#: .\project\settings.py:138
 msgid "English"
 msgstr "إنجليزي"
 
-#: .\project\project\settings.py:136
+#: .\project\settings.py:139
 msgid "Turkish"
 msgstr "اللغة التركية"
 
-#: .\project\project\settings.py:137
+#: .\project\settings.py:140
 msgid "German"
 msgstr "ألمانية"
 
-#: .\project\project\settings.py:138
+#: .\project\settings.py:141
 msgid "arabic"
 msgstr "عربي"
 
-#: .\project\templates\aviation.html:186
+#: .\templates\aviation.html:184
+msgid " AVIATION</span><span> SEGMENTS"
+msgstr "قطاعات الطيران"
+
+#: .\templates\aviation.html:194
 msgid "COMMERCIAL AIRCRAFTS "
 msgstr "الطائرات التجارية"
 
-#: .\project\templates\aviation.html:200
+#: .\templates\aviation.html:208
 msgid "HELICOPTERS"
 msgstr "طائرات الهليكوبتر"
 
-#: .\project\templates\aviation.html:214
+#: .\templates\aviation.html:222
 msgid "BUSINESS JETS"
 msgstr "طائرات الأعمال"
 
-#: .\project\templates\aviation.html:228
+#: .\templates\aviation.html:236
 msgid "PRIVATE AIRCRAFTS"
 msgstr "طائرات خاصة"
 
-#: .\project\templates\aviation.html:242
+#: .\templates\aviation.html:250
 msgid "UAV (UNMANNED AERIAL VEHICLE) - DRONES"
 msgstr "الطائرات بدون طيار (الطائرات بدون طيار) - الطائرات بدون طيار"
 
-#: .\project\templates\aviation.html:268
+#: .\templates\aviation.html:262
+msgid " OEM/PMA</span><span> SEGMENTS"
+msgstr "قطاعات OEM و PMA"
+
+#: .\templates\aviation.html:278
 msgid "ENGINES"
 msgstr "محركات"
 
-#: .\project\templates\aviation.html:282
+#: .\templates\aviation.html:292
 msgid "AVIONICS"
 msgstr "طيران"
 
-#: .\project\templates\aviation.html:296
+#: .\templates\aviation.html:306
 msgid "Tires, Breaks, Gears, Bearings"
-msgstr ""
+msgstr "الإطارات ، الكوابح ، التروس ، المحامل"
 
-#: .\project\templates\aviation.html:310
+#: .\templates\aviation.html:320
 msgid "CONSUMABLES"
 msgstr "مستهلكات"
 
-#: .\project\templates\aviation.html:324 .\project\templates\aviation.html:403
+#: .\templates\aviation.html:334
 msgid "Hardware & Standart Parts"
-msgstr ""
+msgstr "قطع غيار الأجهزة والقياسات"
 
-#: .\project\templates\aviation.html:347
+#: .\templates\aviation.html:350
+msgid "Interıors "
+msgstr "الداخلية"
+
+#: .\templates\aviation.html:364
 msgid "Structual"
-msgstr ""
+msgstr "الهيكلي"
 
-#: .\project\templates\aviation.html:361
+#: .\templates\aviation.html:378
 msgid "Safety & Oxygen"
-msgstr ""
+msgstr "السلامة والأكسجين"
 
-#: .\project\templates\aviation.html:375
+#: .\templates\aviation.html:392
 msgid "Ground Supporting Equipments"
-msgstr ""
+msgstr "معدات الدعم الأرضي"
 
-#: .\project\templates\aviation.html:389
+#: .\templates\aviation.html:406
 msgid "Sustainable Aviation Solutions"
-msgstr ""
+msgstr "حلول طيران مستدامة"
 
-#: .\project\templates\base.html:86 .\project\templates\index.html:121
+#: .\templates\base.html:89 .\templates\index.html:125
 msgid "Avıatıon"
 msgstr "تمويل "
 
-#: .\project\templates\base.html:89 .\project\templates\base.html:231
-#: .\project\templates\index.html:125 .\project\templates\index.html:936
+#: .\templates\base.html:92 .\templates\base.html:260
+#: .\templates\index.html:129 .\templates\index.html:998
 msgid "MRO & GSE"
 msgstr "MRO & GSE"
 
-#: .\project\templates\base.html:92 .\project\templates\index.html:128
+#: .\templates\base.html:95 .\templates\index.html:132
 msgid "Fınance"
 msgstr "تمويل"
 
-#: .\project\templates\base.html:95 .\project\templates\index.html:131
+#: .\templates\base.html:98 .\templates\index.html:135
 msgid "MM & EC"
 msgstr "MM & EC"
 
-#: .\project\templates\base.html:98 .\project\templates\base.html:242
-#: .\project\templates\index.html:134 .\project\templates\index.html:947
+#: .\templates\base.html:101 .\templates\base.html:271
+#: .\templates\index.html:138 .\templates\index.html:1009
 msgid "RE & C"
 msgstr "RE & C"
 
-#: .\project\templates\base.html:101 .\project\templates\index.html:137
+#: .\templates\base.html:104 .\templates\index.html:141
 msgid "Career"
 msgstr "حياة مهنية"
 
-#: .\project\templates\base.html:104 .\project\templates\index.html:140
+#: .\templates\base.html:107 .\templates\index.html:144
 msgid "Contact"
 msgstr "اتصال"
 
-#: .\project\templates\base.html:111 .\project\templates\index.html:148
+#: .\templates\base.html:114 .\templates\index.html:152
 msgid "logout"
 msgstr "تسجيل خروج"
 
-#: .\project\templates\base.html:115 .\project\templates\index.html:153
+#: .\templates\base.html:118 .\templates\index.html:157
 msgid "LOGIN"
 msgstr "تسجيل الدخول"
 
-#: .\project\templates\base.html:209 .\project\templates\index.html:914
+#: .\templates\base.html:238 .\templates\index.html:976
 msgid "REKA Group Companies"
 msgstr "مجموعة شركات REKA"
 
-#: .\project\templates\base.html:213 .\project\templates\index.html:918
+#: .\templates\base.html:242 .\templates\index.html:980
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
 "ON INTERNATIONAL TRADE,AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, "
@@ -148,43 +160,95 @@ msgstr ""
 "الدولية وسلسلة توريد الطيران وخدمات دعم GSE والتمويل والتجارة والعقارات "
 "والتنمية."
 
-#: .\project\templates\base.html:225 .\project\templates\index.html:930
+#: .\templates\base.html:254 .\templates\index.html:992
 msgid "HOME"
 msgstr "بيت"
 
-#: .\project\templates\base.html:228 .\project\templates\index.html:933
+#: .\templates\base.html:257 .\templates\index.html:995
 msgid "AVIATION"
 msgstr "طيران"
 
-#: .\project\templates\base.html:234 .\project\templates\index.html:939
+#: .\templates\base.html:263 .\templates\index.html:1001
 msgid "FINANCE"
 msgstr "تمويل"
 
-#: .\project\templates\base.html:239 .\project\templates\index.html:944
+#: .\templates\base.html:268 .\templates\index.html:1006
 msgid "EC"
 msgstr "EC"
 
-#: .\project\templates\base.html:245 .\project\templates\index.html:950
+#: .\templates\base.html:274 .\templates\index.html:1012
 msgid "CAREER"
 msgstr "حياة مهنية"
 
-#: .\project\templates\base.html:248 .\project\templates\index.html:953
+#: .\templates\base.html:277 .\templates\index.html:1015
 msgid "CONTACT"
 msgstr "اتصال"
 
-#: .\project\templates\base.html:258 .\project\templates\index.html:963
+#: .\templates\base.html:287 .\templates\index.html:1025
 msgid "AOG Line"
 msgstr "خط AOG"
 
-#: .\project\templates\career.html:63
+#: .\templates\career.html:68
 msgid "Join Our Global Team"
 msgstr "انضم إلى فريقنا العالمي"
 
-#: .\project\templates\contact.html:49
+#: .\templates\companyprofile.html:78
+msgid "Edit Profile"
+msgstr "تعديل الملف الشخصي"
+
+#: .\templates\companyprofile.html:83 .\templates\index.html:318
+msgid "Name Surname"
+msgstr "اسم اللقب"
+
+#: .\templates\companyprofile.html:88 .\templates\register.html:321
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#: .\templates\companyprofile.html:93
+msgid "Phone"
+msgstr "هاتف"
+
+#: .\templates\companyprofile.html:98
+msgid "Mobile Phone"
+msgstr "تليفون محمول"
+
+#: .\templates\companyprofile.html:103
+msgid "E-Mail"
+msgstr "بريد إلكتروني"
+
+#: .\templates\companyprofile.html:108
+msgid "Company Website"
+msgstr "اسم الشركة"
+
+#: .\templates\companyprofile.html:113
+msgid "Member Notes"
+msgstr "تذكرنى"
+
+#: .\templates\companyprofile.html:131
+msgid "profile Update"
+msgstr "تحديث الملف الشخصي"
+
+#: .\templates\companyprofile.html:146 .\templates\index.html:323
+msgid "Close"
+msgstr "يغلق"
+
+#: .\templates\companyprofile.html:147
+msgid "Update"
+msgstr "تحديث"
+
+#: .\templates\contact.html:20
+msgid " Offices &</span><span> Warehouses"
+msgstr "المكاتب والمستودعات"
+
+#: .\templates\contact.html:58
 msgid "Contact Us"
 msgstr "اتصال"
 
-#: .\project\templates\ec.html:93
+#: .\templates\ec.html:94
+msgid " Modern Marketing &</span><span> Ecommerce"
+msgstr "التسويق الحديث والتجارة الإلكترونية"
+
+#: .\templates\ec.html:98
 msgid ""
 "Modernization of trade requires differentiation of approaches for "
 "international markets. We serve corporate integration to new generation e-"
@@ -196,7 +260,7 @@ msgstr ""
 "جلوبال مجموعة واسعة من خدمات التجارة الدولية للجيل الجديد لعمليات الاستيراد "
 "والتصدير."
 
-#: .\project\templates\ec.html:95
+#: .\templates\ec.html:100
 msgid ""
 "Our main goal is to offer our customers a smooth and successful trade "
 "operation, free from the possible risks and difficulties of international "
@@ -211,7 +275,7 @@ msgstr ""
 "مصممة خصيصًا لعملك. من خلال الاستفادة من قنوات المبيعات الحالية لدينا في جميع "
 "أنحاء العالم ، نحن نخدم الشركات الصغيرة والمتوسطة كفريق مبيعات خارجي."
 
-#: .\project\templates\finance.html:58
+#: .\templates\finance.html:61
 msgid ""
 "Investment solutions against dynamic economical volatilty. Asset management "
 "and private financial consultancy. Corporate audit, financial control "
@@ -222,39 +286,58 @@ msgstr ""
 "المالية الخاصة. تدقيق الشركات ، وأنظمة الرقابة المالية مع حلول برامج "
 "المحاسبة المخصصة. توقعات دقيقة للاقتصاد العالمي."
 
-#: .\project\templates\index.html:201
+#: .\templates\gse.html:147
+msgid ""
+"REKA provides support for airlines, OEMs, airports, repair workshops and "
+"other facilities with spare parts of aircrafts, equipment and maintenance "
+"management services."
+msgstr ""
+"تقدم REKA الدعم لشركات الطيران والشركات المصنعة للمعدات الأصلية والمطارات "
+"وورش الإصلاح والمرافق الأخرى بقطع غيار الطائرات والمعدات وخدمات إدارة "
+"الصيانة."
+
+#: .\templates\gse.html:148
+msgid ""
+"Global spares supply and maintenance service for virtually every major "
+"aircraft and helicopter manufacturer; Spares supply and maintenance service "
+"for Western-built aircraft and helicopters; Boeing, Airbus and Bombardier "
+"components as well as Ground Support Equipments (GSE) and their spares. "
+msgstr ""
+"خدمة توريد وصيانة قطع الغيار العالمية تقريبًا لكل شركة تصنيع طائرات وهليكوبتر "
+"كبرى ؛ خدمة توريد وصيانة قطع الغيار للطائرات والمروحيات الغربية الصنع ؛ "
+"مكونات بوينج وإيرباص وبومباردييه بالإضافة إلى معدات الدعم الأرضي (GSE) وقطع "
+"غيارها."
+
+#: .\templates\index.html:230
 msgid "WE BUILD TRUST"
 msgstr "نحن نبني الثقة"
 
-#: .\project\templates\index.html:202
+#: .\templates\index.html:231
 msgid ""
 "HUNDREDS OF BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION IN "
 "VARIOUS FIELDS"
 msgstr ""
 "مئات من شركاء الأعمال يعملون في الخارج بتعاون موثوق به في مختلف المجالات"
 
-#: .\project\templates\index.html:209
+#: .\templates\index.html:238
 msgid "INTERNATIONAL TRADE"
 msgstr "التجارة العالمية"
 
-#: .\project\templates\index.html:210
+#: .\templates\index.html:239
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
 "ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
-"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL SERVES EXCELLENT "
-"AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON INTERNATIONAL TRADE, "
-"AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, FINANCE, COMMERCE, REAL ESTATE "
-"AND DEVELOPMENT"
+"FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT "
 msgstr ""
-"REKA GLOBAL SERVICES عمليات طيران ممتازة مع خبراء لبناء الثقة في التجارة "
+"REKA Global Services عمليات طيران ممتازة مع خبراء لبناء الثقة في التجارة "
 "الدولية وسلسلة توريد الطيران وخدمات دعم GSE والتمويل والتجارة والعقارات "
-"والتنمية"
+"والتنمية."
 
-#: .\project\templates\index.html:217
+#: .\templates\index.html:246
 msgid "MRO & GROUND HANDLING"
 msgstr "MRO والمناولة الأرضية"
 
-#: .\project\templates\index.html:218
+#: .\templates\index.html:247
 msgid ""
 "Safety Requires Quality. Maintenance and Repair Operations, Ground Support "
 "Equipments, Low Maintenance Metrics"
@@ -262,38 +345,82 @@ msgstr ""
 "تتطلب السلامة الجودة. عمليات الصيانة والإصلاح ، معدات الدعم الأرضي ، مقاييس "
 "الصيانة المنخفضة"
 
-#: .\project\templates\index.html:225
+#: .\templates\index.html:254
 msgid "COOPERATION CULTURE"
 msgstr "ثقافة التعاون"
 
-#: .\project\templates\index.html:226
+#: .\templates\index.html:255
 msgid "CORPORATE TEAM WORK LEADS TO GLOBAL SUCCESS WITH COOPERATION PRINCIPLES"
 msgstr "يقود العمل الجماعي المؤسسي إلى النجاح العالمي بمبادئ التعاون"
 
-#: .\project\templates\index.html:234
+#: .\templates\index.html:262
+msgid "SKY IS THE LIMIT"
+msgstr "السماء هي الحد"
+
+#: .\templates\index.html:263
 msgid ""
 "EXPECTATION OF SERVICES BEYOND BOUNDRIES WITH CREATIVITY AND INSPIRATION"
 msgstr "توقع خدمات تتجاوز الحدود بالإبداع والإلهام"
 
-#: .\project\templates\index.html:311
-msgid " Our</span> <span>Services"
+#: .\templates\index.html:298
+msgid "Request For Quote "
+msgstr "طلب للحصول على الاقتباس"
+
+#: .\templates\index.html:304
+msgid "Part Number "
+msgstr "رقم القطعة"
+
+#: .\templates\index.html:306
+msgid "Description "
+msgstr "وصف"
+
+#: .\templates\index.html:308
+msgid "Quantity *:"
+msgstr "كمية"
+
+#: .\templates\index.html:310 .\templates\product.html:18
+msgid "Condition"
+msgstr "بناء"
+
+#: .\templates\index.html:312
+msgid "Mail"
+msgstr "بريد إلكتروني"
+
+#: .\templates\index.html:314
+msgid "Telephone"
+msgstr "هاتف"
+
+#: .\templates\index.html:316
+msgid "Company name"
+msgstr "اسم الشركة"
+
+#: .\templates\index.html:328
+msgid "RFQ is submitted successfully!"
 msgstr ""
 
-#: .\project\templates\index.html:322
+#: .\templates\index.html:328
+msgid "Our sales team will contact with you in 48 hours."
+msgstr "سيتواصل معك فريق المبيعات لدينا في غضون 48 ساعة."
+
+#: .\templates\index.html:340
+msgid "Our</span> <span>Services"
+msgstr "خدماتنا"
+
+#: .\templates\index.html:353
 msgid "MRO & Ground Handling"
 msgstr "MRO والمناولة الأرضية"
 
-#: .\project\templates\index.html:324
+#: .\templates\index.html:355
 msgid ""
 "Relaible Maintenannce and Repair with OEM spare parts. Disciplined Ground "
 "Handling"
 msgstr "صيانة وإصلاح موثوق به مع قطع غيار OEM. منضبطة المناولة الأرضية"
 
-#: .\project\templates\index.html:336
+#: .\templates\index.html:367
 msgid "Distributorships"
 msgstr "التوزيعات"
 
-#: .\project\templates\index.html:337
+#: .\templates\index.html:368
 msgid ""
 "Exclusive distribution of premium brands with EXW, CIP, DDP delivery "
 "logistic services"
@@ -301,11 +428,11 @@ msgstr ""
 "توزيع حصري للعلامات التجارية المتميزة مع الخدمات اللوجستية للتسليم EXW و CIP "
 "و DDP"
 
-#: .\project\templates\index.html:350 .\project\templates\rec.html:75
+#: .\templates\index.html:381 .\templates\rec.html:77
 msgid "Real Estate"
 msgstr "العقارات"
 
-#: .\project\templates\index.html:351
+#: .\templates\index.html:382
 msgid ""
 "Trustful commercial property partner for long term localization. "
 "Professional leasing and Tenant Mix solutions"
@@ -313,21 +440,21 @@ msgstr ""
 "شريك ملكية تجارية موثوق به للتوطين على المدى الطويل. التأجير الاحترافي وحلول "
 "Tenant Mix"
 
-#: .\project\templates\index.html:364 .\project\templates\rec.html:75
+#: .\templates\index.html:395 .\templates\rec.html:77
 msgid "Construction"
 msgstr "بناء"
 
-#: .\project\templates\index.html:365
+#: .\templates\index.html:396
 msgid ""
 "Elegant design & construction project management with strick application "
 "quality principles"
 msgstr "تصميم أنيق وإدارة مشاريع البناء مع مبادئ جودة التطبيق الصارمة"
 
-#: .\project\templates\index.html:378
+#: .\templates\index.html:409
 msgid "Finance"
 msgstr "تمويل"
 
-#: .\project\templates\index.html:379
+#: .\templates\index.html:410
 msgid ""
 "Corporate Audit, financial control systems with customized accounting "
 "software solutions. Accurate forecast of global economy"
@@ -335,11 +462,11 @@ msgstr ""
 "تدقيق الشركات ، وأنظمة الرقابة المالية مع حلول برامج المحاسبة المخصصة. "
 "توقعات دقيقة للاقتصاد العالمي"
 
-#: .\project\templates\index.html:392
+#: .\templates\index.html:423
 msgid "E-Commerce"
 msgstr "التجارة الإلكترونية"
 
-#: .\project\templates\index.html:393
+#: .\templates\index.html:424
 msgid ""
 "Modernization of trade for international markets. Corporatintegration to new "
 "generation e-commerce applications"
@@ -347,7 +474,15 @@ msgstr ""
 "تحديث التجارة للأسواق الدولية. دمج الشركات مع تطبيقات التجارة الإلكترونية من "
 "الجيل الجديد"
 
-#: .\project\templates\index.html:707
+#: .\templates\index.html:443
+msgid "Trusted</span> <span>By"
+msgstr "موثوق به"
+
+#: .\templates\index.html:755
+msgid "About</span> <span>Us"
+msgstr "معلومات عنا"
+
+#: .\templates\index.html:758
 msgid ""
 "Reka Global offers a wide range ofinternational trade services for both "
 "import and export processes. Our main goal is to offer our customers a "
@@ -358,7 +493,7 @@ msgstr ""
 "الاستيراد والتصدير. هدفنا الرئيسي هو أن نقدم لعملائنا عملية تجارية سلسة "
 "وناجحة ، خالية من المخاطر والصعوبات المحتملة للتجارة الدولية."
 
-#: .\project\templates\index.html:709
+#: .\templates\index.html:760
 msgid ""
 " Our wide range of services offers managing or monitoring standard and non-"
 "standard trade operations as well as tailor-made solutions for your business."
@@ -366,7 +501,7 @@ msgstr ""
 "تقدم مجموعة خدماتنا الواسعة إدارة أو مراقبة العمليات التجارية القياسية وغير "
 "القياسية بالإضافة إلى الحلول المصممة خصيصًا لأعمالك."
 
-#: .\project\templates\index.html:711
+#: .\templates\index.html:762
 msgid ""
 " By utilizing our existing sales channels among all over the world, we are "
 "serving SMEs as an outsider sales team"
@@ -374,7 +509,7 @@ msgstr ""
 "من خلال الاستفادة من قنوات المبيعات الموجودة لدينا في جميع أنحاء العالم ، "
 "فإننا نخدم الشركات الصغيرة والمتوسطة كفريق مبيعات خارجي"
 
-#: .\project\templates\index.html:714
+#: .\templates\index.html:765
 msgid ""
 "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST "
 "ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVE, FINANCE, "
@@ -384,100 +519,146 @@ msgstr ""
 "الدولية وسلسلة توريد الطيران وخدمة دعم GSE والتمويل والتجارة والعقارات "
 "والتنمية."
 
-#: .\project\templates\index.html:717
+#: .\templates\index.html:768
 msgid ""
 "HUNDREDS OF OUR BUSINESS PARTNERS WORK OVERSEAS WITH TRUSTFULL COOPERATION "
 "IN VARIOUS FIELDS."
 msgstr ""
 "يعمل مئات من شركائنا في العمل في الخارج بتعاون موثوق به في مجالات مختلفة."
 
-#: .\project\templates\index.html:748
+#: .\templates\index.html:799
 msgid "COUNTRIES SERVED"
 msgstr "الدول التي يتم خدمتها"
 
-#: .\project\templates\index.html:758
+#: .\templates\index.html:809
 msgid "PROJECTS COMPLETED"
 msgstr "المشاريع المنجزة"
 
-#: .\project\templates\index.html:768
+#: .\templates\index.html:819
 msgid "SUCCESSFULL DELIVERIES"
 msgstr "عمليات التسليم الناجحة"
 
-#: .\project\templates\index.html:778
+#: .\templates\index.html:829
 msgid "SATISFIED CLIENTS"
 msgstr "عملاء راضون"
 
-#: .\project\templates\index.html:792
-msgid "Our</span> <span>TEAM"
-msgstr ""
+#: .\templates\index.html:844
+msgid "Our</span> <span>Team"
+msgstr "فريقنا"
 
-#: .\project\templates\index.html:801
+#: .\templates\index.html:854
 msgid "General Manager"
 msgstr "مدير عام"
 
-#: .\project\templates\index.html:814
+#: .\templates\index.html:867
 msgid "Trade & Logistic Coordinator"
 msgstr "منسق التجارة واللوجستيات"
 
-#: .\project\templates\index.html:827
+#: .\templates\index.html:880
 msgid "Procurement & Logistic Specialist"
 msgstr "أخصائي المشتريات واللوجستيات"
 
-#: .\project\templates\index.html:840 .\project\templates\index.html:855
+#: .\templates\index.html:893 .\templates\index.html:908
 msgid "CRM Coordinator"
 msgstr "منسق CRM"
 
-#: .\project\templates\index.html:868
+#: .\templates\index.html:921
 msgid "Procurement Specialist"
 msgstr "أخصائي المشتريات"
 
-#: .\project\templates\index.html:881
+#: .\templates\index.html:934
 msgid "Quality Control Specialist"
 msgstr "أخصائي ضبط الجودة"
 
-#: .\project\templates\index.html:894
+#: .\templates\index.html:947
 msgid "Logistic Specialist"
 msgstr "أخصائي لوجستي"
 
-#: .\project\templates\login.html:312
+#: .\templates\login.html:313
 msgid "Welcome"
 msgstr "مرحباً"
 
-#: .\project\templates\login.html:312
+#: .\templates\login.html:313
 msgid "Back!"
 msgstr "خلف!"
 
-#: .\project\templates\login.html:322 .\project\templates\register.html:321
-msgid "Company Name"
-msgstr "اسم الشركة"
+#: .\templates\login.html:324
+msgid "E-mail"
+msgstr "بريد إلكتروني"
 
-#: .\project\templates\login.html:327 .\project\templates\register.html:330
+#: .\templates\login.html:329 .\templates\register.html:330
 msgid "Password"
 msgstr "كلمة المرور"
 
-#: .\project\templates\login.html:337
-msgid "Remember me"
-msgstr "تذكرنى"
-
-#: .\project\templates\login.html:343
+#: .\templates\login.html:342
 msgid "Log In"
 msgstr "تسجيل الدخول"
 
-#: .\project\templates\login.html:345
+#: .\templates\login.html:344
 msgid "Dont Have an Account?"
 msgstr "ليس لديك حساب؟"
 
-#: .\project\templates\login.html:346 .\project\templates\register.html:351
+#: .\templates\login.html:345
+msgid "Forgot Password?"
+msgstr "هل نسيت كلمة السر؟"
+
+#: .\templates\login.html:346 .\templates\register.html:351
 msgid "Return to home page"
 msgstr "العوده للصفحة الرئيسية"
 
-#: .\project\templates\rec.html:77
-#, fuzzy
-#| msgid ""
-#| "As a part of group companies, Reka RE & C  serves comprehensive "
-#| "commercial development consultancy, real estate management, leasing "
-#| "solutions & tenant-mix optimization to localized projects with a wide "
-#| "aspect of globalized know-how in order to expand limits."
+#: .\templates\password_reset.html:10
+msgid "Reset Password"
+msgstr "إعادة تعيين كلمة المرور"
+
+#: .\templates\password_reset.html:11
+msgid ""
+"Forgot your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+"نسيت كلمة السر؟ أدخل عنوان بريدك الإلكتروني أدناه ، وسنرسل إليك تعليمات عبر "
+"البريد الإلكتروني لإعداد عنوان جديد."
+
+#: .\templates\password_reset.html:15
+msgid "Send email"
+msgstr "ارسل بريد الكتروني"
+
+#: .\templates\product.html:16
+msgid "PN"
+msgstr "PN"
+
+#: .\templates\product.html:17
+msgid "Size"
+msgstr "مقاس"
+
+#: .\templates\product.html:19
+msgid "AC Type"
+msgstr "نوع المكيف"
+
+#: .\templates\product.html:20
+msgid "Qty"
+msgstr "الكمية"
+
+#: .\templates\product.html:21
+msgid "Price"
+msgstr "سعر"
+
+#: .\templates\profile.html:12
+msgid "Profile"
+msgstr "حساب تعريفي"
+
+#: .\templates\profile.html:20
+msgid "Part Number"
+msgstr "رقم القطعة"
+
+#: .\templates\profile.html:21
+msgid "SEARCH PART NUMBER FOR STOCK AVAILABILITY"
+msgstr "رقم جزء البحث عن توفر المخزون"
+
+#: .\templates\profile.html:31
+msgid " Inventory List"
+msgstr "قائمة الجرد"
+
+#: .\templates\rec.html:79
 msgid ""
 "As a part of group companies, Reka RE & C  serves comprehensive commercial "
 "development consultancy, real estate management, leasing solutions & tenant-"
@@ -488,7 +669,7 @@ msgstr ""
 "الشاملة ، وإدارة العقارات ، وحلول التأجير ، وتحسين مزيج المستأجرين للمشاريع "
 "المحلية مع جانب واسع من المعرفة المعولمة من أجل توسيع الحدود."
 
-#: .\project\templates\rec.html:78
+#: .\templates\rec.html:80
 msgid ""
 "Trustful commercial property partner for long term localization. Project "
 "management specialized in industrial, mall, office and mixed use "
@@ -499,49 +680,54 @@ msgstr ""
 "في التطوير الصناعي والمول والمكتبي والمتعدد الاستخدامات. وكلاء عقاريون "
 "مرخصون للتأجير الاحترافي وحلول Tenant Mix."
 
-#: .\project\templates\register.html:311
+#: .\templates\register.html:311
 msgid "Welcome!"
 msgstr "مرحباً!"
 
-#: .\project\templates\register.html:325
+#: .\templates\register.html:325
 msgid "Email"
 msgstr "بريد إلكتروني"
 
-#: .\project\templates\register.html:337
+#: .\templates\register.html:337
 msgid "Password again"
 msgstr "أدخل كلمة السر مرة أخرى"
 
-#: .\project\templates\register.html:350
+#: .\templates\register.html:350
 msgid "Already Have an Account?"
 msgstr "هل لديك حساب؟"
 
-#: .\project\templates\soon.html:99
-msgid "Days"
-msgstr "أيام"
+#~ msgid ""
+#~ "REKA GLOBAL SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD "
+#~ "TRUST ON INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT "
+#~ "SERVICES, FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT REKA GLOBAL "
+#~ "SERVES EXCELLENT AVIATION OPERATIONS WITH EXPERTS TO BUILD TRUST ON "
+#~ "INTERNATIONAL TRADE, AVIATION SUPPLY-CHAIN, GSE SUPPORT SERVICES, "
+#~ "FINANCE, COMMERCE, REAL ESTATE AND DEVELOPMENT"
+#~ msgstr ""
+#~ "REKA GLOBAL SERVICES عمليات طيران ممتازة مع خبراء لبناء الثقة في التجارة "
+#~ "الدولية وسلسلة توريد الطيران وخدمات دعم GSE والتمويل والتجارة والعقارات "
+#~ "والتنمية"
 
-#: .\project\templates\soon.html:100
-msgid "Hours"
-msgstr "ساعات"
+#~ msgid "Days"
+#~ msgstr "أيام"
 
-#: .\project\templates\soon.html:101
-msgid "Minutes"
-msgstr "دقائق"
+#~ msgid "Hours"
+#~ msgstr "ساعات"
 
-#: .\project\templates\soon.html:102
-msgid " Seconds"
-msgstr "ثواني"
+#~ msgid "Minutes"
+#~ msgstr "دقائق"
 
-#: .\project\templates\soon.html:108
-msgid "Coming Soon"
-msgstr "قريباً"
+#~ msgid " Seconds"
+#~ msgstr "ثواني"
 
-#: .\project\templates\soon.html:109
-msgid "Subscribe to get notification when we start"
-msgstr "اشترك للحصول على إشعار عندما نبدأ"
+#~ msgid "Coming Soon"
+#~ msgstr "قريباً"
 
-#: .\project\templates\soon.html:112
-msgid "Subscribe"
-msgstr "يشترك"
+#~ msgid "Subscribe to get notification when we start"
+#~ msgstr "اشترك للحصول على إشعار عندما نبدأ"
+
+#~ msgid "Subscribe"
+#~ msgstr "يشترك"
 
 #~ msgid "TIRES & BRAKES"
 #~ msgstr "الإطارات والمكابح"
