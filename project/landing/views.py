@@ -306,7 +306,7 @@ def register(request):
                 user = User.objects.create_user(username=companyName, email=email, password=password)
                 user.is_active = 0
                 user.save()
-
+                activateEmail(request, user, user.email)
                 #log user in and redirect to settings page
                 user_login = auth.authenticate(username=companyName, password=password)
                 #auth.login(request, user_login)
@@ -428,3 +428,70 @@ result_list = list(a)
         m = (i["UnitPrice"]["Price"]*1.3)
         i["UnitPrice"]["Price"] = round(m,2)
 """
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.contrib.auth.models import User as CustomUser
+def email_dogrulama(request):
+    dil = dil_bilgisi()
+    trans = translate(language='en')
+    user = get_object_or_404(CustomUser, id = request.user.id)
+
+    activateEmail(request,user,request.user.email)
+
+    return redirect("/")
+def activatee(request, uidb64, token):
+    dil = dil_bilgisi()
+    trans = translate(language='en')
+    User = get_user_model()
+    try:
+        uid = force_str(urlsafe_base64_decode(uidb64))
+        user = get_object_or_404(CustomUser,id=uid)
+    except:
+        user = None
+    print(token,uidb64,user,uid)
+    if user is not None and account_activation_token.check_token(user, token):
+        user.is_active = 1
+        user.save()
+
+        messages.success(request, "Thank you for your email confirmation. Now you can login your account.")
+        return redirect('/')
+    else:
+        messages.error(request, "Activation link is invalid!")
+
+    return redirect('/')
+from django.template.loader import get_template
+from django.core.mail import EmailMultiAlternatives
+def activateEmail(request, user, to_email):
+    dil = dil_bilgisi()
+    trans = translate(language='en')
+    mail_subject = "Activate your user account."
+    message = render_to_string("template_activate_account.html", {
+        'user': CustomUser.username,
+        'domain': get_current_site(request).domain,
+        'uid': urlsafe_base64_encode(force_bytes(CustomUser.pk)),
+        'token': account_activation_token.make_token(CustomUser),
+        "protocol": 'https' if request.is_secure() else 'http'
+    })
+    plaintext = get_template('template_activate_account.txt')
+    htmly     = get_template('template_activate_account.html')
+
+    d = {
+        'user': CustomUser.username,
+        'domain': get_current_site(request).domain,
+        'uid': urlsafe_base64_encode(force_bytes(CustomUser.pk)),
+        'token': account_activation_token.make_token(CustomUser),
+        "protocol": 'https' if request.is_secure() else 'http'
+    }
+
+    subject, from_email, to = 'Email Confirmation', 'from@example.com', 'to@example.com'
+    text_content = plaintext.render(d)
+    html_content = htmly.render(d)
+    msg = EmailMultiAlternatives(subject, text_content, from_email, [to_email])
+    msg.attach_alternative(html_content, "text/html")
+    #msg.send()
+    #email = EmailMessage(mail_subject, message, to=[to_email])
+    msg.send()
+    if msg.send():
+        messages.success(request, f'Dear <b>{user}</b>, please go to you email <b>{to_email}</b> inbox and click on \
+                received activation link to confirm and complete the registration. <b>Note:</b> Check your spam folder.')
+    else:
+        messages.error(request, f'Problem sending email to {to_email}, check if you typed it correctly.')
