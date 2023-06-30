@@ -95,6 +95,7 @@ def password_reset_request(request):
         template_name="password_reset.html", 
         context={"form": form,"trans":trans,"dil":dil,"link":link}
         )
+
 def passwordResetConfirm(request, uidb64, token):
     User = get_user_model()
     try:
@@ -303,11 +304,12 @@ def register(request):
                 return redirect("/register")
             else:
                 user = User.objects.create_user(username=companyName, email=email, password=password)
+                user.is_active = 0
                 user.save()
 
                 #log user in and redirect to settings page
                 user_login = auth.authenticate(username=companyName, password=password)
-                auth.login(request, user_login)
+                #auth.login(request, user_login)
 
                 #create a Profile object for the new user
                 user_model = User.objects.get(username=companyName)
